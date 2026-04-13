@@ -47,10 +47,6 @@ is unlikely before 2029.
 - No formal rulemaking has been initiated to update CMMC from Rev 2 to Rev 3
 - The class deviation has no published expiration date
 
-> Source: Alluvionic, "Before You Rebuild Your CMMC Program for NIST
-> 800-171 Rev. 3, Read This"
-> https://alluvionic.com/cmmc-nist-800-171-rev-2-vs-rev-3/
-
 ---
 
 ## Key Changes in Rev 3
