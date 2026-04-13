@@ -133,7 +133,7 @@ Each POA&M entry should contain:
 ### Good vs Bad POA&M Entries
 
 **Bad:**
-> Practice AC.L2-3.1.5: "Need to implement session locks. Will fix soon."
+> Practice AC.L2-3.1.5: "Too many users have admin access. Will fix soon."
 
 **Good:**
 > Practice AC.L2-3.1.5 — Least Privilege
