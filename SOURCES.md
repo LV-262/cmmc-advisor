@@ -75,9 +75,9 @@ requirements.
 
 ## Practitioner Sources
 
-### Summit 7 Blog — Jacob Horne
-- **Author:** Jacob Horne, Chief Security Evangelist, Summit 7
-- **URL:** https://www.summit7.us/blog/author/jacob-horne
+### Summit 7 Blog
+- **Publisher:** Summit 7
+- **URL:** https://www.summit7.us/blog
 - **Accessed:** April 2026
 - **Used in:** Assessment insights, practitioner guidance, CMMC interpretation
 

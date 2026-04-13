@@ -12,7 +12,7 @@ handles and the sensitivity of the contract.
 
 CMMC does not create new cybersecurity requirements. It verifies that
 contractors have implemented requirements that have been in place since
-DFARS 252.204-7012 was published in 2017. As Jacob Horne (Summit 7) states:
+DFARS 252.204-7012 was published in 2017. As Summit 7 puts it:
 "CMMC isn't making you do the requirements; it's making sure you did the
 requirements."
 
