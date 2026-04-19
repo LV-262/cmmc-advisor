@@ -1,0 +1,47 @@
+id: level-2-scoping-basic
+title: Small SDVOSB building SaaS that processes CUI
+category: level-selection-and-scoping
+
+prompt: |
+  We are a small SDVOSB (about 15 people) building a SaaS platform that our
+  DoD customer will use to process Controlled Unclassified Information. The
+  platform is hosted on AWS GovCloud. Our DoD contract is for the Air Force
+  and the PWS says we must "maintain appropriate security controls for CUI
+  per DFARS 252.204-7012."
+
+  Three questions:
+  1. Which CMMC level do we need to achieve?
+  2. What is in scope for assessment, and what is out of scope?
+  3. If we had to pick between C3PAO assessment and a self-assessment,
+     which applies to us and why?
+
+required_terms:
+  - Level 2
+  - NIST SP 800-171
+  - CUI
+  - C3PAO
+  - DFARS 252.204-7012
+  - AWS GovCloud
+  - assessment boundary
+
+factual_claims_expected: true
+
+expected_recommendation: |
+  Level 2 with C3PAO third-party assessment (because the contractor is
+  processing CUI and the DFARS clause is in the PWS, which triggers Level 2
+  at minimum; self-assessment is not acceptable for CUI-processing
+  contractors under the CMMC 2.0 final rule).
+
+  Scope should include the SaaS platform itself (application, data stores,
+  admin plane), the GovCloud environment configuration, any endpoint that
+  accesses the CUI plane, and identity/access pathways into that plane.
+  Corporate IT (email, HR systems, finance) is out of scope IF isolated
+  from the CUI plane — the contractor should document this enclave
+  boundary in the System Security Plan.
+
+evaluator_notes: |
+  The answer should lead with Level 2 / C3PAO and cite DFARS 252.204-7012
+  as the trigger. CUI scoping answer should explicitly address the enclave
+  model (separate CUI plane from corporate IT). Enabler posture required:
+  the answer must tell the contractor what to DO next (pick a C3PAO, draft
+  an SSP with a clear boundary diagram), not just what the rules say.
