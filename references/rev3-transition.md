@@ -168,7 +168,6 @@ Track these signals for Rev 3 adoption timing:
    CMMC Rev 3 signals imminent adoption
 4. **Cyber AB guidance** — The CMMC Accreditation Body will publish
    assessor guidance for Rev 3 assessments
-5. **Summit 7 / Jacob Horne analysis** — Jacob Horne's Sum IT Up
-   podcast and Summit 7 blog consistently provide early and accurate
-   analysis of CMMC rulemaking developments:
-   https://www.summit7.us/podcast
+5. **Summit 7 analysis** — The Sum IT Up podcast and Summit 7 blog
+   consistently provide early and accurate analysis of CMMC rulemaking
+   developments: https://www.summit7.us/podcast
