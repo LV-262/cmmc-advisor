@@ -71,7 +71,7 @@ domains assume it is working.
   locked storage, and household non-visibility are training-delivered
   controls that depend on user behavior; VPN routing is a technical
   control enforced by endpoint configuration that training must cover
-  but does not substitute for
+  but does not substitute for those user-behavior safeguards.
 - Cadence: at hire before access authorization, annually thereafter,
   and on material change to policy, threat environment, or
   organizational systems. The annual refresh is a floor, not a
