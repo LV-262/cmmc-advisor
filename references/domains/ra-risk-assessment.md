@@ -133,7 +133,9 @@ exposures, not just producing tickets.
 - Authenticated scanning: credentialed scans into systems find issues
   unauthenticated scans cannot see (missing patches on non-listening
   services, local configuration weaknesses, installed-but-unused
-  software). Authenticated scanning is the standard; unauthenticated
+  software). Authenticated scanning is the practitioner standard for
+  internal assets (NIST SP 800-115 Section 4.3.1 recommends
+  credentialed testing for complete results); unauthenticated
   scanning supplements it for external-perimeter views
 - Frequency: a periodic baseline (monthly for production, more
   frequently for internet-facing assets) plus event-driven scans on
@@ -209,12 +211,17 @@ first, not to whichever team complains loudest.
   exposure: critical findings on internet-facing or CUI-handling
   assets resolved in days; high findings in weeks; medium in the
   monthly patch cycle; low at the next opportunity. KEV-catalog
-  entries override CVSS-based scheduling and get critical treatment
-  regardless of score
+  entries warrant accelerated treatment with priority elevated to
+  critical when the vulnerability is present on an in-scope asset,
+  regardless of CVSS score
 - Coordination with SI.L2-3.14.1 flaw remediation: the two practices
-  overlap on patch application. Agree on a single tracking system
-  and single authoritative record per remediation item so the
-  assessor sees one evidence trail rather than two parallel ones
+  overlap where vulnerability remediation takes the form of patches,
+  firmware updates, or configuration corrections. SI.L2-3.14.1 is
+  broader (includes flaw correction beyond CVE-tracked vulnerabilities);
+  RA.L2-3.11.3 is risk-prioritized within that overlap. Agree on a
+  single tracking system and single authoritative record per
+  remediation item so the assessor sees one evidence trail rather
+  than two parallel ones
 - Patch application flows through Configuration Management (CM). A
   patch is a configuration change; it goes through the change-control
   process with test, approve, deploy, verify stages. The patch being
