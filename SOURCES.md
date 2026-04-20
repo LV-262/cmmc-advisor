@@ -36,7 +36,7 @@ requirements.
 - **Title:** Safeguarding Covered Defense Information and Cyber Incident Reporting
 - **Publisher:** Department of Defense (Defense Federal Acquisition Regulation Supplement)
 - **URL:** https://www.acquisition.gov/dfars/252.204-7012-safeguarding-covered-defense-information-and-cyber-incident-reporting
-- **Used in:** Incident Response domain (72-hour cyber incident reporting requirement)
+- **Used in:** Incident Response domain (72-hour cyber incident reporting requirement; 90-day media preservation obligation)
 
 ---
 
