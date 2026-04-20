@@ -36,8 +36,9 @@ analysis, containment, recovery, and user response activities.
 
 **Why it matters:** Detection without response is surveillance. A plan
 on the shelf is not a capability. The 72-hour reporting clock starts
-at discovery, and the team's first time through the runbook should
-have been a drill.
+when the organization reasonably determines and declares that an
+incident occurred, and the team's first time through the runbook
+should have been a drill.
 
 **Implementation guidance:**
 - Preparation: document an IR plan with named roles, severity
