@@ -14,8 +14,10 @@ so contractors handling only FCI have no awareness-and-training
 requirement under this domain.
 
 AT is the training hub for the rest of the skill.
-Personnel Security (PS) drives onboarding training assignment via
-PS.L2-3.9.1 and role-based re-assignment on transfer via PS.L2-3.9.2.
+Personnel Security (PS) establishes the pre-access screening gate
+under PS.L2-3.9.1 that training completion must clear before access
+authorization, and triggers role-based training re-assignment on
+transfer via PS.L2-3.9.2.
 Access Control (AC) content covers least-privilege and need-to-know
 concepts. Identification and Authentication (IA) content covers
 credential hygiene and multi-factor authentication.
@@ -43,7 +45,7 @@ standards, and procedures related to the security of those systems.
 **Why it matters:** Users are the largest component of the attack
 surface. Phishing, CUI mishandling, and careless credential disclosure
 come from people, not from misconfigured systems. Awareness training
-is the control that addresses the human layer; the other twelve
+is the control that addresses the human layer; the other thirteen
 domains assume it is working.
 
 **Implementation guidance:**
@@ -65,8 +67,10 @@ domains assume it is working.
   device and remote-work rules, social-engineering awareness
 - Alternate-work-site safeguards from PE.L2-3.10.6 belong in the
   remote-work portion of base awareness training. Privacy filter use,
-  VPN routing, locked storage, and household non-visibility are
-  training-delivered controls, not technical-only controls
+  locked storage, and household non-visibility are training-delivered
+  controls that depend on user behavior; VPN routing is a technical
+  control enforced by endpoint configuration that training must cover
+  but does not substitute for
 - Cadence: at hire before access authorization, annually thereafter,
   and on material change to policy, threat environment, or
   organizational systems. The annual refresh is a floor, not a
@@ -196,11 +200,14 @@ path the reporter trusts.
   access to resources outside stated duties, policy violations that
   cluster, behavioral changes correlated with stressors, attempts to
   acquire resources not tied to assigned work
-- Training must include a reporting path that does not require routing
-  through the suspected individual's management chain. A path through
-  IR intake (IR.L2-3.6.2) or through a designated security contact
-  avoids the single-point-of-failure where the person the reporter is
-  worried about is also the person they would have to tell
+- Training should include a reporting path that does not require
+  routing through the suspected individual's management chain. The
+  standard requires recognition and reporting; the chain-of-command
+  bypass is a program design choice that closes a practical gap. A
+  path through IR intake (IR.L2-3.6.2) or through a designated
+  security contact avoids the single-point-of-failure where the person
+  the reporter is worried about is also the person they would have to
+  tell
 - Reporter protection: training should state that good-faith reports
   are protected from retaliation and that reports are investigated
   before action is taken. Absent this assurance, the training teaches
@@ -256,9 +263,10 @@ passes or fails primarily on whether the reporting path is credible,
 which is a design choice more than a content choice.
 
 **Key relationships:**
-- Personnel Security (PS) drives onboarding training assignment via
-  PS.L2-3.9.1 screening tier and role, and re-assigns role-based
-  training on transfer via PS.L2-3.9.2 personnel actions
+- Personnel Security (PS) establishes the pre-access screening gate
+  under PS.L2-3.9.1 that training completion must clear before access
+  authorization; PS.L2-3.9.2 personnel actions trigger role-based
+  training re-assignment on transfer
 - Access Control (AC) provides the content backbone for
   least-privilege and need-to-know training in both base awareness and
   role-based tracks
