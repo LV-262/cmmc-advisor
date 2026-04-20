@@ -22,7 +22,7 @@ Security Assessment (CA) consumes RA output; risk assessments and
 vulnerability-scan findings populate SSP (System Security Plan) and
 POA&M (Plan of Action and Milestones) content under CA.L2-3.12.2.
 System and Information Integrity (SI) overlaps RA.L2-3.11.3 with
-SI.L2-3.14.1 flaw remediation; coordination is required so both
+SI.L1-3.14.1 flaw remediation; coordination is required so both
 practices reference the same remediation artifact rather than
 tracking duplicates. Configuration Management (CM) is the control
 gate through which patches land as configuration changes.
@@ -214,9 +214,9 @@ first, not to whichever team complains loudest.
   entries warrant accelerated treatment with priority elevated to
   critical when the vulnerability is present on an in-scope asset,
   regardless of CVSS score
-- Coordination with SI.L2-3.14.1 flaw remediation: the two practices
+- Coordination with SI.L1-3.14.1 flaw remediation: the two practices
   overlap where vulnerability remediation takes the form of patches,
-  firmware updates, or configuration corrections. SI.L2-3.14.1 is
+  firmware updates, or configuration corrections. SI.L1-3.14.1 is
   broader (includes flaw correction beyond CVE-tracked vulnerabilities);
   RA.L2-3.11.3 is risk-prioritized within that overlap. Agree on a
   single tracking system and single authoritative record per
@@ -286,7 +286,7 @@ because unauthenticated scans miss the majority of real issues.
   findings and vulnerability data populate SSP content and
   CA.L2-3.12.2 POA&M entries
 - System and Information Integrity (SI) shares flaw-remediation
-  scope with RA.L2-3.11.3; SI.L2-3.14.1 and RA.L2-3.11.3 require
+  scope with RA.L2-3.11.3; SI.L1-3.14.1 and RA.L2-3.11.3 require
   coordination so evidence is not duplicated or split
 - Configuration Management (CM) is the change-control gate through
   which patches and other remediations land as configuration changes

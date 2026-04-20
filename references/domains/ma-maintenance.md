@@ -28,7 +28,7 @@ IA.L2-3.5.3 in the maintenance context.
 System and Communications Protection (SC) frames the boundary
 crossings that nonlocal maintenance sessions traverse.
 System and Information Integrity (SI) overlaps MA.L2-3.7.4 malicious-
-code checks with SI.L2-3.14.2 malicious-code protection; the two
+code checks with SI.L1-3.14.2 malicious-code protection; the two
 practices coordinate on what scans run where.
 Physical Protection (PE) carries the physical chain-of-custody when
 equipment leaves the facility for off-site maintenance under
@@ -188,7 +188,7 @@ direct path past endpoint controls into the systems being serviced.
   anti-malware before connection to an in-scope system
 - Vendor-supplied media: treated as untrusted until scanned, even
   from authorized vendors
-- Reciprocal with SI.L2-3.14.2: SI owns the anti-malware capability
+- Reciprocal with SI.L1-3.14.2: SI owns the anti-malware capability
   on systems; MA owns the pre-connection discipline at the
   maintenance boundary. Coordinate so scan signatures and capability
   come from the same source of truth
@@ -365,7 +365,7 @@ pre-assessment review.
   controls under SC carry the traffic MA.L2-3.7.5 requires be
   authenticated and terminated
 - System and Information Integrity (SI) overlaps MA.L2-3.7.4 at the
-  malicious-code check; SI.L2-3.14.2 owns anti-malware capability on
+  malicious-code check; SI.L1-3.14.2 owns anti-malware capability on
   systems, MA owns pre-connection scanning discipline at the
   maintenance boundary
 - Physical Protection (PE) carries the physical chain-of-custody for
