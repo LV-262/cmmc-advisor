@@ -200,9 +200,13 @@ transport, access restriction) cannot be applied selectively.
   embedded watermarks identifying CUI status
 - Physical media: exterior label clearly visible, interior label
   where applicable (tape cartridge exterior and internal index)
-- Distribution limitations: FOUO (legacy), NOFORN, LES, and category-
-  specific limitations applied per the CUI Registry guidance for the
-  category the CUI belongs to
+- Dissemination controls under the CUI Registry: FEDCON (Federal
+  Government and contractors only), NOCON (no contractor access),
+  RELTO (releasable to specified entities), and other controls
+  defined in 32 CFR 2002.16 and applied per the CUI category the
+  information belongs to. NOFORN is a classified-system marking
+  under EO 13526, not a CUI dissemination control, and does not
+  apply to standalone unclassified CUI
 - Re-marking on reuse: if media is sanitized and reused, old
   markings removed or overwritten
 
@@ -285,9 +289,11 @@ covers cases like armed courier with continuous custody, not
 
 **Implementation guidance:**
 - Full-disk encryption on laptops and removable drives carrying CUI.
-  FIPS 140-validated cryptographic modules where contract language
-  requires it; otherwise FIPS 140-validated modules remain the
-  practitioner standard for consistency with SC requirements
+  FIPS 140-validated cryptographic modules are required at Level 2
+  under SC.L2-3.13.11 regardless of contract language; contracts may
+  impose additional specificity (FIPS 140-3 vs 140-2, particular
+  module classes) but the validation requirement itself is not
+  optional
 - File-level or volume-level encryption for media that will be in
   transit but stored unencrypted at destination
 - Key management: encryption keys managed separately from the media
