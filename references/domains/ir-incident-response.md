@@ -1,7 +1,7 @@
 # Incident Response (IR)
 
-> Source: NIST SP 800-171 Rev 2, Section 3.6; CMMC Assessment Guide
-> Level 2; NIST SP 800-61 Rev 2
+> Source: NIST SP 800-171 Rev 2, Section 3.6;
+> CMMC Assessment Guide Level 2; NIST SP 800-61 Rev 2
 
 ## Overview
 
