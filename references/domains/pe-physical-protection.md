@@ -36,9 +36,9 @@ practice and demonstrate enforcement.
 
 ### PE.L1-3.10.1 — Limit Physical Access
 
-**Requirement:** Limit physical access to organizational information
-systems, equipment, and the respective operating environments to
-authorized individuals.
+**Requirement:** Limit physical access to organizational systems,
+equipment, and the respective operating environments to authorized
+individuals.
 
 **Why it matters:** Logical controls protect data while the physical
 boundary holds. An attacker with hands on a server, endpoint, or
@@ -150,7 +150,8 @@ to verify the other PE practices are real.
 - Manual logs for spaces without EACS (paper sign-in at server rooms);
   logs reviewed for completeness rather than filed and forgotten
 - Retention commonly 1 to 3 years, guided by contract requirements and
-  the DFARS 90-day preservation obligation during incident response
+  the DFARS 252.204-7012(e) 90-day media preservation obligation during
+  incident response
 - Periodic review cadence defined in policy, with a designated reviewer
   who attests to the review in writing
 
