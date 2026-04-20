@@ -54,10 +54,11 @@ access has already been granted is not screening, it is notification.
   National Agency Check with Inquiries, under the 2012 Federal
   Investigative Standards). Higher-risk public-trust CUI roles may
   require MBI (Moderate Background Investigation), which is the
-  Tier 2 investigation under the 2012 FIS. Tier 3 and above involve
-  Secret or higher clearance eligibility and are out of scope for
-  most CUI-only roles; include Tier 3 only when the contract
-  explicitly requires it. Investigation submissions today route
+  Tier 2 investigation under the 2012 FIS. Tier 3 and above are
+  generally national-security or otherwise higher-sensitivity
+  investigations and are out of scope for most CUI-only roles;
+  include Tier 3 only when the contract explicitly requires that
+  higher investigation level. Investigation submissions today route
   through NBIS
   (National Background Investigation Services, which replaced e-QIP
   around 2023) and are tracked in DISS
