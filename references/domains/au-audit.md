@@ -147,7 +147,8 @@ failures ensures you know immediately when your audit trail is broken.
 ### AU.L2-3.3.5 — Audit Correlation
 
 **Requirement:** Correlate audit record review, analysis, and reporting
-processes to support after-the-fact investigations of incidents.
+processes for investigation and response to indications of unlawful,
+unauthorized, suspicious, or unusual activity.
 
 **Why it matters:** A single log source rarely tells the full story.
 Correlating logs across systems (network + endpoint + authentication +

@@ -139,9 +139,9 @@ should have been a drill.
 
 ### IR.L2-3.6.2 — Incident Tracking and Reporting
 
-**Requirement:** Track and document incidents and report them to
-designated internal officials and external authorities per contractual
-and regulatory obligations.
+**Requirement:** Track, document, and report incidents to designated
+officials and/or authorities both internal and external to the
+organization.
 
 **Why it matters:** Assessors require a documented record. Contractual
 obligations require external reports on a clock. Missing the DIBNet
@@ -245,9 +245,7 @@ contract independent of the incident's technical impact.
 
 ### IR.L2-3.6.3 — Incident Response Testing
 
-**Requirement:** Test the organizational incident response capability
-using appropriate tests and exercises, and use the results to improve
-the capability.
+**Requirement:** Test the organizational incident response capability.
 
 **Why it matters:** A plan that has never been tested will fail the
 first time it matters. Tests surface missing contacts, broken
