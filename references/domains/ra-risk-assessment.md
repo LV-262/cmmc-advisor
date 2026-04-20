@@ -13,7 +13,7 @@ contractors handling only FCI have no risk-assessment requirement
 under this domain. RA is the risk-visibility layer for the rest of
 the skill; Phase 6 anti-pattern content will cite RA.L2-3.11.1 as the
 correct pattern against which risk-assessment theater is the
-anti-pattern, and Phase 5f FedRAMP gap analysis cites RA methodology
+anti-pattern, and Phase 5 FedRAMP gap analysis cites RA methodology
 for identifying coverage gaps between contractor and cloud-provider
 responsibility.
 
