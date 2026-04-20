@@ -188,8 +188,9 @@ Security (PS).
 - Issuance tied to a personnel record and a business-justification
   review, not handed out by reception at the badge machine
 - Revocation on separation, transfer, or role change within a defined
-  SLA (same-day for termination; within one business day for transfer
-  or role change)
+  SLA: same-day for hostile terminations and one business day for
+  routine separations (per the PS.L2-3.9.2 personnel-action SLA);
+  one business day for transfer or role change
 - Badge audit cadence with corrective action when the physical
   inventory does not match the issuance records
 - Combination rotation schedule for any combination-based locks;
@@ -209,8 +210,12 @@ Security (PS).
 - Temporary-badge issuance procedures and sample records
 
 **Common mistakes:**
-- Badge revocation delayed past the termination date, leaving the
-  former employee with physical access for days after exit
+- Badge revocation delayed past the same-day SLA for hostile
+  terminations; the same miss shows up as a PS.L2-3.9.2 finding
+  because the two practices share the failure mode
+- Hostile-termination workflow absent; access revoked on the
+  routine-separation path after the employee has already left with
+  physical access still active
 - Lost badges reported but never deactivated in the EACS
 - Master keys held by too many people, making revocation impractical
 - Combinations unchanged since facility lease start
