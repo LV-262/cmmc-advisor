@@ -158,10 +158,10 @@ exposures, not just producing tickets.
   applicable) covers application-layer issues that infrastructure
   scanners miss. Required when the organization runs custom web
   applications in scope for CUI processing
-- Cloud-workload scanning: cloud-native tools (AWS Inspector, Azure
-  Defender, GCP Security Command Center) supplement traditional
-  scanners for cloud assets and integrate with the overall scan
-  record
+- Cloud-workload scanning: cloud-native tools (Amazon Inspector,
+  Microsoft Defender for Cloud, GCP Security Command Center)
+  supplement traditional scanners for cloud assets and integrate
+  with the overall scan record
 
 **Evidence to collect:**
 - Vulnerability scanning policy with defined asset scope and
