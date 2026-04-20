@@ -149,7 +149,7 @@ duties, not generic coverage.
   training refreshes more frequently than manager-level training
   because the privilege surface changes faster. Annual is a reasonable
   floor for most roles; semiannual is appropriate where tooling
-  changes that quickly
+  changes occur that quickly
 - Verify competency, not just completion. A completion record
   showing attendance does not demonstrate the person can execute the
   duty. Assessments, certifications, practical exercises, or supervisor
