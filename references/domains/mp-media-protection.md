@@ -7,7 +7,7 @@
 Media Protection governs the lifecycle of every object that stores
 CUI: laptops and servers, external drives and USB sticks, printed
 documents and archived tapes, backup media and loaner devices. The
-domain has 9 practices across a 1 Level 1 + 8 Level 2 split.
+domain has 9 practices with 1 Level 1 and 8 Level 2 practices.
 MP.L1-3.8.3 (sanitize or destroy before disposal or reuse) is the
 single L1 practice, so contractors handling only FCI still have the
 sanitization obligation. The 8 L2 practices cover physical protection
