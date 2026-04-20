@@ -9,7 +9,7 @@
 
 ## Verdict
 
-**No-Go.** One CRITICAL finding in the SI slice: a factual regulatory error that misstates whether FCI-only contractors carry SI obligations under CMMC. Remediation required before Phase 4 is locked for Phase 5 scoping.
+**No-Go at audit time → Go after inline hotfix.** One CRITICAL finding in the SI slice: a factual regulatory error that misstated whether FCI-only contractors carry SI obligations under CMMC. Remediated inline on this branch (commit `245a7c4`); see the Remediation addendum at the bottom of this report.
 
 The rest of the corpus is in good shape. Format parity is clean, per-practice structure is uniform, and practice totals sum to 110 across all 14 domains, matching the canonical `levels-and-assessment.md` table. Three MEDIUM findings (scope-boundary leaks in CA and MP, gloss-hygiene drift in MP/PS/SI) and several LOW/informational findings should be filed as follow-ups but do not block.
 
@@ -296,3 +296,30 @@ Per the prompt, a bd issue will be created for the Phase 5 scoping session (FedR
 
 - AC 668 lines with 22 practices; SC 553 lines with 16 practices. Both pre-date the density-discipline rule codified in later slices. Accepted as-is.
 - AC, CM, IA, IR, SC carry zero practice-ID coordination pointers. Filed as F-2 for follow-up but not a Phase 4 blocker; the pattern emerged mid-Phase 4 and retrofitting is a scoped Phase 5 slice.
+
+---
+
+## Remediation addendum — SI CRITICAL resolved inline
+
+Commit `245a7c4` on this branch resolves F-1 (the SI CRITICAL). Changes:
+
+- 4 practice headings relabeled `SI.L2-3.14.x` → `SI.L1-3.14.x` for 3.14.1, 3.14.2, 3.14.4, 3.14.5
+- File restructured into `## Level 1 Practices` and `## Level 2 Practices` sections, following PE/MP/AC/IA/SC convention. `SI.L2-3.14.3` moved from between .2 and .4 into the L2 section (numerical order preserved within each level)
+- Domain Summary count row fixed: `0/7/7` → `4/3/7` (matches canonical `levels-and-assessment.md`)
+- Overview prose rewritten to remove the false FCI claim and call out the NIST 800-171 Basic/Derived vs CMMC L1/L2 distinction explicitly
+- All intra-file prose references updated to correct labels (21 occurrences)
+- Inbound references updated: `ca-security-assessment.md` (5 refs), `ma-maintenance.md` (3 refs), `ra-risk-assessment.md` (4 refs)
+- FCI split-line gloss (F-8) resolved implicitly by the Overview rewrite
+
+Post-hotfix verification:
+- Zero `SI.L2-3.14.[1245]` remaining anywhere in `references/`
+- Format parity clean: all required sections present, 7 practices matched by 7 of each block type
+- 59 total SI cross-references across the corpus, all correctly labeled
+
+### Side-discovery during hotfix
+
+AC, IA, and SC section headers use `## Level 1 Practices (Basic)` and `## Level 2 Practices (Derived)`. This conflates CMMC L1/L2 with NIST 800-171 Basic/Derived — the same conflation that broke SI, with inverted effect. In AC, the "Level 1 Practices (Basic)" heading labels 4 practices that span both Basic (3.1.1, 3.1.2) and Derived (3.1.20, 3.1.22) Security Requirements. The per-practice identifiers are correct; the section label prose is misleading. Filed as a separate MEDIUM bd issue, not included in this hotfix to keep scope minimal. PE, MP, SI (post-hotfix) use the unambiguous `## Level 1 Practices` / `## Level 2 Practices` style and are the convention to standardize on.
+
+### Verdict flip
+
+With commit `245a7c4` on the branch, Phase 4 clears the CRITICAL blocker. Residual findings (HIGH AU.L2-3.3.5 paraphrase, MEDIUM scope/drift/header issues, LOW gloss hygiene) are filed as bd follow-ups and do not block Phase 5 scoping. Phase 4 is **Go** on this branch as of the hotfix commit.
