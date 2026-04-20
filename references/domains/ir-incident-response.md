@@ -30,14 +30,14 @@ chain-of-custody during investigation.
 
 ### IR.L2-3.6.1 — Incident Handling Capability
 
-**Requirement:** Build and maintain an operational incident handling
-capability for organizational systems covering preparation, detection
-and analysis, containment, recovery, and user response.
+**Requirement:** Establish an operational incident-handling capability
+for organizational systems that includes preparation, detection,
+analysis, containment, recovery, and user response activities.
 
 **Why it matters:** Detection without response is surveillance. A plan
 on the shelf is not a capability. The 72-hour reporting clock starts
-when something goes wrong, not when the team finishes reading the
-runbook for the first time.
+at discovery, and the team's first time through the runbook should
+have been a drill.
 
 **Implementation guidance:**
 - Preparation: document an IR plan with named roles, severity
@@ -161,20 +161,31 @@ contract independent of the incident's technical impact.
   protection obligations apply to incident communications themselves
   (CUI leaked in an email to an unauthorized recipient becomes its own
   incident)
-- External reporting to DIBNet: for cyber incidents affecting CUI on
-  covered contractor systems, report within 72 hours of discovery via
-  DIBNet (the DoD Defense Industrial Base Network cyber incident
-  reporting portal at dibnet.dod.mil) per DFARS 252.204-7012 (the DFARS
-  cyber incident reporting clause). The 72-hour clock is a contractual
-  requirement, not a suggestion. Discovery starts when the organization
-  has credible reason to suspect a cyber incident, not when root cause
-  is confirmed, so conservative reporting is the default posture
+- External reporting to DIBNet: for cyber incidents that affect a
+  covered contractor information system, the covered defense
+  information residing on it, or the contractor's ability to perform
+  obligations under the contract, report within 72 hours of discovery
+  via DIBNet (the DoD Defense Industrial Base Network cyber incident
+  reporting portal at dibnet.dod.mil, run by the DoD Cyber Crime Center
+  / DC3) per DFARS 252.204-7012 (the DFARS cyber incident reporting
+  clause). The 72-hour clock is a contractual requirement, not a
+  suggestion. Discovery in 7012 context means the point at which the
+  contractor has determined a cyber incident has occurred, not when
+  root cause is confirmed. Reporting at the point of reasonable
+  determination is the required posture; waiting for confirmation will
+  miss the window
 - DIBNet pre-provisioning: DIBNet submission requires a medallion
   certificate for authentication. The certificate takes time to obtain
   from the DoD external certification authority; organizations that
   wait until an incident to start the process will miss the 72-hour
   window. Register the organization and obtain at least one medallion
   certificate before it is needed
+- Media preservation: DFARS 252.204-7012(e) requires preserving images
+  of all known affected systems and relevant monitoring or packet
+  capture data for at least 90 days from the report date, to support
+  potential DoD forensic review. Coordinate with Media Protection (MP)
+  controls for chain-of-custody. DCSA or other DoD entities may request
+  access to preserved media after the report is filed
 - External reporting to law enforcement: FBI field office or local law
   enforcement for criminal activity, typically coordinated through
   legal counsel. Parallel paths may be required (DIBNet for contractual
@@ -206,6 +217,9 @@ contract independent of the incident's technical impact.
   notification procedures
 - Retention schedule for incident records (commonly tied to contract
   retention requirements)
+- Evidence of 90-day forensic media preservation process per DFARS
+  252.204-7012(e) (forensic imaging procedures, write-blocker use,
+  chain-of-custody records)
 
 **Common mistakes:**
 - No DIBNet account established before an incident occurs. Discovering
@@ -230,8 +244,9 @@ contract independent of the incident's technical impact.
 
 ### IR.L2-3.6.3 — Incident Response Testing
 
-**Requirement:** Exercise the incident response capability periodically
-to confirm the plan works under realistic conditions.
+**Requirement:** Test the organizational incident response capability
+using appropriate tests and exercises, and use the results to improve
+the capability.
 
 **Why it matters:** A plan that has never been tested will fail the
 first time it matters. Tests surface missing contacts, broken
