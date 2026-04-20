@@ -145,7 +145,8 @@ workflow).
 - Alternatives when sanitization is not feasible: if the equipment
   cannot be sanitized (embedded firmware, sealed devices), require
   the maintenance be performed under contractor supervision or use
-  a vendor authorized for CUI handling
+  a vendor under a written agreement specifying CUI handling
+  requirements and safeguards
 - Loaner equipment: when a system is sent out and a replacement
   loaned in, the loaner goes through the same controls as any new
   system entering the environment
@@ -356,8 +357,9 @@ pre-assessment review.
   screening outcomes
 - Identification and Authentication (IA) provides the MFA mechanism
   MA.L2-3.7.5 requires; IA.L2-3.5.3 multifactor authentication for
-  privileged accounts is the generic practice that MA.L2-3.7.5
-  specializes for maintenance
+  privileged accounts and for network access to non-privileged
+  accounts is the generic practice that MA.L2-3.7.5 specializes for
+  maintenance session context
 - System and Communications Protection (SC) frames the boundary that
   nonlocal maintenance sessions cross; VPN or remote-access gateway
   controls under SC carry the traffic MA.L2-3.7.5 requires be
