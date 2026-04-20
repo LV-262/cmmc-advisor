@@ -43,6 +43,7 @@ from memory alone when a reference exists.
 | POA&M rules, 180-day closeout, critical items | `references/poam-management.md` |
 | What evidence to collect | `references/evidence-collection.md` |
 | NIST 800-171 Rev 3 transition timeline | `references/rev3-transition.md` |
+| FedRAMP vs CMMC, 7012 CSP requirements | `references/fedramp-gap.md` |
 | Common mistakes, compliance theater | `references/anti-patterns.md` |
 | Specific domain practices (AC, IA, SC, etc.) | `references/domains/{domain}.md` |
 | AWS GovCloud compliance | `references/modern-it/cloud-platforms/aws-govcloud.md` |
