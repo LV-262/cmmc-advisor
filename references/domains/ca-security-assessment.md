@@ -141,9 +141,13 @@ rather than forgotten.
 
 **Implementation guidance:**
 
-- POA&M as tracking artifact: every practice scored NOT MET or
-  PARTIALLY MET in CA.L2-3.12.1 assessment becomes a POA&M entry
-  when the gap cannot be closed before the assessment concludes
+- POA&M as tracking artifact: practices scored NOT MET in
+  CA.L2-3.12.1 become POA&M entries when the gap cannot be closed
+  before the assessment concludes AND the practice qualifies for
+  Conditional Certification deferral (weight-1 practices plus the
+  SC.L2-3.13.11 encryption carve-out per references/poam-management.md).
+  NIST SP 800-171A scores practices MET or NOT MET; partially
+  implemented practices score NOT MET
 - Entry content per item: practice ID, weakness description, named
   point of contact, planned remediation steps, target completion
   date, resources required, current status. Specificity beats
@@ -231,12 +235,14 @@ reappear a month later.
 - Coordination with SI.L2-3.14.1 (flaw remediation) and
   SI.L2-3.14.3 (security alerts and advisories): CA.L2-3.12.3
   owns the assessment and monitoring cadence (are controls still
-  operating, are findings still being produced). SI.L2-3.14.1 and
-  SI.L2-3.14.3 own flaw-correction execution (are findings being
-  closed). Both practices draw from the same findings inventory
-  but reference different artifacts. Agree on a single
-  authoritative record per finding so the assessor sees one
-  evidence trail rather than two parallel ones
+  operating, are findings still being produced). SI.L2-3.14.1
+  owns flaw-correction execution (are findings being closed).
+  SI.L2-3.14.3 provides the advisory-intake channel that surfaces
+  new findings from external sources into the monitoring program.
+  All three practices draw from the same findings inventory.
+  Agree on a single authoritative record per finding so the
+  assessor sees one evidence trail rather than three parallel
+  ones
 - Feedback to CA.L2-3.12.1: monitoring data updates assessment
   scope and priority for the next periodic pass. Practices where
   monitoring shows drift get deeper attention in the next
@@ -299,12 +305,12 @@ are now is a finding waiting to happen.
   implemented, and relationships with or connections to other
   systems. Missing any one of the four is a practice defect, not
   a documentation defect
-- Periodic update cadence: at least annual review, with off-cycle
-  updates triggered by material change (new system, new
-  interconnection, significant personnel turnover in named SSP
-  roles, significant control implementation change). Annual is
-  practitioner baseline; high-volatility environments update more
-  often
+- Periodic update cadence: at least annual at the NIST practice
+  requirement floor, with off-cycle updates triggered by material
+  change (new system, new interconnection, significant personnel
+  turnover in named SSP roles, significant control implementation
+  change). References/ssp-guidance.md establishes quarterly full
+  review as the operational cadence
 - Ownership: a named individual (typically the System Security
   Officer) accountable for SSP currency. Anonymous or distributed
   ownership is the most common cause of stale SSPs
@@ -374,9 +380,9 @@ common assessment gaps in this domain.
 
 - Risk Assessment (RA) feeds CA.L2-3.12.1 with current-state risk
   data and CA.L2-3.12.2 POA&M entries with vulnerability-scan
-  findings. Reciprocal: RA.L2-3.11.3 already cites CA.L2-3.12.2
-  POA&M as the tracking artifact for items that cannot be
-  immediately remediated
+  findings. Reciprocal: RA already cites CA.L2-3.12.2 across
+  multiple practices as the POA&M tracking artifact for items
+  that cannot be immediately remediated
 - System and Information Integrity (SI) shares the findings
   inventory with CA.L2-3.12.3 continuous monitoring. CA owns the
   assessment cadence; SI.L2-3.14.1 and SI.L2-3.14.3 own
