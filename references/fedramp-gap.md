@@ -242,12 +242,12 @@ officer acceptance. It is not a lower bar.
 
 Detailed equivalency mechanics (3PAO role, body of evidence,
 contracting officer acceptance workflow) and the rest of DFARS
-252.204-7012 (the 72-hour DoD Cyber Crime Center reporting
-obligation, the DFARS 252.204-7019 and 252.204-7020 Supplier
-Performance Risk System (SPRS) scoring assessment, the DFARS
-252.204-7021 CMMC certification requirement) are treated in the
-"CMMC and DFARS Excesses Over FedRAMP" section below once that
-section lands.
+252.204-7012 (the 72-hour DIBNet incident reporting obligation,
+the DC3 malware-submission path, the DFARS 252.204-7019 and
+252.204-7020 Supplier Performance Risk System (SPRS) scoring
+assessment, the DFARS 252.204-7021 CMMC certification requirement)
+are treated in the "CMMC and DFARS Excesses Over FedRAMP" section
+below once that section lands.
 
 ---
 
@@ -676,14 +676,15 @@ own IR workflow.
 **Where it gets missed.** Reporting destinations and timelines. A
 FedRAMP CSP reports certain classes of incidents to the agency
 authorizing official and to US-CERT per FedRAMP IR guidance. A CMMC
-contractor under DFARS 252.204-7012 reports cyber incidents to the
-DoD Cyber Crime Center within 72 hours. These are different
+contractor under DFARS 252.204-7012 reports cyber incidents to DoD
+via DIBNet within 72 hours, and separately submits any isolated
+malware samples to DC3 under paragraph (d). These are different
 destinations with different triggers. A joint incident may require
 reporting on both tracks with different content requirements. The
 "FedRAMP Excesses Over CMMC" section below treats the ConMon and
 US-CERT reporting cadence; the "CMMC and DFARS Excesses Over
-FedRAMP" section treats the 7012 DC3 reporting. Contractors should
-pre-map the reporting destinations by incident class, not
+FedRAMP" section treats the 7012 reporting mechanics. Contractors
+should pre-map the reporting destinations by incident class, not
 improvise during an incident.
 
 ### Inherited vs shared-responsibility controls
@@ -754,11 +755,12 @@ treats allowlisting more permissively across baselines, and
 contractors using CM-7(5) should confirm the CSP's Rev 5
 authorization reflects this.
 
-**New Rev 5 families.** Supply Chain Risk Management (SR) and
-Personally Identifiable Information Processing and Transparency
-(PT) are new in Rev 5 and do not appear in the 171-to-53 crosswalk
-because 171 predates them. They become relevant in the "FedRAMP
-Excesses Over CMMC" section below.
+**New Rev 5 families.** Two new families appear in Rev 5:
+SR (Supply Chain Risk Management) and
+PT (Personally Identifiable Information Processing and Transparency).
+Neither appears in the 171-to-53 crosswalk because 171 predates
+them. Both become relevant in the "FedRAMP Excesses Over CMMC"
+section below.
 
 **Authoritative Rev 4 to Rev 5 translation.** The authoritative
 mapping lives in NIST SP 800-53 Revision 5, Appendix C ("Mapping
@@ -775,6 +777,325 @@ crosswalk requires full reauthoring rather than delta patches. Rev
 practices, renumbered practices, the elimination of the Basic
 versus Derived distinction. Readers tracking that transition
 should treat this crosswalk as a snapshot of the Rev 2 era.
+
+---
+
+## FedRAMP Excesses Over CMMC
+
+The crosswalk above shows where CMMC and FedRAMP Moderate align. A
+contractor using a FedRAMP Moderate CSP inherits substantial control
+coverage. But alignment is not equivalence: FedRAMP carries several
+obligations that go meaningfully beyond what CMMC Level 2 requires.
+
+This section names those excesses. A contractor reading an inherited
+FedRAMP Moderate control as satisfying a CMMC practice is usually
+correct; a contractor reading the same control as equivalent to the
+full FedRAMP program is not. The CSP's FedRAMP package carries
+monthly scan reports, 1-hour incident reporting obligations to the
+Cybersecurity and Infrastructure Security Agency (CISA), a system
+security plan format with seventeen-plus appendices, and (in Rev 5)
+new control families the contractor's 800-171 baseline does not name
+at all. None of these flow down to the contractor automatically, but
+all of them shape how the CSP operates the infrastructure the
+contractor relies on.
+
+### Continuous monitoring cadence
+
+CMMC Level 2 assessments are conducted on a **three-year cycle**
+under 32 CFR Part 170. A certified CMMC assessment runs every three
+years, with annual self-affirmations between assessments. Between
+formal assessments, the contractor maintains their program through
+internal reviews, POA&M maintenance, and ongoing evidence collection.
+The cadence floor is annual; the external validation floor is
+triennial.
+
+FedRAMP continuous monitoring (ConMon) runs on a **monthly cycle**
+with an **annual 3PAO subset assessment**. This cadence reflects
+the Rev 5 Agency Authorization pathway. FedRAMP 20x (in staged
+pilot as of April 2026, per the "FedRAMP at a Glance" section
+above) may alter the ConMon cadence for CSPs on that pathway;
+verify against the CSP's specific authorization package. For
+Rev 5 Agency Authorization specifically:
+
+**Monthly.** CSPs submit an updated POA&M, an up-to-date inventory,
+and raw vulnerability scan files (when required by agency
+agreement) to the FedRAMP secure repository. Vulnerability scans
+cover operating systems, web applications, and databases for all
+externally accessible components; FedRAMP recommends 100% coverage
+of externally accessible system components, with any sampling
+methodology requiring strong justification.
+
+**Monthly vulnerability scanning.** The 30-day scan window is
+anchored to NIST SP 800-53 control RA-5, with FedRAMP-specific
+guidance in the FedRAMP Vulnerability Scanning Requirements. For
+containerized components, the 30-day window begins at production
+registry deployment; only images scanned within the window are
+actively deployed.
+
+**Annual.** A FedRAMP-accredited 3PAO performs an assessment of a
+subset of the overall controls implemented on the system. This is
+not a full reassessment (that happens on the three-year FedRAMP
+reauthorization cycle), but it is a substantive independent check
+on a rotating subset of controls each year.
+
+> Source: FedRAMP Documentation, "Continuous Monitoring Overview"
+> (fedramp.gov/docs/rev5/playbook/csp/continuous-monitoring/) and
+> "Vulnerability Scanning"
+> (fedramp.gov/docs/rev5/playbook/csp/continuous-monitoring/vulnerability-scanning/).
+
+**What this means for the contractor.** A contractor using a
+FedRAMP Moderate CSP inherits the CSP's ConMon program for the
+infrastructure layer: monthly scanning of the CSP's operating
+systems, web apps, and databases is happening regardless of the
+contractor's own cadence. What the contractor still owes, and what
+CMMC still requires, is vulnerability scanning of the contractor's
+own layer: applications the contractor builds on top of the CSP,
+endpoints connecting into the tenancy, on-premises components of
+the CUI boundary. CMMC practice RA.L2-3.11.2 (vulnerability
+scanning) does not specify a cadence; FedRAMP ConMon effectively
+sets a monthly floor for the CSP's portion of the stack, but the
+contractor-side cadence is a scoping decision.
+
+### Incident reporting cadence
+
+This is where the two regimes diverge most sharply. CMMC and DFARS
+route incident reports to DoD; FedRAMP routes to CISA. The triggers,
+timing, and destinations are different, and a contractor whose CSP
+is FedRAMP-authorized and who is subject to DFARS 252.204-7012 owes
+**both** sets of reports when a single incident affects both
+surfaces.
+
+**FedRAMP CSP reporting to CISA: 1 hour.** A CSP must report to the
+Cybersecurity and Infrastructure Security Agency (CISA) within 1
+hour of incident identification when the incident is confirmed,
+suspected, or yet-to-be-confirmed as stemming from an attack vector
+listed in CISA's Federal Incident Notification Guidelines. The
+report goes through the CISA Incident Reporting System.
+
+**FedRAMP CSP reporting to customers, FedRAMP, and agency AO: 1
+hour.** The same 1-hour window applies to notifying affected agency
+customers via the FedRAMP Secure Repository, notifying FedRAMP at
+the fedramp_security@gsa.gov address, and notifying the agency
+Authorizing Official's designated points of contact.
+
+**Daily updates.** After initial notification, CSPs provide daily
+updates to all parties (FedRAMP, CISA when applicable, all agency
+customers) until recovery is complete.
+
+**Final post-incident report.** After completing the Post-Incident
+Activity phase, the CSP provides a comprehensive report describing
+what occurred, root cause, response actions, lessons learned, and
+required changes. The Agency AO reviews this report and may
+establish corrective action plans.
+
+> Source: FedRAMP Documentation, "Incident Communication"
+> (fedramp.gov/docs/rev5/playbook/csp/continuous-monitoring/incident-communication/).
+> CISA trigger list: Federal Incident Notification Guidelines
+> (cisa.gov/federal-incident-notification-guidelines).
+
+**CMMC contractor reporting via DIBNet: 72 hours.** DFARS
+252.204-7012 paragraph (c)(1)(ii) requires the contractor to
+rapidly report cyber incidents affecting covered defense
+information to DoD through the
+DIBNet (Defense Industrial Base Network) portal at dibnet.dod.mil.
+"Rapidly report" is defined in paragraph (a) as within 72 hours
+of discovery.
+
+**DC3 is a separate recipient for malware samples.** Per DFARS
+252.204-7012 paragraph (d), contractors who discover and isolate
+malicious software during a reported incident submit the malware
+to the DC3 (DoD Cyber Crime Center). This is a separate submission
+from the (c)(1)(ii) incident report. The clause states explicitly:
+"Do not send the malicious software to the Contracting Officer."
+See `references/domains/ir-incident-response.md` for the full
+IR.L2-3.6.2 narrative and `references/evidence-collection.md` for
+evidence preservation requirements.
+
+**Joint-reporting scenarios.** An incident affecting both a FedRAMP
+CSP and a DoD contractor using that CSP for CUI may trigger all of:
+the CSP's 1-hour CISA report, the CSP's 1-hour notifications to the
+contractor and agency AO, and the contractor's 72-hour DIBNet
+filing. These are independent obligations with independent content
+requirements. A CSP's CISA filing does not discharge the
+contractor's DIBNet filing, and the contractor's DIBNet filing does
+not discharge the CSP's CISA obligation. Both tracks must run.
+
+**Pre-mapping is the mitigation.** Neither clock is friendly to
+improvisation. Contractors with any FedRAMP-authorized CSP handling
+CUI should have the reporting decision tree written down, with
+named owners for each track, before an incident. The "CMMC and
+DFARS Excesses Over FedRAMP" section below treats the DFARS
+reporting mechanics in more depth.
+
+### System Security Plan depth
+
+The FedRAMP SSP is a substantially more elaborate document than
+what CMMC requires for the nonfederal side.
+
+**FedRAMP SSP structure.** The template uses a single document
+shared across impact levels with a baseline-specific appendix. The
+body covers FIPS 199 categorization, service model, deployment
+model, system function description, system architecture,
+authorization boundary, data flows, interconnections, leveraged
+external services, and cryptographic module use. As of the Rev 5
+SSP template (April 2026), the template includes Section 8
+"Illustrated Architecture and Narratives" and appendices labeled
+A through Q (seventeen appendices total). Template structure is
+subject to change; verify against the current template on
+fedramp.gov/rev5/documents-templates/.
+
+**Per-control depth.** Every control cited in the baseline has
+three required sections in the SSP appendix: Control Requirement,
+Control Summary Information, and Control Implementation Statement.
+The Moderate baseline carries 300-plus controls. The per-control
+depth multiplied across the baseline is the reason FedRAMP SSPs run
+to hundreds of pages.
+
+**CMMC SSP guidance.** The skill's `references/ssp-guidance.md`
+treats the contractor-side SSP: per-practice implementation
+narrative, boundary documentation, evidence pointers. The CMMC SSP
+is lighter than the FedRAMP SSP in both per-control depth and
+structural framing, reflecting 800-171's role as a tailored subset
+rather than a full federal catalog. This is not a gap in CMMC; it
+is a deliberate scope choice that matches the 110-practice
+safeguarding baseline.
+
+**What this means for the contractor.** A contractor whose CSP
+carries a FedRAMP Moderate SSP does not inherit a completed SSP.
+The contractor must still write their own SSP for the contractor's
+system boundary, and the contractor's SSP references (but does not
+reproduce) the CSP's FedRAMP package via inherited-control
+attribution. See
+`references/ssp-guidance.md` for the CMMC SSP pattern and the
+"Inherited vs shared-responsibility controls" section above for
+the attribution model.
+
+> Source: FedRAMP Documentation, "System Security Plan (SSP)"
+> (fedramp.gov/docs/rev5/playbook/csp/authorization/ssp/); FedRAMP
+> Rev 5 Documents and Templates (fedramp.gov/rev5/documents-templates/).
+
+### Supply chain (SR family) — new in Rev 5
+
+NIST SP 800-53 Revision 5 added the
+SR (Supply Chain Risk Management) family as a new control family,
+integrating SCRM concepts throughout the catalog. The SR family
+did not exist in Rev 4. FedRAMP Rev 5 Moderate includes a subset
+of SR controls.
+
+**What the SR family covers.** Controls in the SR family address
+supply-chain risk across the system lifecycle: supply-chain risk
+management planning, supplier assessments, tamper resistance,
+component authenticity, software integrity, and provenance. These
+cover the kinds of risks that surface in high-profile supply-chain
+incidents (compromised software updates, counterfeit hardware,
+insider threats at upstream vendors).
+
+**Gap against CMMC Level 2.** NIST SP 800-171 Rev 2 does not have a
+dedicated supply-chain family. Some supply-chain risk considerations
+appear implicitly through CM (configuration management) and AT
+(awareness and training), but there is no 800-171 equivalent to the
+800-53 SR family. A CMMC Level 2 contractor implements no
+dedicated SR controls under the 171 baseline.
+
+**What this means for the contractor.** A contractor using a
+FedRAMP Moderate CSP inherits the CSP's SR-family implementation
+for the CSP's own supply chain: the CSP has documented its
+suppliers, its software-integrity processes, its firmware-update
+channels, and so on. The contractor's own supply chain, including
+software the contractor uses beyond the CSP, remains outside the
+CMMC 110-practice scope. Contractors evaluating supply-chain
+exposure should read the CSP's SR implementation as a starting
+point, not as the contractor's own SCRM program. If DoD requires
+dedicated SCRM (some DFARS clauses and specific contract flowdowns
+do), the contractor provides that separately.
+
+### Privacy overlay (PT family) — new in Rev 5
+
+NIST SP 800-53 Rev 5 introduced the
+PT (Personally Identifiable Information Processing and Transparency)
+family as a new privacy-focused control family, replacing and
+expanding the privacy appendix from Rev 4. FedRAMP Rev 5 includes
+PT controls in the Moderate baseline when a system processes
+PII (Personally Identifiable Information).
+
+**What the PT family covers.** Authority to collect and process
+PII, purpose specification, consent mechanisms, specific PII
+categories handled, and transparency obligations including system
+of records notices and privacy notices.
+
+**Gap against CMMC Level 2.** NIST SP 800-171 Rev 2 is scoped to
+CUI confidentiality. It does not treat privacy or PII handling as
+a distinct regime. A contractor whose system processes only CUI
+and no PII sees no PT-family gap. A contractor whose system
+processes PII along with CUI sees a gap: PT controls at the
+FedRAMP Moderate level cover considerations that CMMC 800-171 Rev
+2 does not.
+
+**When this matters.** Government contractors handling personnel
+records, health information (under Health Insurance Portability
+and Accountability Act (HIPAA) overlays), or broader constituent
+data typically have PII obligations layered on top of or alongside
+CUI obligations. In those cases, the FedRAMP Moderate PT-family
+inheritance is substantive. Read the CSP's privacy documentation
+separately from the security documentation.
+
+### Boundary documentation depth
+
+FedRAMP requires a formal authorization boundary with explicit
+documentation, diagrams, and data-flow artifacts. CMMC boundary
+definition is looser in 800-171 Rev 2 text and tightened in the
+CMMC Assessment Guide and scoping guidance.
+
+**FedRAMP boundary artifacts.** The SSP includes the authorization
+boundary diagram, data flow diagrams, and a narrative of what is
+inside the boundary versus what is out. Leveraged external services
+are documented with their own FedRAMP authorization status.
+Interconnections are enumerated. The boundary is the unit of
+authorization; changing the boundary is a formal event that may
+require a Significant Change Request and an impact review.
+
+**CMMC boundary.** Defined in 800-171 §3.12.4 and the CMMC Scoping
+Guidance. The CMMC boundary is "the CUI boundary," the set of
+systems, components, and processes where CUI is stored, processed,
+or transmitted. Less formal than FedRAMP; practical and
+contractor-scoped rather than architectural-first. See
+`references/scoping-and-cui.md` for the CUI boundary pattern.
+
+**Two-boundary problem.** The CUI boundary and the FedRAMP
+authorization boundary may not be the same boundary. The CSP's
+FedRAMP boundary is what the CSP authorized; the contractor's CUI
+boundary is where CUI lives. If the contractor uses a small
+fraction of the CSP's capabilities, the contractor's CUI boundary
+is a subset of the CSP's authorization boundary. If the contractor
+processes CUI across multiple CSPs plus on-premises systems, the
+CUI boundary spans multiple authorization boundaries. The CUI
+boundary sits in the contractor's SSP per
+`references/scoping-and-cui.md`; the FedRAMP authorization
+boundary sits in the CSP's SSP. They are distinct artifacts and
+should not be conflated.
+
+### Summary of the inheritance gap
+
+The six areas above share a common pattern. FedRAMP sets a higher
+floor for the CSP's operation of the infrastructure the contractor
+relies on. CMMC sets the floor for the contractor's own operation
+of their CUI boundary. A contractor with a FedRAMP Moderate CSP
+inherits the CSP's implementation of the overlapping technical
+controls (cryptography, boundary protection, audit logging, and
+so on per the crosswalk above). The contractor does not inherit
+the CSP's ConMon cadence, the CSP's CISA reporting obligation, or
+the CSP's SR or PT control implementations as discharge of the
+contractor's own obligations.
+
+The inheritance model from the crosswalk section above applies:
+**fully inherited** controls shift to the CSP, **shared**
+controls require both the CSP's capability and the contractor's
+configuration, **contractor-owned** controls stay with the
+contractor regardless of CSP posture. The FedRAMP excesses in
+this section affect the first two categories (what the CSP does
+goes further than CMMC demands) but not the third (contractor-
+owned controls are not affected by the CSP's cadence or reporting
+obligations).
 
 ---
 
