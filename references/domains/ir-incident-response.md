@@ -166,7 +166,7 @@ contract independent of the incident's technical impact.
   information residing on it, or the contractor's ability to perform
   obligations under the contract, report within 72 hours of discovery
   via DIBNet (the DoD Defense Industrial Base Network cyber incident
-  reporting portal at dibnet.dod.mil, run by the DoD Cyber Crime Center
+  reporting portal at https://dibnet.dod.mil, run by the DoD Cyber Crime Center
   / DC3) per DFARS 252.204-7012 (the DFARS cyber incident reporting
   clause). The 72-hour clock is a contractual requirement, not a
   suggestion. Discovery in 7012 context means the point at which the
