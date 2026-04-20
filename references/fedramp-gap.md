@@ -1099,6 +1099,384 @@ obligations).
 
 ---
 
+## CMMC and DFARS Excesses Over FedRAMP
+
+The "Inherited vs shared-responsibility controls" framing in the
+crosswalk section explains what a contractor inherits from a
+FedRAMP Moderate CSP. That model addresses **control
+implementation** for the overlapping technical surface. It does
+not address the CMMC/DFARS-specific obligations that sit on the
+contractor regardless of CSP posture.
+
+This section covers those contractor-side obligations. It is not
+about what the CSP does; it is about what the contractor must do
+even with a fully FedRAMP-inheriting cloud stack. The distinction
+matters because a C3PAO (CMMC Third-Party Assessment Organization)
+assesses the contractor's implementation of CMMC, not the CSP's
+FedRAMP authorization. A contractor cannot cite "we use a FedRAMP
+Moderate CSP" as a substitute for CMMC certification. The CSP's
+FedRAMP ATO and the contractor's CMMC certification are different
+artifacts, from different assessors, covering different scopes.
+
+### DFARS 252.204-7012 — the safeguarding clause in full
+
+The crosswalk section above cited DFARS 252.204-7012(b)(2)(ii)(D)
+for the FedRAMP Moderate CSP requirement, and the FedRAMP Excesses
+section above cited (c)(1)(ii) and (d) for the 72-hour DIBNet
+reporting and DC3 malware submission. The clause carries further
+obligations that shape contractor behavior before and after an
+incident.
+
+**(a) Definitions.** The clause defines four key terms used
+throughout the rest of the clause:
+CDI (covered defense information), "cyber incident," "covered
+contractor information system," and "rapidly report" (which means
+within 72 hours). CDI includes CUI identified in the contract
+plus certain categories defined in the clause. A contractor
+uncertain about scope should read (a) first.
+
+**(b)(1) IT services operated on behalf of the Government.** For
+covered contractor information systems that are part of an IT
+service or system operated on behalf of the Government, the
+clause directs the contractor to cloud computing security
+requirements in DFARS 252.239-7010 or to other contract-specified
+security requirements, not to NIST SP 800-171. The 800-171 path
+in (b)(2) applies to everything else.
+
+**(b)(2)(i) NIST SP 800-171 baseline.** Except as provided in
+(b)(2)(ii), the covered contractor information system shall
+implement NIST SP 800-171. This is the primary CUI safeguarding
+requirement.
+
+**(b)(2)(ii) Subparagraphs A through D.** Four specific provisions
+modify the (b)(2)(i) baseline: (A) sets the original December 31,
+2017 implementation deadline for NIST SP 800-171. (B) directs the
+contractor to submit variance requests in writing to the
+contracting officer for DoD CIO consideration. (C) allows
+recognition of prior DoD CIO adjudications on inapplicable
+requirements or equivalent security measures. (D) is the FedRAMP
+Moderate CSP path for external cloud services (see the CUI
+Baseline Decision section above).
+
+**(c)(1) Cyber incident reporting.** Paragraph (c)(1) requires
+the contractor to conduct a review for evidence of compromise and
+rapidly report cyber incidents to DoD through DIBNet at
+dibnet.dod.mil. See the FedRAMP Excesses section above for the
+72-hour window and the DIBNet destination. (c)(1)(i) through (iv)
+detail the review activities, the reporting destination, the
+medium access token requirement, and the submission of malicious
+software under (d).
+
+**(d) Malicious software.** When the contractor discovers and
+isolates malicious software during a reported incident, submit
+the malware to the DC3 (DoD Cyber Crime Center). The clause
+states explicitly: "Do not send the malicious software to the
+Contracting Officer." DC3 submission is separate from the (c)(1)
+DIBNet incident report.
+
+**(e) Media preservation and protection.** Preserve and protect
+images of all known affected information systems and all relevant
+monitoring and packet-capture data for **at least 90 days** from
+the submission of the cyber incident report. This gives DoD a
+90-day window to request the media or decline interest. Practical
+implication: if a contractor rolls over logs or wipes images on
+anything shorter than 90 days post-incident-report, the contract
+is out of compliance.
+
+**(f) Access for forensic analysis.** Upon request by DoD, the
+contractor provides access to additional information and equipment
+necessary to conduct a forensic analysis of the incident.
+
+**(g) Cyber incident damage assessment activities.** If DoD elects
+to conduct a damage assessment, the contracting officer will
+request that the contractor provide the damage assessment
+information gathered in accordance with paragraph (e).
+
+**(m) Subcontracts.** The clause flows down to subcontracts
+"without alteration" for subcontracts involving operationally
+critical support or covered defense information. Subcontractors
+must notify the prime when requesting NIST SP 800-171 variances
+under (b)(2)(ii)(B) and must provide incident report numbers when
+they report cyber incidents to DoD.
+
+> Source: DFARS 252.204-7012, effective DFARS Change 2025-11-10,
+> at acquisition.gov/dfars/252.204-7012.
+
+### FedRAMP Moderate Equivalency — the detail path
+
+The CUI Baseline Decision section introduced equivalency as an
+alternate path to a full FedRAMP Moderate authorization. This
+subsection treats the equivalency mechanics.
+
+**DoD CIO Memorandum, December 2023.** The memorandum narrows
+(b)(2)(ii)(D)'s "equivalent to" language: equivalence requires a
+complete body of evidence equivalent to a FedRAMP Moderate
+authorization package, including a 3PAO-assessed attestation
+against the full Moderate baseline. The contracting officer
+evaluates the equivalency claim and accepts or rejects it.
+
+**What this means in practice.** A CSP pursuing equivalency
+submits to the same 3PAO assessment rigor as a CSP pursuing full
+FedRAMP authorization. The difference is the absence of an agency
+sponsor and the absence of an Agency ATO; the contracting officer
+takes the role the agency AO would have taken. Equivalency is not
+a lower bar; it is a parallel path with a different acceptance
+structure.
+
+**Where contractors get this wrong.** A CSP's marketing claim of
+"FedRAMP Moderate equivalent" is not, by itself, sufficient. The
+contractor must verify: (1) a current 3PAO attestation letter
+exists, (2) a complete body of evidence mirroring a FedRAMP
+package is available for contracting officer review, (3) the
+specific contracting officer has accepted the equivalency claim
+for the specific contract. Absent all three, the equivalency path
+is unsubstantiated and a DFARS 252.204-7012(b)(2)(ii)(D) finding
+is available to any assessor or auditor who looks.
+
+### DFARS 252.204-7019 and 252.204-7020 — SPRS assessment
+
+These two DFARS provisions establish the self-assessment and
+flowdown framework that sits underneath CMMC. Both apply
+contract-by-contract based on NIST SP 800-171 implementation
+requirements.
+
+**DFARS 252.204-7019 (Notice of NIST SP 800-171 DoD Assessment
+Requirements).** A solicitation provision. Offerors must have a
+current NIST SP 800-171 DoD Assessment posted in the Supplier
+Performance Risk System (SPRS) for each covered contractor
+information system relevant to the offer. "Current" means not
+more than 3 years old unless the solicitation specifies a shorter
+window. Offerors without a current assessment may conduct and
+submit a Basic Assessment for SPRS posting before the solicitation
+closes.
+
+**DFARS 252.204-7020 (NIST SP 800-171 DoD Assessment
+Requirements).** A contract clause. Defines three assessment
+levels.
+
+**Basic Assessment.** Contractor self-assessment against NIST
+SP 800-171 using the DoD Assessment Methodology. Confidence
+level: Low. Contractor submits the summary score to SPRS via
+encrypted email.
+
+**Medium Assessment.** Government-conducted evaluation including
+review of the contractor's Basic Assessment, a thorough document
+review, and discussions with the contractor. Confidence level:
+Medium.
+
+**High Assessment.** Government-conducted evaluation using NIST
+SP 800-171A, including verification, examination, and
+demonstration of implementation. Typically performed by
+DCMA (Defense Contract Management Agency), specifically the
+Defense Industrial Base Cybersecurity Assessment Center (DIBCAC).
+Confidence level: High.
+
+**SPRS summary scores.** SPRS posts summary scores in the form
+"95 out of 110," not individual practice scores. DoD posts Medium
+and High Assessment results within 30 days of assessment, giving
+the contractor 14 business days for rebuttal before the score
+appears in SPRS.
+
+**Flowdown under 7020.** The clause flows down "without
+alteration" to subcontracts involving NIST SP 800-171
+implementation. Primes cannot award such subcontracts unless the
+subcontractor has completed a Basic Assessment (or higher) within
+the last 3 years and posted the score in SPRS.
+
+### The DoD Assessment Methodology scoring rules
+
+The DoD Assessment Methodology (currently Version 1.2.1, June 24,
+2020) defines how the 110-point scoring works.
+
+**Maximum score is 110.** A contractor implementing all 110
+practices correctly scores 110. A contractor missing a practice
+loses the weighted point value of that practice, subtracted from
+110. Scores can go negative (a contractor missing many 5-point
+practices can end up well below zero).
+
+**Weighted deductions: 1, 3, or 5 points per missed practice.**
+Each practice is weighted according to its security impact. A
+missed 5-point practice is worth 5 points subtracted from 110; a
+missed 3-point practice is worth 3; a missed 1-point practice is
+worth 1.
+
+**Partial credit exists only on two practices.** IA.L2-3.5.3
+(multi-factor authentication) and SC.L2-3.13.11 (FIPS-validated
+cryptography) permit partial credit. IA.L2-3.5.3 scores 5 points
+off if MFA is not implemented at all, 3 points off if MFA is
+implemented only for privileged or remote users (not general
+users). SC.L2-3.13.11 has an analogous partial-credit structure.
+
+**No partial credit on the other 108 practices.** A practice is
+either implemented (full weighted score) or not implemented (full
+weighted deduction). "Mostly implemented" earns zero points.
+
+**Why this matters for FedRAMP comparison.** FedRAMP Moderate
+does not use a 110-point scoring system. FedRAMP is pass-fail at
+the authorization level, with POA&M accepting time-bound
+remediation of specific findings. The DoD Assessment Methodology
+is additive and weighted; a contractor can still hold a valid
+contract with a 58 out of 110 score as long as the gaps are
+captured in an SSP and POA&M. CMMC Level 2 raises the bar to
+requiring all 110 (subject to POA&M allowances for specific
+items; see `references/poam-management.md`).
+
+> Source: NIST SP 800-171 DoD Assessment Methodology, Version
+> 1.2.1 (2020-06-24), operative as of April 2026, published at
+> acq.osd.mil/asda/dpc/cp/cyber/docs/safeguarding/. DoD may revise
+> the Methodology; verify current version before relying on
+> specific point values.
+
+### DFARS 252.204-7021 — CMMC certification requirement
+
+**Effective date.** 2025-11-10 (DFARS Change). The clause is now
+in force for contracts with the required CMMC level specified by
+the contracting officer.
+
+**What the clause requires.** The contractor must have and
+maintain, for the duration of the contract, a current CMMC status
+at the level specified in the solicitation. Levels are Level 1
+(Self), Level 2 (Self), Level 2 (C3PAO), and Level 3 (DIBCAC),
+with the CMMC status type determined by the contracting officer.
+
+**CMMC status validity.** Per 32 CFR 170.17 and the clause:
+
+- Conditional certification: not older than 180 days. Conditional
+  status allows a contractor to hold the contract while closing
+  out specific POA&M items, but the 180-day clock converts
+  Conditional to Final or expires.
+- Final Level 1 (Self): not older than 1 year. Level 1 is
+  self-assessed and annually reaffirmed.
+- Final Level 2 (Self or C3PAO) and Level 3 (DIBCAC): not older
+  than 3 years, with annual affirmations between assessments.
+
+**Annual affirmations.** A senior official of the contractor's
+OSA (Organization Seeking Assessment) affirms annually that the
+contractor remains in compliance with the CMMC requirements. The
+affirmation is posted in SPRS.
+
+**Flowdown under 7021.** The clause flows down to subcontracts
+involving FCI or CUI. Primes must ensure the subcontractor holds
+a current CMMC status at the appropriate level for the
+subcontract scope.
+
+### C3PAO versus FedRAMP 3PAO — what gets assessed by whom
+
+This distinction is load-bearing. The crosswalk section's
+inheritance taxonomy addresses what a FedRAMP 3PAO assessed about
+the CSP's cloud offering. The C3PAO assessment is a different
+event, against a different scope, with a different certification
+outcome.
+
+**FedRAMP 3PAO.** A Third-Party Assessment Organization
+accredited by the FedRAMP PMO. Assesses the CSP's cloud offering
+against the 800-53 Rev 5 baseline selected for the authorization
+(Low, Moderate, or High). The 3PAO produces a Security Assessment
+Report. The sponsoring agency's Authorizing Official grants the
+ATO to the CSP. The CSP is the entity with the authorization;
+the authorization covers the CSP's defined authorization
+boundary.
+
+**C3PAO.** A CMMC Third-Party Assessment Organization
+authorized, and eventually accredited (ISO/IEC 17020:2012
+compliance required), by the CyberAB (the Accreditation Body
+defined in 32 CFR 170.8). Assesses the OSA's implementation of
+CMMC Level 2 practices against NIST SP 800-171 Rev 2 per the DoD
+Assessment Methodology and the CMMC Assessment Guide. The C3PAO
+issues a Certificate of CMMC Status to the OSA if the assessment
+passes (possibly Conditional, with POA&M items to close out).
+The OSA is the
+entity with the certification; the certification covers the OSA's
+CMMC Assessment Scope.
+
+**Why the distinction matters.** A contractor cannot point to a
+CSP's FedRAMP 3PAO assessment as evidence for the contractor's
+own CMMC certification. The FedRAMP 3PAO assessed the CSP; the
+C3PAO assesses the contractor. Inheritance of *controls* happens
+through the SSP attribution pattern (per the crosswalk
+inheritance section); certification of *the contractor* happens
+through the C3PAO assessment of the contractor's environment.
+
+**DCMA DIBCAC's role.** For Level 3 assessments, DCMA DIBCAC
+conducts the certification assessment directly. For Level 2
+(C3PAO), DCMA DIBCAC audits the C3PAOs themselves, including
+assessing the C3PAO's own information systems for CMMC Level 2
+compliance. The C3PAO's certificate-issuing authority rides on
+the C3PAO being certified at the same level the C3PAO is
+certifying others to.
+
+> Source: 32 CFR Part 170 Subpart C (§170.8 Accreditation Body,
+> §170.9 C3PAOs, §170.10 CAICO, §170.11 CCA) in effect as of
+> April 2026, at
+> ecfr.gov/current/title-32/chapter-I/subchapter-G/part-170.
+
+### CUI-specific handling not covered by FedRAMP
+
+CUI has categorical markings, dissemination controls, and
+handling requirements defined by the National Archives CUI
+Registry and 32 CFR Part 2002. FedRAMP addresses the security of
+federal information systems generally; it does not cover the
+markings and handling layer that CUI-specific compliance demands.
+
+**CUI markings.** Each piece of CUI carries a category marking
+(Controlled Technical Information, Law Enforcement Sensitive,
+Export Controlled, etc.) and may carry dissemination controls
+(NOFORN, REL TO, FEDCON, etc.). Contractors processing CUI must
+apply and preserve these markings through the data lifecycle.
+FedRAMP provides no marking guidance; it presumes the agency
+owning the data applies and enforces markings.
+
+**CUI dissemination controls.** Controls like NOFORN ("No Foreign
+Dissemination") and FEDCON ("Federal Contractors Only") shape who
+can receive the data regardless of technical access. A FedRAMP
+Moderate CSP does not implement dissemination-control awareness;
+the contractor's own access-control policies implement these
+marking-based restrictions.
+
+**CUI Registry categories.** The National Archives CUI Registry
+enumerates the CUI categories (roughly 100+ subcategories under
+20+ categories). Contractor SSPs typically scope which categories
+apply to their contract. FedRAMP inherits nothing about which CUI
+categories the contractor handles; that scoping is contractor-
+side.
+
+**Where this lives in this skill.** See
+`references/scoping-and-cui.md` for the full CUI scoping treatment
+including category enumeration, dissemination-control rules, and
+boundary implications. This section establishes only that CUI
+markings and dissemination controls are contractor-owned work
+that FedRAMP does not address.
+
+### Summary
+
+The contractor's CMMC and DFARS obligations form a stack that a
+FedRAMP Moderate CSP cannot discharge. The stack, read from the
+bottom up:
+
+1. CUI handling (markings, dissemination, categories).
+   Contractor-only, outside FedRAMP scope entirely.
+2. 800-171 implementation on the contractor's covered information
+   systems. This is the baseline CMMC evaluates against.
+3. SPRS Basic Assessment score (current within 3 years) posted by
+   the contractor per DFARS 7019/7020.
+4. CMMC Level 2 (or 3) certification issued by a C3PAO (or DCMA
+   DIBCAC for Level 3) against the OSA's environment per DFARS
+   7021.
+5. Annual affirmations by a senior official of the OSA attesting
+   continued compliance.
+6. Incident reporting via DIBNet within 72 hours per DFARS
+   7012(c)(1)(ii) when an incident affects CDI, with malware
+   samples to DC3 per (d) and 90-day image preservation per (e).
+
+The FedRAMP Moderate CSP inheritance supports the 800-171
+implementation layer for the infrastructure the contractor runs
+on. It does not supply the other layers. A contractor building
+a CMMC program who treats the FedRAMP CSP's ATO as "CMMC
+compliance" will fail a C3PAO assessment; the C3PAO assesses the
+contractor's environment, not the CSP's.
+
+---
+
 ## Scope and Sections
 
 This file is a hub for FedRAMP-related content across the corpus.
