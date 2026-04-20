@@ -9,7 +9,7 @@
 
 ## Verdict
 
-**No-Go at audit time → Go after inline hotfix.** One CRITICAL finding in the SI slice: a factual regulatory error that misstated whether FCI-only contractors carry SI obligations under CMMC. Remediated inline on this branch (commit `245a7c4`); see the Remediation addendum at the bottom of this report.
+**No-Go at audit time → Go after inline hotfix.** One CRITICAL finding in the SI slice: a factual regulatory error that misstated whether FCI-only contractors carry SI obligations under CMMC. Remediated inline on this branch (commit `245a7c4`); see the Remediation addendum at the bottom of this report. This close-out report intentionally preserves both the audit-time snapshot and the post-hotfix state.
 
 The rest of the corpus is in good shape. Format parity is clean, per-practice structure is uniform, and practice totals sum to 110 across all 14 domains, matching the canonical `levels-and-assessment.md` table. Three MEDIUM findings (scope-boundary leaks in CA and MP, gloss-hygiene drift in MP/PS/SI) and several LOW/informational findings should be filed as follow-ups but do not block.
 
@@ -18,6 +18,8 @@ The rest of the corpus is in good shape. Format parity is clean, per-practice st
 ## Check 1 — Domain count and practice totals
 
 Canonical totals from `references/levels-and-assessment.md`: 17 L1 + 93 L2 = 110 practices.
+
+The table below is the **audit-time snapshot before** commit `245a7c4`. Post-hotfix SI counts are 4/3/7 and post-hotfix corpus totals are 17/93/110.
 
 | File | L1 declared | L2 declared | Total declared | Canonical (L1/L2/Total) | Match |
 |------|-------------|-------------|----------------|-------------------------|-------|
@@ -37,7 +39,7 @@ Canonical totals from `references/levels-and-assessment.md`: 17 L1 + 93 L2 = 110
 | **si-system-information-integrity** | **0** | **7** | **7** | **4/3/7** | **✗** |
 | **Totals** | **13** | **93** | **106** | **17/93/110** | ✗ (4 L1 missing) |
 
-**CRITICAL — SI Domain Summary count.** SI declares 0 L1 + 7 L2 + 7 total. Canonical is 4 L1 + 3 L2 + 7 total. The total is right; the split is wrong. This cascades from the labeling error below.
+**CRITICAL at audit time — SI Domain Summary count.** SI declared 0 L1 + 7 L2 + 7 total. Canonical is 4 L1 + 3 L2 + 7 total. The total was right; the split was wrong. This cascaded from the labeling error below.
 
 ---
 
