@@ -1,7 +1,6 @@
 # Physical Protection (PE)
 
-> Source: NIST SP 800-171 Rev 2, Section 3.10; CMMC Assessment Guide
-> Level 2
+> Source: NIST SP 800-171 Rev 2, Section 3.10; CMMC Assessment Guide Level 2
 
 ## Overview
 
