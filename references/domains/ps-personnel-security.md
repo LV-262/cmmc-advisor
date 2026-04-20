@@ -50,18 +50,22 @@ access has already been granted is not screening, it is notification.
   check for roles with financial or fraud exposure, reference checks
   for senior or high-access roles
 - For contracts that require federal investigations, the typical
-  pattern is NACI (National Agency Check with Inquiries), now
-  processed as a Tier 1 investigation under the 2012 Federal
-  Investigative Standards. Higher-risk CUI roles may require MBI
-  (Moderate Background Investigation) or Tier 3 investigation.
-  Investigation submissions route through e-QIP
-  (Electronic Questionnaires for Investigations Processing)
-  and are tracked in DISS
+  pattern is the Tier 1 investigation (which replaced the NACI,
+  National Agency Check with Inquiries, under the 2012 Federal
+  Investigative Standards). Higher-risk public-trust CUI roles may
+  require MBI (Moderate Background Investigation), which is the
+  Tier 2 investigation under the 2012 FIS. Tier 3 and above involve
+  Secret or higher clearance eligibility and are out of scope for
+  most CUI-only roles; include Tier 3 only when the contract
+  explicitly requires it. Investigation submissions today route
+  through NBIS
+  (National Background Investigation Services, which replaced e-QIP
+  around 2023) and are tracked in DISS
   (Defense Information System for Security)
 - Clearance mechanics are out of scope for Level 2 CUI work; the
-  investigation acronyms are referenced here only because contracts
-  sometimes require them for CUI-handling roles even without a
-  classified component
+  investigation tier references are included here only because
+  contracts sometimes require them for CUI-handling roles even without
+  a classified component
 - Periodic reinvestigation cadence where contracts require it
   (commonly 5 to 10 years depending on tier). Screening valid at hire
   does not stay valid forever
@@ -70,9 +74,9 @@ access has already been granted is not screening, it is notification.
   clauses; subs who claim screening compliance must be able to
   demonstrate it
 - Pre-access evidence timing matters. Screening complete and documented
-  before access authorization, before first login,
-  before entry on duty (EOD). Access granted first with screening
-  results expected later
+  before access authorization, before first login, and before entry
+  on duty (EOD). Access granted first with screening results returned
+  later
   fails the practice as written
 
 **Evidence to collect:**
@@ -81,7 +85,7 @@ access has already been granted is not screening, it is notification.
   records
 - Completion records for NACI, Tier 1, MBI, or Tier 3 investigations
   where contracts require them
-- e-QIP submission confirmations and DISS tracking records for
+- NBIS submission confirmations and DISS tracking records for
   federal-investigation subjects
 - Onboarding checklist showing the screening-complete gate preceding
   access authorization
@@ -121,8 +125,9 @@ after they should have been cut off.
   business day for routine separations). Media Protection handles
   credential and CUI artifact return: issued laptops, tokens, hardcopy
   CUI documents, personal devices containing any CUI residue. Exit
-  interview includes a security briefing covering the departee's
-  ongoing CUI confidentiality obligations after employment ends
+  interview includes a security briefing covering the departing
+  employee's ongoing CUI confidentiality obligations after employment
+  ends
 - Transfer workflow: role change triggers re-authorization, not access
   retention. Need-to-know decisions made for the previous role do not
   automatically apply to the new role. Access review against the new
