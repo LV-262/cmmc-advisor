@@ -15,9 +15,10 @@ requirement under this domain.
 
 AT is the training hub for the rest of the skill.
 Personnel Security (PS) establishes the pre-access screening gate
-under PS.L2-3.9.1 that training completion must clear before access
-authorization, and triggers role-based training re-assignment on
-transfer via PS.L2-3.9.2.
+under PS.L2-3.9.1 before access authorization. Organizations may
+also require completion of assigned training before granting access
+as a separate internal policy. Personnel transfer under PS.L2-3.9.2
+can prompt role-based training re-assignment.
 Access Control (AC) content covers least-privilege and need-to-know
 concepts. Identification and Authentication (IA) content covers
 credential hygiene and multi-factor authentication.
