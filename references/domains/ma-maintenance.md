@@ -139,7 +139,7 @@ workflow).
 - Pre-departure verification: sanitization performed, verified, and
   documented before equipment leaves custody. Chain-of-custody
   record starts at the moment of verification
-- Reciprocal framing with MP.L2-3.8.3: MP owns the sanitization
+- Reciprocal framing with MP.L1-3.8.3: MP owns the sanitization
   method and verification; MA invokes it at the off-site-maintenance
   trigger
 - Alternatives when sanitization is not feasible: if the equipment
