@@ -748,7 +748,7 @@ control numbers.
 
 **Specific deltas that matter.** IA-2(8) replay resistance for
 non-privileged accounts was not in Rev 4 Moderate (Appendix D
-footnote 33); Rev 5 Moderate includes it. CM-7(5) whitelisting
+footnote 33); Rev 5 Moderate includes it. CM-7(5) allowlisting
 was restricted to High in Rev 4 (Appendix D footnote 32); Rev 5
 treats allowlisting more permissively across baselines, and
 contractors using CM-7(5) should confirm the CSP's Rev 5
