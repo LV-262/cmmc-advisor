@@ -18,8 +18,8 @@ enforced because you cannot verify who is requesting access.
 
 ### IA.L1-3.5.1 — Identification
 
-**Requirement:** Identify information system users, processes acting on
-behalf of users, or devices.
+**Requirement:** Identify system users, processes acting on behalf
+of users, and devices.
 
 **Why it matters:** Every entity accessing your system must have a unique
 identity. Without unique identification, you cannot attribute actions to
@@ -47,9 +47,9 @@ individuals, which undermines accountability and audit.
 
 ### IA.L1-3.5.2 — Authentication
 
-**Requirement:** Authenticate (or verify) the identities of those users,
+**Requirement:** Authenticate (or verify) the identities of users,
 processes, or devices, as a prerequisite to allowing access to
-organizational information systems.
+organizational systems.
 
 **Why it matters:** Identification says who you claim to be. Authentication
 proves it. Without authentication, anyone can claim any identity.

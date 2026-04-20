@@ -81,7 +81,7 @@ should not approve their own code deployments.
 ### AC.L1-3.1.20 — External System Connections
 
 **Requirement:** Verify and control/limit connections to and use of
-external information systems.
+external systems.
 
 **Why it matters:** Every connection to an external system is a potential
 path for CUI to leave your boundary or for threats to enter it. You need
@@ -109,8 +109,8 @@ to know what external connections exist and control them.
 
 ### AC.L1-3.1.22 — Publicly Accessible Content
 
-**Requirement:** Control information posted or processed on publicly
-accessible information systems.
+**Requirement:** Control CUI posted or processed on publicly
+accessible systems.
 
 **Why it matters:** CUI must never be posted on publicly accessible
 systems. This practice ensures someone reviews content before it goes
@@ -624,8 +624,8 @@ ensures CUI remains protected even if the physical device is compromised.
 
 ### AC.L2-3.1.21 — Portable Storage on External Systems
 
-**Requirement:** Limit use of organizational portable storage devices on
-external information systems.
+**Requirement:** Limit use of portable storage devices on external
+systems.
 
 **Why it matters:** USB drives and other portable storage moving between
 your CUI environment and external systems create data leakage and malware
