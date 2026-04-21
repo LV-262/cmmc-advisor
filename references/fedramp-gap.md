@@ -168,19 +168,62 @@ problem but it does affect cost and operational complexity.
 
 ### Relationship to DoD Cloud Computing Security Requirements Guide
 
-The DoD Cloud Computing Security Requirements Guide (CC SRG) defines
-Impact Levels (IL2, IL4, IL5, IL6) that sit on top of FedRAMP impact
-levels for DoD-specific workloads. IL4 and IL5 require FedRAMP
-Moderate plus additional DoD controls; IL6 requires FedRAMP High plus
-classified-adjacent handling. Most CMMC Level 2 contractors operate
-against FedRAMP Moderate baselines; IL4/IL5 considerations arise for
-contractors handling specific categories of defense CUI such as
-Controlled Technical Information at certain distribution levels.
+The Department of Defense (DoD) cloud computing security requirements
+are delivered through two Security Requirements Guides (SRGs) that
+define Impact Levels (IL2, IL4, IL5, IL6) layered on top of FedRAMP
+authorization for DoD-specific workloads:
 
-Detailed IL4/IL5 content is out of scope for this file and belongs
-in a future DoD-specific reference not yet authored in this corpus.
-This file treats FedRAMP as the authorization framework; the DoD
-overlay is a separate layer.
+- **DoD CSP SRG v1r1** — security requirements Cloud Service
+  Providers must meet to deliver cloud service offerings to DoD
+  Mission Owners.
+- **DoD MO SRG** — technical requirements applying to the Mission
+  Owner (the DoD organization or contractor using the CSP's
+  offering).
+
+Both are published at public.cyber.mil/dccs/dccs-documents/. The
+two-document split replaced the retired monolithic CC SRG v1r4 in
+2024. Contractors operating a CSP-hosted workload under DFARS
+252.204-7012 must review both documents.
+
+Under the CSP SRG v1r1 reciprocity rules (verified 2026-04-21):
+
+- **IL2** (non-CUI federal data) maps to FedRAMP Moderate.
+- **IL4** (CUI and non-critical mission data) has two authorized
+  paths: (a) FedRAMP Moderate + DoD FedRAMP+ security controls +
+  Moderate Confidentiality and Integrity overlays from
+  CNSSI 1253 (Committee on National Security Systems Instruction 1253),
+  or (b) FedRAMP High baseline with General Readiness
+  Requirements.
+- **IL5** (higher-sensitivity CUI, mission-critical data, NSS
+  non-classified) now requires the FedRAMP High baseline plus
+  CNSSI 1253 High Confidentiality and Integrity overlays. This
+  is a change from the retired CC SRG v1r4, which specified IL5
+  as FedRAMP Moderate plus a Level 5 dedicated-infrastructure
+  overlay.
+- **IL6** (classified information up to SECRET) requires FedRAMP
+  High plus CNSSI 1253 High overlays plus classified-network
+  residency (SIPRNet or equivalent). DoD retains the right to
+  perform independent penetration testing on IL6 environments
+  under the v1r1 guidance.
+
+Most CMMC Level 2 contractors operate against FedRAMP Moderate
+baselines mapping to IL4. IL5 considerations arise for contractors
+handling specific categories of defense CUI such as
+Controlled Technical Information at certain distribution levels
+or National Security Systems workloads. A contractor with an
+existing FedRAMP Moderate authorization cannot re-use it for an
+IL5 workload under v1r1; a new FedRAMP High authorization is
+required.
+
+The `references/modern-it/cloud-platforms/cloud-selection.md` hub
+carries the full IL-to-FedRAMP crosswalk in tabular form, the
+per-provider tenancy guidance for AWS GovCloud, Azure Government,
+and Google Cloud Assured Workloads, and the contractor-facing
+decision tree for selecting a platform. Detailed IL4/IL5
+implementation content (workload-category criteria, dedicated-
+infrastructure requirements, specific FedRAMP+ overlays beyond
+the hub crosswalk) remains deferred to a future DoD-specific
+reference not yet authored in this corpus.
 
 ---
 
@@ -1526,8 +1569,11 @@ Content that does not belong in this file:
 - Detailed SSP format. That lives in `references/ssp-guidance.md`,
   with the FedRAMP template-depth comparison added below in the
   "FedRAMP Excesses Over CMMC" section once that section lands.
-- DoD Impact Level (IL4, IL5, IL6) content beyond the Moderate/High
-  relationship. Belongs in future DoD-specific references.
+- Detailed IL4, IL5, IL6 implementation content beyond the
+  FedRAMP-to-IL crosswalk. Hub-level treatment lives in
+  `references/modern-it/cloud-platforms/cloud-selection.md`.
+  Deeper workload-category detail and NSS-specific overlays
+  belong in future DoD-specific references.
 - Product or vendor recommendations. The FedRAMP Marketplace is the
   authoritative product registry; this skill will not duplicate it.
 
