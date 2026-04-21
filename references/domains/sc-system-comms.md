@@ -368,7 +368,8 @@ be FIPS 140-2 or FIPS 140-3 validated. Check the NIST CMVP list.
 **POA&M note:** This practice has a special carve-out. It can be placed
 on a POA&M if encryption exists but is not FIPS-validated, provided
 you are actively pursuing FIPS-validated alternatives. This is the only
-3-point practice eligible for POA&M. See `poam-management.md`.
+5-point practice with a 3-point-deduction state eligible for POA&M.
+See `poam-management.md`.
 
 **Common mistakes:**
 - Assuming the algorithm name (AES-256) equals FIPS validation. It does not
