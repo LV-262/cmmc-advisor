@@ -1,0 +1,79 @@
+id: anti-patterns-scope-theater
+title: Recognizing scope theater in a CUI assessment narrative
+category: anti-patterns
+
+prompt: |
+  A peer contractor recently told me: "We don't have to worry about
+  CMMC for our customer emails. Sure, our DoD customer emails us
+  CUI attachments, but we delete the attachments after processing
+  them, so CUI never 'lives' on our systems. That means email is
+  out of scope for our assessment."
+
+  Is that right? If not, what is the anti-pattern, and how should
+  they have scoped this?
+
+required_terms:
+  - scope theater
+  - DFARS 252.204-7012
+  - CUI
+  - SSP
+  - 32 CFR 2002
+
+factual_claims_expected: true
+
+expected_recommendation: |
+  The peer's scoping is wrong. It is a textbook example of semantic
+  scope-dodging — one of the named scope-theater anti-patterns at
+  `references/anti-patterns.md`.
+
+  Why the reasoning fails:
+  - 32 CFR Part 2002 (the CUI Registry framework) defines CUI based
+    on information content and handling requirements. "We don't
+    store it" does not remove CUI status when the information
+    transits contractor systems.
+  - DFARS 252.204-7012 applies to CUI processed, stored, OR
+    transmitted. Email transmission of CUI is in scope; attachments
+    on email servers are CUI at rest even briefly; inbox indices
+    and email retention policies create CUI persistence beyond the
+    "we delete after processing" claim.
+  - An assessor will ask three questions the peer cannot answer:
+    (a) what's the evidence that attachments are actually deleted
+    from every mailbox, backup, and journal; (b) what retention
+    policy governs email body content that may itself contain CUI
+    in quoted text or summaries; (c) what happens when a user
+    forwards, replies, or archives the email before the "processing"
+    step.
+
+  The correct scope posture:
+  - CUI scope follows the information, not the storage state.
+    Email is in scope when CUI transits it.
+  - SSP documents the email system (likely Exchange Online in GCC
+    High or equivalent) as a CUI-carrying surface with the full
+    Level 2 control applicability.
+  - Retention and records policy under Purview (or Workspace Vault)
+    governs the CUI-attachment lifecycle, with audit trail from
+    the SIEM.
+  - If the contractor genuinely wants to minimize scope, the
+    architectural answer is a CUI enclave with a dedicated mailbox
+    for CUI receipt, NOT a semantic argument that email is out of
+    scope.
+
+  This is a scope-theater anti-pattern because it substitutes a
+  semantic maneuver for an architectural change. Assessors catch
+  this pattern in the first scoping conversation. See
+  `references/scoping-and-cui.md` for the scope-determination
+  framework and `references/anti-patterns.md` Pattern 10
+  (semantic scope-dodging) for the broader pattern context.
+
+evaluator_notes: |
+  The answer must identify this as scope theater and explain why
+  the "we delete after processing" argument fails (DFARS 7012
+  applies to transmitted CUI; retention on email systems creates
+  persistence). Citation of 32 CFR 2002 is expected for the CUI
+  definition. Pointing to anti-patterns.md Pattern 10 and scoping-
+  and-cui.md is a plus. Enabler posture: the answer gives the
+  peer the correct architectural path (enclave mailbox) rather
+  than just saying "you're wrong." Hallucinating that "all email
+  is always CUI in scope regardless" is also wrong and would
+  evaluator-fail; the scope rule is CUI-following-information,
+  not email-always-in.

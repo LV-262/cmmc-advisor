@@ -1,0 +1,69 @@
+id: modern-it-m365-tenancy
+title: Microsoft 365 tenancy selection for a mid-size DIB contractor
+category: modern-it
+
+prompt: |
+  We are a 200-person defense contractor running Microsoft 365
+  Commercial today. Our Air Force contract just added DFARS 252.204-
+  7012. Our CIO wants us to stay on Microsoft but is getting pitched
+  three options: (a) tighten our commercial M365 with advanced
+  conditional access and DLP, (b) migrate to Microsoft 365 GCC, or
+  (c) migrate to Microsoft 365 GCC High. Cost-conscious; we would
+  prefer (a) if it works.
+
+  Which path is correct and why? If the answer is GCC or GCC High,
+  what do we need to evaluate before committing?
+
+required_terms:
+  - GCC High
+  - FedRAMP High
+  - IL5
+  - DFARS 252.204-7012
+  - Entra ID Government
+
+factual_claims_expected: true
+
+expected_recommendation: |
+  Option (a) is a scope breach. Configuration tightening on commercial
+  M365 does not substitute for the FedRAMP-authorized-tenancy
+  requirement DFARS 252.204-7012 establishes for CUI workflow.
+  Commercial M365 holds FedRAMP High on specific services but runs on
+  the commercial-cloud operator-access boundary; it does not meet DoD
+  Impact Level 4/5 reciprocity under CSP SRG v1r1. Policy controls
+  on a commercial tenancy are the anti-pattern.
+
+  Option (b) GCC is FedRAMP Moderate + DoD IL2. Some contracts accept
+  GCC for limited CUI scenarios with agency agreement, but the
+  typical DIB contractor path for DFARS 7012 CUI is GCC High.
+
+  Option (c) GCC High is FedRAMP High + DoD IL5 and the common
+  defense-contractor path. Sovereign tenancy physically and
+  logically separated from commercial Microsoft 365; Microsoft
+  operator access restricted to screened US-persons.
+
+  Recommendation: GCC High unless the contracting officer explicitly
+  permits GCC (rare for CUI-handling). Before committing:
+  1. Confirm the contract's CMMC level requirement and any ITAR or
+     EAR export-controlled data presence (ITAR drives GCC High over
+     GCC).
+  2. Inventory existing M365 Commercial usage: Exchange mailboxes,
+     SharePoint sites, Teams channels, Power Platform apps.
+     Migration complexity scales with the footprint.
+  3. Plan the identity plane: Entra ID Government is the natural
+     IdP; federation from commercial Azure AD during cutover is a
+     standard pattern but adds operational steps.
+  4. Budget for migration project (typically 6-12 months for a
+     200-person contractor) plus ongoing GCC High licensing delta.
+  5. See `references/modern-it/productivity/microsoft-365-gcc.md`
+     for the full Tenancy Selection framework.
+
+evaluator_notes: |
+  The answer must reject option (a) firmly with the right reason
+  (commercial-cloud boundary is not a FedRAMP-authorized tenancy
+  for CUI). GCC vs GCC High must be distinguished correctly: GCC =
+  Moderate + IL2, GCC High = High + IL5. ITAR presence should be
+  named as a GCC-High-specific driver. Enabler posture: the answer
+  provides a migration path with pre-commitment checklist, not just
+  "pick GCC High." Citation of the productivity reference file is a
+  plus. Hallucinated claims (for example, that commercial M365
+  somehow inherits GCC High operator access) are a hard-fail.
