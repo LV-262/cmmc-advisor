@@ -706,12 +706,19 @@ Per hub Versioning discipline:
   reflect 2026-04 state; the category framing survives
   rebrands.
 
-A deeper automated approach for tracking Marketplace state is
-tracked as a follow-up (`dev-w1ez` FedRAMP Marketplace snapshot
-+ refresh, P3 backlog) — a JSON data file plus refresh script
-for the Phase 5d/5 corpus's named vendors with dated
-verification stamps. When it ships, this file's vendor-specific
-claims migrate to cite the snapshot as the stable reference.
+A machine-readable snapshot of the productivity and AI-service
+vendor authorization state lives at
+`references/data/fedramp-snapshot.json`. Ten entries covering the
+corpus's primary managed-service vendors with primary-source
+URLs, DoD IL overlays, CUI-suitability framing, and notes on
+common miscitations. The snapshot is agent-facing reference data,
+not an SSP citation substitute — contractors building an SSP
+still verify the current Marketplace package at
+marketplace.fedramp.gov and cite with a live-verification date.
+See `references/data/README.md` for the refresh cadence and
+contribution guidance. A future automated refresh against the
+FedRAMP Marketplace JSON endpoint is possible but scoped as a
+separate task.
 
 Content verified 2026-04-21 against the cited primary sources.
 Next full re-verification at the corpus review cycle or when
