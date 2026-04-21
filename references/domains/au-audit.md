@@ -321,9 +321,11 @@ not trustworthy.
 - AU supports Incident Response (IR) by providing investigation data
 - AU log protection relates to System and Communications Protection (SC)
   encryption
-- FedRAMP inheritance: the FedRAMP Moderate AU baseline covers AU-2,
-  AU-3, AU-6, AU-11, AU-12, and the CSP runs a continuous
-  monitoring program with monthly vuln scanning, monthly POA&M
-  upload, and annual 3PAO subset assessment. See
-  `references/fedramp-gap.md` "Audit and accountability" family
-  deep-dive and "Continuous monitoring cadence"
+- FedRAMP inheritance: the FedRAMP Moderate AU baseline covers NIST
+  SP 800-53 controls AU-2, AU-3, AU-6, AU-11, and AU-12, and the
+  cloud service provider (CSP) runs a continuous monitoring program
+  with monthly vuln scanning, monthly Plan of Action and Milestones
+  (POA&M) upload, and annual Third-Party Assessment Organization
+  (3PAO) subset assessment. See `references/fedramp-gap.md`
+  "Audit and accountability" family deep-dive and "Continuous
+  monitoring cadence"
