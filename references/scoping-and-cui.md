@@ -13,6 +13,16 @@ leaves CUI unprotected in systems you thought were out of scope.
 
 Get scoping right first. Everything else follows from it.
 
+**FedRAMP interaction.** If CUI lives in an external cloud service, the
+Defense Federal Acquisition Regulation Supplement (DFARS)
+252.204-7012(b)(2)(ii)(D) requires the cloud service provider (CSP) to meet
+Federal Risk and Authorization Management Program (FedRAMP) Moderate (or
+equivalent) security requirements. See `references/fedramp-gap.md` "The
+CUI Baseline Decision" for the clause text and the equivalency mechanics.
+The CUI boundary and the CSP's FedRAMP authorization boundary are distinct
+artifacts; see `references/fedramp-gap.md` "Boundary documentation depth"
+for the two-boundary pattern.
+
 ---
 
 ## FCI vs CUI

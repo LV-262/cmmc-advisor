@@ -15,6 +15,19 @@ The SSP is not a compliance artifact to be written at the end. It is a
 living document that reflects your actual security posture. Write it as
 you build your controls, not after.
 
+**Federal Risk and Authorization Management Program (FedRAMP) SSP comparison.**
+The CMMC SSP described here is lighter than a FedRAMP Moderate SSP
+in both per-control depth and overall structure. As of April 2026,
+the FedRAMP Rev. 5 SSP template is a much larger document with
+300-plus controls and additional required material beyond what a
+contractor typically includes in a CMMC SSP. Contractors using a
+FedRAMP Moderate cloud service provider (CSP) still write their own
+CMMC SSP; the CSP's FedRAMP package serves as inherited-control
+evidence, not as a substitute. See `references/fedramp-gap.md`
+"System Security Plan depth" and "Inherited vs shared-responsibility
+controls" for the exact template caveats and inheritance narrative
+patterns.
+
 > Source: NIST SP 800-171 Rev 2, Practice 3.12.4: "Develop, document, and
 > periodically update system security plans that describe system boundaries,
 > system environments of operation, how security requirements are implemented,

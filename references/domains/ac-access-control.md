@@ -672,3 +672,14 @@ because findings in AC often cascade into other domains (Audit, IA, SC).
   relate to System and Communications Protection (SC) encryption
   requirements, specifically SC.L2-3.13.8 (transmission
   confidentiality) and SC.L2-3.13.11 (FIPS-validated cryptography)
+- Federal Risk and Authorization Management Program (FedRAMP)
+  inheritance: AC.L1-3.1.1, AC.L1-3.1.2, and the L2 AC practices
+  overlap with FedRAMP Moderate NIST SP 800-53 controls AC-2,
+  AC-3, and AC-17. See `references/fedramp-gap.md` "Access control"
+  family deep-dive under "Where the mapping is tightest" for the
+  inheritance pattern and the break-glass-account gap
+- AC.L1-3.1.20 (external system connections) is anchored in the
+  Defense Federal Acquisition Regulation Supplement (DFARS)
+  252.204-7012(b)(2)(ii)(D) when the external system is a cloud
+  service holding CUI. See `references/fedramp-gap.md` "The CUI
+  Baseline Decision"
