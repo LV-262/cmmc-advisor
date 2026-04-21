@@ -545,9 +545,18 @@ in transit) and SC.L2-3.13.16 (data at rest) as they directly protect
 CUI confidentiality.
 
 **Key relationships:**
-- SC encryption practices interact with IA authentication practices
-  (encrypted authentication channels)
-- SC boundary protection supports Access Control (AC) enforcement
-- SC split tunnel prevention relates to AC remote access practices
-- SC FIPS validation applies wherever cryptography is used — this
-  practice cascades across IA, AU, and MP domains
+- SC.L2-3.13.8 (transmission confidentiality) and SC.L2-3.13.11
+  (FIPS-validated cryptography) interact with IA authentication
+  practices IA.L2-3.5.10 (cryptographic password protection) and
+  IA.L2-3.5.11 (obscured feedback) on encrypted authentication
+  channels
+- SC.L1-3.13.1 (boundary protection) and SC.L1-3.13.5 (public
+  access separation) support Access Control (AC) enforcement at
+  AC.L1-3.1.20 (external system connections)
+- SC.L2-3.13.7 (split tunnel prevention) relates to AC remote
+  access practices AC.L2-3.1.12 through AC.L2-3.1.15
+- SC.L2-3.13.11 (FIPS validation) applies wherever cryptography
+  is used; the practice cascades into IA.L2-3.5.10 (cryptographic
+  password protection), AU.L2-3.3.8 (audit information protection
+  when encrypted), and MP.L2-3.8.6 (cryptographic mechanisms for
+  media in transport)

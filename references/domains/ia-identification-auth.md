@@ -358,7 +358,14 @@ It protects against the most common attack vectors and assessors will look
 for it early.
 
 **Key relationships:**
-- IA provides the authentication that Access Control (AC) depends on
-- IA credential management relates to Audit and Accountability (AU) logging
-- IA password protection relates to System and Communications Protection
-  (SC) encryption requirements
+- IA.L1-3.5.1 (identify users) and IA.L1-3.5.2 (authenticate users)
+  provide the authentication that Access Control (AC) depends on,
+  specifically AC.L1-3.1.1 (system access) and AC.L1-3.1.2
+  (transaction and function control)
+- IA.L2-3.5.3 (MFA) and related practices generate events that
+  Audit and Accountability (AU) captures under AU.L2-3.3.2 (user
+  traceability)
+- IA.L2-3.5.10 (cryptographic password protection) and IA.L2-3.5.11
+  (obscured feedback) rely on System and Communications Protection
+  (SC) encryption requirements, specifically SC.L2-3.13.11
+  (FIPS-validated cryptography)

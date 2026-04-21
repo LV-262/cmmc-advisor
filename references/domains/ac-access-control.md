@@ -662,7 +662,13 @@ because findings in AC often cascade into other domains (Audit, IA, SC).
 
 **Key relationships:**
 - AC practices depend on Identification and Authentication (IA) for
-  user verification
-- AC practices generate evidence relevant to Audit and Accountability (AU)
-- Remote access AC practices relate to System and Communications
-  Protection (SC) encryption requirements
+  user verification; specifically IA.L1-3.5.1 (identify users) and
+  IA.L1-3.5.2 (authenticate users) are prerequisites for AC.L1-3.1.1
+  and AC.L1-3.1.2
+- AC practices generate evidence relevant to Audit and Accountability
+  (AU), notably AU.L2-3.3.1 (audit log creation) and AU.L2-3.3.2
+  (user traceability), which depend on AC to know who is logged in
+- Remote access AC practices (AC.L2-3.1.12 through AC.L2-3.1.15)
+  relate to System and Communications Protection (SC) encryption
+  requirements, specifically SC.L2-3.13.8 (transmission
+  confidentiality) and SC.L2-3.13.11 (FIPS-validated cryptography)
