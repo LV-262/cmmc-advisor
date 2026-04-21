@@ -456,6 +456,18 @@ user is doing what they were authorized to do."
 - UEBA purchased as the check-the-box solution without the
   foundational log coverage that makes it useful
 
+**Modern IT note:** See
+`modern-it/ai-services/fedramp-ai-services.md` and
+`modern-it/ai-services/self-hosted-ai.md` for AI-service content-
+safety and guardrail monitoring posture. Bedrock Guardrails,
+Azure AI Content Safety, and Vertex AI Safety provide managed
+unauthorized-use detection on AI outputs (jailbreak attempts,
+policy-violating prompts, PII-leak detection). Self-hosted
+deployments author equivalent guardrails via NeMo Guardrails,
+Llama Guard, or contractor-authored filters. Guardrail events
+feed the same SI.L2-3.14.7 detection pipeline as other
+unauthorized-use signals.
+
 ---
 
 ## Domain Summary

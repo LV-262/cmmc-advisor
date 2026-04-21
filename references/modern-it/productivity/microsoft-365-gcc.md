@@ -107,7 +107,7 @@ Not covered:
   landing there directly.
 - Microsoft 365 Copilot and generative-AI features. Productivity
   AI features carry separate FedRAMP scope considerations
-  covered under `references/modern-it/ai-services/` (pending).
+  covered under `references/modern-it/ai-services/`.
 - Pre-2016 legacy offerings (Office 365 E3 Government, older
   GCC naming). The current GCC / GCC High / DoD taxonomy is
   the authoritative one.

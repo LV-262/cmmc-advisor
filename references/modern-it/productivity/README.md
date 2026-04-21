@@ -80,9 +80,9 @@ Not covered:
   level guidance lives under `references/domains/sc-system-comms.md`.
 - Microsoft 365 Copilot and Google Workspace generative-AI
   features in depth. AI-specific posture is covered under
-  `references/modern-it/ai-services/` (pending) where the AI
-  service scope and FedRAMP or IL authorization for model and
-  prompt processing is the load-bearing concern.
+  `references/modern-it/ai-services/` where the AI service
+  scope and FedRAMP or IL authorization for model and prompt
+  processing is the load-bearing concern.
 
 ---
 

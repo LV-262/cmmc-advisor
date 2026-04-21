@@ -104,7 +104,7 @@ Not covered:
   US federal contractor CUI work.
 - Generative AI features (Gemini for Workspace). Generative AI
   scope considerations are covered under
-  `references/modern-it/ai-services/` (pending).
+  `references/modern-it/ai-services/`.
 - Consumer Gmail and personal Google Accounts. Consumer-grade
   products are not CUI-capable.
 
