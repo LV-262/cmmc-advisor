@@ -207,7 +207,7 @@ control).
 **Operator access and cryptography.** Atlassian personnel do not
 touch Data Center instances except under explicit Professional
 Services engagement with NDA. Running Data Center on a FIPS-mode
-OS image and a FIPS-validated JDK (RedHat OpenJDK with FIPS
+OS image and a FIPS-validated JDK (Red Hat OpenJDK with FIPS
 enabled, Azul Zulu with FIPS module) is the standard path;
 document the CMVP validated module references in the SSP.
 
