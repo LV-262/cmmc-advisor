@@ -54,6 +54,7 @@ from memory alone when a reference exists.
 | Google Workspace compliance | `references/modern-it/productivity/google-workspace.md` |
 | Atlassian, ServiceNow, legacy tools | `references/modern-it/productivity/legacy-dib-tools.md` |
 | AI services in compliant environments | `references/modern-it/ai-services/` |
+| Endpoint fleet overview, capability vs product, practice crosswalk | `references/modern-it/endpoints/README.md` |
 | macOS fleet compliance | `references/modern-it/endpoints/macos-fleet.md` |
 | Windows endpoint compliance | `references/modern-it/endpoints/windows-fleet.md` |
 | Remote work and VDI | `references/modern-it/endpoints/remote-work.md` |
