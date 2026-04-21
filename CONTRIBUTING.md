@@ -11,6 +11,52 @@ This is non-negotiable. The CMMC Advisor skill is built entirely from
 publicly available documentation. No proprietary, classified, or
 access-restricted content is permitted.
 
+### Zero-contamination rule
+
+This skill is authored without reference to any private, proprietary,
+or competitor compliance content. Contributors must not copy, adapt,
+or paraphrase content from:
+
+- Private client Systems Security Plans, POA&Ms, or assessment reports
+- Internal contractor compliance documentation
+- Competing compliance skills or proprietary knowledge bases behind
+  paywalls or non-public agreements
+- Classified or controlled-unclassified government documents outside
+  the public domain
+
+The test: if a contributor's employer or a past engagement is the
+only place they could have seen the content, it does not belong here.
+Public sources only, attributed in SOURCES.md.
+
+Practitioner knowledge derived from applying public standards to
+private work is welcome. A contributor who has implemented NIST SP
+800-171A assessment objectives across twenty private engagements has
+practitioner-level understanding of what those objectives look like
+in practice; that understanding, expressed through the public
+standards themselves, is the contribution this skill depends on. The
+rule is about content provenance (do not copy private content), not
+about contributor experience (experience from private work shapes
+the framing without being the source).
+
+### Primary-source verification with dated stamp
+
+Compliance facts change. FedRAMP authorization status, DoD Impact
+Level coverage, per-service model availability, and vendor product
+scopes all shift on weeks-to-months cadences. For every claim that
+depends on current authorization state:
+
+1. Verify against the primary source (vendor compliance page,
+   FedRAMP Marketplace package entry, Federal Register rule text,
+   NIST CSRC publication) at the time of authoring.
+2. Stamp the verification date inline in the content — the corpus
+   convention is "verified YYYY-MM-DD via [URL]".
+3. Label claims that decay faster than the stamp can track as
+   "as of YYYY-MM, verify current [source] before implementing."
+4. Do not cite a vendor's marketing claim of compliance without a
+   Marketplace package entry or equivalent primary-source backing.
+
+### Citation mechanics
+
 When adding or modifying content:
 
 1. Cite the specific source document (title, publisher, URL)
