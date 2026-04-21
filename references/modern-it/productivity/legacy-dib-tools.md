@@ -19,8 +19,9 @@
 This file covers adjacent productivity tools the defense industrial
 base (DIB) runs alongside a primary suite (Microsoft 365 GCC High
 or Google Workspace with Assured Controls Plus). Scope is a finite,
-named catalog of four vendor families per hub Decision 7. Not a
-general SaaS compliance directory.
+named catalog of four vendor families, including government-cloud
+and self-hosted variants where applicable, per hub Decision 7. Not
+a general SaaS compliance directory.
 
 Read alongside `references/modern-it/productivity/README.md` (Phase
 5d hub carrying the seven conventions), `microsoft-365-gcc.md`, and
