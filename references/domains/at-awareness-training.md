@@ -109,6 +109,17 @@ domains assume it is working.
 - Manager-specific content folded into general-user training rather
   than delivered as a distinct track
 
+**Modern IT note:** See
+`modern-it/ai-services/README.md` and
+`modern-it/ai-services/ai-dev-tools.md` for AI-specific
+awareness-training topics. Contractors using AI services or AI
+developer tools (Claude Code, Copilot Enterprise, Continue) on
+CUI workloads should train developers and general users on the
+prompt-surface CUI boundary (hub Decision 5): which files belong
+in workspace context, which prompts may carry CUI, when output
+retention creates a CUI-derived asset, and which backend
+configurations keep inference on a FedRAMP-authorized path.
+
 ---
 
 ### AT.L2-3.2.2 — Role-Based Training

@@ -50,6 +50,18 @@ assessors that your controls are operational.
 - No centralized log collection — logs only on individual systems
 - Insufficient event types logged (only login events, missing admin actions)
 
+**Modern IT note:** See
+`modern-it/ai-services/fedramp-ai-services.md` and
+`modern-it/ai-services/self-hosted-ai.md` for AI-service
+invocation logging posture. FedRAMP-authorized AI services
+(Bedrock GovCloud, Azure OpenAI Government, Vertex AI Assured
+Workloads) expose per-invocation audit streams that export to
+the contractor's SIEM; self-hosted inference requires
+contractor-authored telemetry instrumentation. The prompt and
+response content captured in model invocation logs may itself
+be CUI per hub Decision 5; log retention and access posture
+should match the contractor's CUI handling rules.
+
 ---
 
 ### AU.L2-3.3.2 — User Accountability

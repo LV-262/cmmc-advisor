@@ -82,9 +82,9 @@ Not covered:
   servers — see `references/domains/sc-system-comms.md`.
 - Generative-AI features bundled with the listed tools (Atlassian
   Intelligence, ServiceNow Now Assist, GitHub Copilot, Box AI).
-  Covered under `references/modern-it/ai-services/` (pending) where
-  model hosting, prompt processing, and output retention are the
-  load-bearing concerns.
+  Covered under `references/modern-it/ai-services/` where model
+  hosting, prompt processing, and output retention are the load-
+  bearing concerns.
 
 ---
 
