@@ -201,10 +201,10 @@ Cloud Computing Security Requirements Guide (CC SRG) v1r4 has
 been officially retired** and replaced by two separate
 documents:
 
-- **DoD CSP SRG v1r1** — security requirements Cloud Service
+- **DoD CSP SRG v1r1.** Security requirements Cloud Service
   Providers must meet to deliver cloud service offerings to
   DoD Mission Owners.
-- **DoD Mission Owner (MO) SRG** — technical requirements that
+- **DoD Mission Owner (MO) SRG.** Technical requirements that
   apply to the Mission Owner (the DoD organization or
   contractor using the CSP's cloud service).
 

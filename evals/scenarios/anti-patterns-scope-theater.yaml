@@ -23,7 +23,7 @@ factual_claims_expected: true
 
 expected_recommendation: |
   The peer's scoping is wrong. It is a textbook example of semantic
-  scope-dodging — one of the named scope-theater anti-patterns at
+  scope-dodging, one of the named scope-theater anti-patterns at
   `references/anti-patterns.md`.
 
   Why the reasoning fails:

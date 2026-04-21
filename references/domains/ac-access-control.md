@@ -4,7 +4,7 @@
 
 ## Overview
 
-Access Control is the largest CMMC domain with 22 practices — 4 at Level 1
+Access Control is the largest CMMC domain with 22 practices: 4 at Level 1
 and 18 additional at Level 2. This domain governs who and what can access
 your systems and CUI, and under what conditions.
 
@@ -24,8 +24,8 @@ access control capabilities.
 **Requirement:** Limit system access to authorized users, processes acting
 on behalf of authorized users, and devices (including other systems).
 
-**Why it matters:** This is the foundational access control principle —
-only authorized entities should access your systems. Without this, no
+**Why it matters:** This is the foundational access control principle.
+Only authorized entities should access your systems. Without this, no
 other control is meaningful.
 
 **Implementation guidance:**
@@ -33,7 +33,7 @@ other control is meaningful.
 - Implement an account provisioning process tied to HR onboarding
 - Use a centralized identity provider (Azure AD, Okta, Google Workspace
   identity) as the single source of truth for user authorization
-- Enforce authentication on all system access — no anonymous or guest
+- Enforce authentication on all system access. No anonymous or guest
   access to systems containing FCI or CUI
 
 **Evidence to collect:**
@@ -109,7 +109,7 @@ to know what external connections exist and control them.
 - Periodic review records
 
 **Common mistakes:**
-- Shadow IT — users connecting to unapproved external services
+- Shadow IT (users connecting to unapproved external services)
 - No inventory of external connections
 - Assuming cloud services are "internal" when they are external systems
 
@@ -175,7 +175,7 @@ transfers).
 **Common mistakes:**
 - No data flow diagram
 - CUI flowing through personal email
-- No DLP or technical controls — relying on policy alone
+- No DLP or technical controls, relying on policy alone
 
 ---
 
@@ -203,7 +203,7 @@ insider threats and accidental damage.
 
 **Common mistakes:**
 - One person approving their own access requests
-- Small teams assuming separation doesn't apply to them — it does,
+- Small teams assuming separation doesn't apply to them. It does,
   but compensating controls are acceptable when documented
 
 ---
@@ -243,7 +243,7 @@ any compromise.
 nonsecurity functions.
 
 **Why it matters:** Administrators should use regular accounts for email,
-web browsing, and other daily activities — not their admin accounts. This
+web browsing, and other daily activities, not their admin accounts. This
 limits exposure if a daily-use account is compromised.
 
 **Implementation guidance:**
@@ -573,7 +573,7 @@ eavesdropping.
 **Requirement:** Control connection of mobile devices.
 
 **Why it matters:** Mobile devices (phones, tablets) connecting to CUI
-systems introduce risk — they can be lost, stolen, or compromised. Their
+systems introduce risk. They can be lost, stolen, or compromised. Their
 connections must be controlled.
 
 **Implementation guidance:**
@@ -624,7 +624,7 @@ ensures CUI remains protected even if the physical device is compromised.
 - Policy prohibiting CUI on unencrypted devices
 
 **Common mistakes:**
-- Assuming all devices are encrypted by default — verify
+- Assuming all devices are encrypted by default (verify)
 - Encryption enabled but not enforced through MDM
 - No verification that encryption modules are FIPS-validated
 
@@ -652,7 +652,7 @@ introduction risks.
 - USB connection logs
 
 **Common mistakes:**
-- No USB device control — anyone can plug in any drive
+- No USB device control (anyone can plug in any drive)
 - Policy exists but no technical enforcement
 - USB drives used freely between CUI and personal systems
 

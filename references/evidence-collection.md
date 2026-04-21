@@ -22,10 +22,10 @@ Screenshots or exports showing system settings match your SSP descriptions.
 
 **Best practices:**
 - Include the system name and date in every screenshot
-- Capture the full context, not just the single setting — assessors want
+- Capture the full context, not just the single setting. Assessors want
   to see surrounding configuration to verify nothing contradicts the claim
 - Export configurations programmatically when possible (CLI output, JSON
-  exports, policy exports) — these are harder to fabricate and easier to
+  exports, policy exports). These are harder to fabricate and easier to
   version
 - Refresh configuration evidence quarterly at minimum. Stale screenshots
   from 18 months ago do not prove current implementation.
@@ -39,7 +39,7 @@ for each practice domain.
 - Each CMMC domain should have at least one governing policy
 - Policies should be signed or approved by leadership
 - Include effective dates and review dates
-- Policies without evidence of implementation are insufficient — the policy
+- Policies without evidence of implementation are insufficient. The policy
   says "we will do X" and the evidence shows "we did X"
 
 ### 3. Procedure Documents
@@ -223,7 +223,7 @@ and have tested it.
 | FIPS validation | FIPS 140-2/140-3 module certifications for encryption modules in use |
 
 **Note on FIPS:** The encryption must use FIPS-validated cryptographic
-modules. "We use AES-256" is insufficient — the specific implementation
+modules. "We use AES-256" is insufficient. The specific implementation
 must be validated. Check the NIST Cryptographic Module Validation Program
 (CMVP) list at https://csrc.nist.gov/projects/cryptographic-module-validation-program
 
@@ -295,8 +295,8 @@ Better yet, use CLI exports with timestamps.
 ### 2. Evidence That Contradicts the SSP
 
 The SSP says MFA is enabled for all remote access. The VPN configuration
-screenshot shows MFA is optional. This is worse than having no evidence —
-it actively demonstrates non-compliance.
+screenshot shows MFA is optional. This is worse than having no evidence.
+It actively demonstrates non-compliance.
 
 **Fix:** Update either the SSP or the configuration so they match. Then
 collect new evidence.

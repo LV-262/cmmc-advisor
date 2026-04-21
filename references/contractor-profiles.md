@@ -23,32 +23,32 @@ set-aside certification (SDVOSB, 8(a), WOSB, HUBZone).
 
 Three size profiles:
 
-- **Small** (fewer than 50 employees) — the most cost-sensitive
+- **Small** (fewer than 50 employees). The most cost-sensitive
   segment. Enclave architectures, managed-service partnerships,
-  and tax-credit leverage are common patterns. Primary risk is
+  and tax-credit use are common patterns. Primary risk is
   under-scoping CUI and running compliance on a spreadsheet.
-- **Medium** (50-500 employees) — scaling compliance across
+- **Medium** (50-500 employees). Scaling compliance across
   multiple programs and contract vehicles. Typical segment for
   standing up dedicated compliance staff and maturing policy
   architecture.
-- **Large** (500+ employees) — enterprise compliance programs
+- **Large** (500+ employees). Enterprise compliance programs
   with GRC tooling, dedicated teams, and multi-BU scope. Primary
   risk is scope sprawl and CUI-boundary drift across business
   units.
 
 Four set-aside program considerations:
 
-- **SDVOSB** (Service-Disabled Veteran-Owned Small Business) —
+- **SDVOSB** (Service-Disabled Veteran-Owned Small Business).
   SBA certification required since 2024-01-01 for federal
   set-aside eligibility.
-- **8(a)** — the SBA's business development program for socially
+- **8(a).** The SBA's business development program for socially
   and economically disadvantaged small businesses. The Small
   Disadvantaged Business contracting goal reset to the statutory
   5% on 2025-01-24.
 - **WOSB / EDWOSB** (Women-Owned Small Business / Economically
-  Disadvantaged Women-Owned Small Business) — SBA certification
+  Disadvantaged Women-Owned Small Business). SBA certification
   via certify.sba.gov.
-- **HUBZone** — Historically Underutilized Business Zone, SBA
+- **HUBZone.** Historically Underutilized Business Zone, SBA
   certification for firms in designated distressed areas.
 
 Read this file alongside
@@ -300,7 +300,7 @@ interpretation and specific compliance decisions.
   approach; the enterprise loses visibility and consistent
   posture.
 - Compliance theater. Enterprise organizations can maintain
-  elaborate policy hierarchies, robust evidence repositories,
+  elaborate policy hierarchies, well-stocked evidence repositories,
   and full-time compliance staff while the actual operational
   posture drifts from documented intent. Anti-pattern discussion
   beyond this file's scope is covered in a future corpus
@@ -339,11 +339,12 @@ set-asides). Self-certification is no longer valid for federal
 set-asides; contractors must hold SBA certification obtained
 through certify.sba.gov.
 
-**CMMC intersection.** SDVOSB status determines contract
-eligibility for set-aside procurements but does not reduce or
-shift CMMC requirements. A small SDVOSB contractor handling CUI
-under DFARS 7012 meets the same NIST 800-171 requirements as any
-other contractor. The SDVOSB set-aside may make the contract
+**CMMC intersection.** As a general rule, SDVOSB status
+determines contract eligibility for set-aside procurements but
+does not reduce or shift CMMC requirements; specific contract
+clauses control. A small SDVOSB contractor handling CUI under
+DFARS 7012 meets the same NIST 800-171 requirements as any other
+contractor. The SDVOSB set-aside may make the contract
 competitively accessible; the cybersecurity bar is the same.
 
 **Practical implications.**
@@ -372,9 +373,10 @@ mechanics.
 
 **CMMC intersection.** 8(a) sole-source awards and competitive
 8(a) set-asides carry DFARS 7012 when the contract handles CUI.
-8(a) certification does not exempt or reduce CMMC requirements.
-8(a) graduates (firms that have completed the nine-year 8(a)
-term) carry CMMC requirements as they compete on open-market
+As a general rule, 8(a) certification does not exempt or reduce
+CMMC requirements; specific contract clauses control. 8(a)
+graduates (firms that have completed the nine-year 8(a) term)
+carry CMMC requirements as they compete on open-market
 contracts.
 
 **Practical implications.**
@@ -488,12 +490,14 @@ protection plus readiness) rather than scope (every Level 2
 contract requires all 110). Priority timing framing below
 ("first-quarter" for small, "first-six-months" for medium) is
 relative to when a contractor begins compliance investment;
-with Phase 1 enforcement active since 2025-11-10, contractors
+with Phase 2 enforcement active since 2025-11-10 (per
+`references/levels-and-assessment.md` phased-rollout
+taxonomy), contractors
 catching a DFARS 7012 clause on an active solicitation or
 newly-awarded contract start the priority clock immediately and
 compress the sequence as assessment deadlines dictate.
 
-**Small profile — first-quarter priorities.**
+**Small profile, first-quarter priorities.**
 
 1. Scope CUI accurately. Wrong scope dominates cost risk at
    small scale.
@@ -507,7 +511,7 @@ compress the sequence as assessment deadlines dictate.
    investing in tooling. Scope drives tooling; tooling does
    not drive scope.
 
-**Medium profile — first-six-months priorities.**
+**Medium profile, first-six-months priorities.**
 
 1. Tenancy migration to government-tier productivity (GCC High
    or Assured Controls Plus) if not already complete.
@@ -520,7 +524,7 @@ compress the sequence as assessment deadlines dictate.
 5. Establish assessment-readiness cycle separate from assessment
    delivery.
 
-**Large profile — continuous priorities.**
+**Large profile, continuous priorities.**
 
 1. Cross-BU consistency. Single SSP per assessment scope;
    consistent CUI-boundary definitions; consistent tooling.
@@ -542,34 +546,34 @@ compress the sequence as assessment deadlines dictate.
 Contractor-profile considerations compose with corpus cross-
 cutting files and domain practice files:
 
-- **CUI scoping.** `references/scoping-and-cui.md` — the most
+- **CUI scoping.** `references/scoping-and-cui.md`. The most
   load-bearing upstream input to profile-driven compliance
   planning.
-- **Levels and assessment.** `references/levels-and-assessment.md`
-  — the L1 vs L2 determination that sets the cost envelope per
+- **Levels and assessment.** `references/levels-and-assessment.md`.
+  The L1 vs L2 determination that sets the cost envelope per
   profile.
-- **SSP authoring.** `references/ssp-guidance.md` — SSP
+- **SSP authoring.** `references/ssp-guidance.md`. SSP
   complexity scales with profile.
-- **POA&M management.** `references/poam-management.md` —
+- **POA&M management.** `references/poam-management.md`.
   Conditional Certification deferral rules particularly
   relevant at small and medium profiles where resource
   constraints drive POA&M volume.
-- **FedRAMP framing.** `references/fedramp-gap.md` —
-  government-tenancy migration cost implications per profile.
+- **FedRAMP framing.** `references/fedramp-gap.md`.
+  Government-tenancy migration cost implications per profile.
 - **Modern IT productivity.**
   `references/modern-it/productivity/README.md` and
-  per-vendor files — tenancy-migration costs vary sharply by
+  per-vendor files. Tenancy-migration costs vary sharply by
   profile (enclave vs full migration).
 - **Modern IT cloud platforms.**
-  `references/modern-it/cloud-platforms/cloud-selection.md` —
-  platform selection interacts with profile (single cloud
+  `references/modern-it/cloud-platforms/cloud-selection.md`.
+  Platform selection interacts with profile (single cloud
   commitment for small; multi-cloud for medium and large).
 - **Modern IT AI services.**
-  `references/modern-it/ai-services/README.md` — AI service
+  `references/modern-it/ai-services/README.md`. AI service
   adoption pattern varies by profile (managed services favored
   at small; self-hosted viable at medium and large).
-- **Rev 3 transition.** `references/rev3-transition.md` —
-  transition timing and cost impact varies by profile.
+- **Rev 3 transition.** `references/rev3-transition.md`.
+  Transition timing and cost impact varies by profile.
 
 Domain practice files for requirement text and evidence lists:
 all 14 CMMC domains at `references/domains/`.
@@ -589,8 +593,8 @@ CFR Part 124.
 
 **C3PAO (CMMC Third-Party Assessment Organization).** An
 accredited assessor authorized to perform Level 2 and Level 3
-certification assessments. Accreditation through the Cyber AB
-(formerly CMMC Accreditation Body).
+certification assessments. Accreditation through The Cyber AB
+(formerly the CMMC Accreditation Body; rebranded 2022).
 
 **CISO (Chief Information Security Officer).** The executive
 responsible for information-security program leadership.
@@ -619,7 +623,7 @@ administering small-business size standards, socioeconomic
 set-aside certifications, and business-development programs.
 
 **SBIR / STTR.** Small Business Innovation Research and Small
-Business Technology Transfer — federal research programs that
+Business Technology Transfer. Federal research programs that
 sometimes intersect with CMMC when the research produces or
 involves CUI.
 
@@ -660,9 +664,12 @@ Contractor-profile content drifts on several axes:
   regulations at 13 CFR Parts 121/124/126/127/128 update
   periodically. Verify current text at sba.gov/regulations
   before citing specific requirements.
-- **CMMC enforcement timeline.** CMMC Phase 1 enforcement
-  began 2025-11-10 per 48 CFR final rule. Phase 2, 3, and 4
-  enforcement phases roll forward over subsequent years.
+- **CMMC enforcement timeline.** Per
+  `references/levels-and-assessment.md`, Phase 1 is the
+  2024-12-16 32 CFR program-rule effective date; Phase 2 is the
+  2025-11-10 48 CFR acquisition-rule effective date; Phase 3
+  begins 2026-11-10; Phase 4 begins 2027-11-10. Content below
+  reflects the Phase 2 operating context.
 - **SBA certification processes.** certify.sba.gov is the
   current authoritative portal for SDVOSB, WOSB, EDWOSB, 8(a),
   and HUBZone certifications. Process timing and documentation

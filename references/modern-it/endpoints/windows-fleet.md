@@ -742,16 +742,16 @@ cadence.
 Windows-specific guidance here composes with the domain practice
 files for assessor-facing requirement text and evidence lists:
 
-- Configuration Management (CM) — `references/domains/cm-configuration-mgmt.md`
-- System and Information Integrity (SI) —
+- Configuration Management (CM): `references/domains/cm-configuration-mgmt.md`
+- System and Information Integrity (SI):
   `references/domains/si-system-information-integrity.md`
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC):
   `references/domains/sc-system-comms.md`
-- Identification and Authentication (IA) —
+- Identification and Authentication (IA):
   `references/domains/ia-identification-auth.md`
-- Access Control (AC) — `references/domains/ac-access-control.md`
-- Audit and Accountability (AU) — `references/domains/au-audit.md`
-- Media Protection (MP) — `references/domains/mp-media-protection.md`
+- Access Control (AC): `references/domains/ac-access-control.md`
+- Audit and Accountability (AU): `references/domains/au-audit.md`
+- Media Protection (MP): `references/domains/mp-media-protection.md`
 
 For FedRAMP Moderate inheritance relevant when the Intune, SCCM,
 or Defender management planes are operated by a FedRAMP-

@@ -36,7 +36,7 @@ expected_recommendation: |
   admin plane), the GovCloud environment configuration, any endpoint that
   accesses the CUI plane, and identity/access pathways into that plane.
   Corporate IT (email, HR systems, finance) is out of scope IF isolated
-  from the CUI plane — the contractor should document this enclave
+  from the CUI plane. The contractor should document this enclave
   boundary in the System Security Plan.
 
 evaluator_notes: |

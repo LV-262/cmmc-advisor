@@ -46,7 +46,7 @@ surface back to its practice anchors.
 
 Files currently planned in `references/modern-it/endpoints/`:
 
-- **`README.md`** (this file) — hub, capability-to-practice
+- **`README.md`** (this file). Hub, capability-to-practice
   crosswalk, and the capability-versus-product convention. The
   hub is named `README.md` rather than `endpoints-overview.md`
   because the SKILL.md knowledge-base router accepts any file
@@ -54,11 +54,11 @@ Files currently planned in `references/modern-it/endpoints/`:
   automatically discoverable when a reader browses the
   directory. The SKILL.md routing table carries a first-class
   row pointing at this file.
-- **`macos-fleet.md`** — macOS endpoint capability patterns
+- **`macos-fleet.md`.** macOS endpoint capability patterns
   mapped to CMMC.
-- **`windows-fleet.md`** — Windows endpoint capability patterns
+- **`windows-fleet.md`.** Windows endpoint capability patterns
   mapped to CMMC.
-- **`remote-work.md`** — VDI, DaaS, BYOD, mobile, travel, and
+- **`remote-work.md`.** VDI, DaaS, BYOD, mobile, travel, and
   Outside Continental United States (OCONUS) posture mapped to
   CMMC.
 
@@ -98,7 +98,7 @@ deliberate authoring choice, not a stylistic preference. The
 rationale matters, so it is stated in prose rather than buried in a
 note.
 
-The endpoint product landscape churns faster than compliance
+The endpoint product market churns faster than compliance
 guidance can track. A single calendar year routinely carries a
 vendor acquisition, an End-of-Life (EOL) announcement for a
 major management product, a FedRAMP Marketplace status change
@@ -139,7 +139,7 @@ sidebar format is:
 Four rules govern every sidebar:
 
 1. Dated. Every sidebar opens with a "as of YYYY-MM" stamp. A
-   reader six months later knows the product landscape may have
+   reader six months later knows the product market may have
    moved.
 2. Non-ranking. Vendors appear alphabetically, never ranked by
    fit. The skill is a map, not a review site.
@@ -164,7 +164,7 @@ specific FIPS-validated module, cite the CMVP certificate number
 directly and stamp the verification date. Example form:
 
 > **FIPS 140 status.** Apple CoreCrypto Kernel Module v14.0 is CMVP
-> certificate #4832 (verified 2026-04-20 on csrc.nist.gov). Module
+> certificate #4832 (verified 2026-04-21 on csrc.nist.gov). Module
 > status transitions (Active, Historical, Revoked) occur
 > continuously; verify before citing.
 
@@ -194,14 +194,14 @@ the next section.
 | Data-in-transit encryption from the endpoint | SC.L2-3.13.8, SC.L2-3.13.11 | L2 |
 | Patch management (operating system and application) | SI.L1-3.14.1, CM.L2-3.4.9 | L1/L2 |
 | Anti-malware capability on endpoints | SI.L1-3.14.2, SI.L1-3.14.4, SI.L1-3.14.5 | L1 |
-| Endpoint Detection and Response (EDR) — monitoring surface | SI.L2-3.14.3, SI.L2-3.14.6, SI.L2-3.14.7 | L2 |
+| Endpoint Detection and Response (EDR), monitoring surface | SI.L2-3.14.3, SI.L2-3.14.6, SI.L2-3.14.7 | L2 |
 | Multi-Factor Authentication (MFA) endpoint agent | IA.L2-3.5.3, IA.L2-3.5.4 | L2 |
 | Endpoint account identification and authentication | IA.L1-3.5.1, IA.L1-3.5.2 | L1 |
 | Screen lock and idle timeout | AC.L2-3.1.10, AC.L2-3.1.11 | L2 |
 | Remote wipe / device decommissioning | MP.L1-3.8.3, MP.L2-3.8.1 | L1/L2 |
 | Remote access posture (VPN, ZTNA, split-tunnel block) | AC.L2-3.1.12, AC.L2-3.1.13, SC.L2-3.13.7 | L2 |
 | External system connection gate (BYOD, contractor laptops) | AC.L1-3.1.20, AC.L2-3.1.21 | L1/L2 |
-| Mobile device management (MDM) — overall capability | CM.L2-3.4.1, CM.L2-3.4.2, CM.L2-3.4.6, AC.L2-3.1.18, AC.L2-3.1.19 | L2 |
+| Mobile device management (MDM), overall capability | CM.L2-3.4.1, CM.L2-3.4.2, CM.L2-3.4.6, AC.L2-3.1.18, AC.L2-3.1.19 | L2 |
 | Endpoint audit log forwarding to SIEM | AU.L2-3.3.1, AU.L2-3.3.2, AU.L2-3.3.5 | L2 |
 
 A capability that does not appear in this table is either out of

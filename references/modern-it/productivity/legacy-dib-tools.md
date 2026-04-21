@@ -79,7 +79,7 @@ Not covered:
   productivity for CUI in 2026 is a migration problem covered under
   the primary-suite files.
 - Generic protocols (FTP, SFTP, SMTP, S/MIME) and on-prem file
-  servers — see `references/domains/sc-system-comms.md`.
+  servers. See `references/domains/sc-system-comms.md`.
 - Generative-AI features bundled with the listed tools (Atlassian
   Intelligence, ServiceNow Now Assist, GitHub Copilot, Box AI).
   Covered under `references/modern-it/ai-services/` where model
@@ -97,7 +97,7 @@ same order:
    needs, and at what impact level?
 2. Does the tool carry any DoD Impact Level authorization on top of
    FedRAMP?
-3. What is the CUI-handling story — which categories of CUI is the
+3. What is the CUI-handling story: which categories of CUI is the
    tool appropriate for, and which are out of bounds?
 4. What is the migration path when the tool cannot handle the
    contractor's CUI scope directly?
@@ -156,8 +156,8 @@ Atlassian Commercial with CUI has a scope problem; options are (a)
 migrate to Atlassian Government Cloud via Atlassian's government-
 migration team, (b) migrate to Atlassian Data Center inside the
 contractor's own boundary (see next section), or (c) migrate off
-Atlassian to primary-suite-native equivalents — rarely feasible at
-engineering-team scale.
+Atlassian to primary-suite-native equivalents (rarely feasible at
+engineering-team scale).
 
 **Data flow and identity.** Federates identity via SAML 2.0 from
 the contractor's primary-suite IdP (Entra ID Government or Cloud
@@ -176,7 +176,7 @@ infrastructure (on-premises, Azure Government, AWS GovCloud, or
 hybrid); Atlassian licenses the software and compliance posture is
 the contractor's responsibility.
 
-**1. FedRAMP authorization.** None — Data Center is self-hosted.
+**1. FedRAMP authorization.** None; Data Center is self-hosted.
 FedRAMP inheritance flows from the underlying cloud platform when
 Data Center runs on Azure Government or AWS GovCloud; see
 `references/modern-it/cloud-platforms/azure-government.md` and
@@ -230,10 +230,7 @@ GCC is frequently cited as FedRAMP Moderate in compliance
 literature, but the current authorization is High. A contractor
 building an SSP cites the current FedRAMP Marketplace package
 listing and the verification date, not the widely-circulated
-Moderate claim. (The Phase 5d hub snapshot at
-`references/modern-it/productivity/README.md` still reads
-FedRAMP Moderate for ServiceNow GCC; hub correction is tracked
-under Slice S.)
+Moderate claim.
 
 **2. DoD Impact Level.** ServiceNow GCC carries **DoD Impact Level
 4 (IL4) Provisional Authorization** under CSP SRG v1r1 reciprocity
@@ -300,9 +297,9 @@ and High. It was designed by the FedRAMP program for low-risk SaaS
 systems where the stored data is itself considered low-risk and
 where the SaaS pattern does not warrant the full Moderate or High
 control catalog. GitHub's public reasoning for the Tailored
-authorization rests on the premise that "best practices suggest
-that source code contain no information — personally identifiable
-or otherwise — so it is seen as low risk to operations."
+authorization rests on the premise that best practices suggest
+source code should contain no information, personally identifiable
+or otherwise, so it is seen as low risk to operations.
 
 **Moderate authorization roadmap.** The GitHub Enterprise Cloud
 Trust Center (ghec.github.trust.page) describes FedRAMP Moderate
@@ -340,7 +337,7 @@ equivalent or IL4/IL5 boundary (next section); (b) move to Azure
 DevOps Services for Government inside Azure Government's FedRAMP
 High + IL5 boundary where tooling allows; (c) keep Enterprise Cloud
 for code-only scope and rigorously exclude CUI-beyond-source-code
-content — the most common DIB pattern.
+content. This is the most common DIB pattern.
 
 **Operator access, residency, and GitHub AE.** Enterprise Cloud
 operator access is governed by the Tailored authorization.
@@ -363,7 +360,7 @@ Government, AWS GovCloud, hybrid). Same product surface as
 Enterprise Cloud with architecture differences appropriate to
 self-hosted operation.
 
-**1. FedRAMP authorization.** None — self-hosted. Inheritance
+**1. FedRAMP authorization.** None; self-hosted. Inheritance
 flows from the underlying IaaS platform.
 
 **2. DoD Impact Level.** Determined by hosting. Enterprise Server
@@ -444,7 +441,7 @@ screening regime against Box's current authorization package.
 Box for Microsoft 365 enables Office co-authoring on files stored
 in Box; Box for Google Workspace enables Docs editing on files
 stored in Box. Verify each integration's FedRAMP scope before
-relying on it — not every integration path is inside the Box
+relying on it; not every integration path is inside the Box
 government package.
 
 ---
@@ -466,20 +463,20 @@ each pattern.
 ## Capability appendix — CMMC capability to legacy DIB tool
 
 Per hub Decision 1 canonical format, this appendix follows the
-hub row order. `—` in a row means the legacy DIB tool families do
-not provide that capability in a CUI-suitable way; the primary
+hub row order. A dash in a row means the legacy DIB tool families
+do not provide that capability in a CUI-suitable way; the primary
 productivity suite is expected to own that capability.
 
 | Productivity capability | Legacy DIB tool service |
 |---|---|
-| Email and calendar | — |
-| Chat and team messaging | — |
-| Meetings and video conferencing | — |
-| Document authoring | — |
-| Spreadsheets | — |
-| Presentations | — |
+| Email and calendar | - |
+| Chat and team messaging | - |
+| Meetings and video conferencing | - |
+| Document authoring | - |
+| Spreadsheets | - |
+| Presentations | - |
 | File storage and internal collaboration | Box for Government (FedRAMP High) |
-| Intranet and employee communications | — |
+| Intranet and employee communications | - |
 | Forms and workflow intake | ServiceNow GCC (FedRAMP High + IL4) |
 | Issue tracking and project management | Atlassian Jira (Government Cloud at FedRAMP Moderate); GitHub Issues (FedRAMP Tailored, source-code scope only) |
 | Knowledge base and wiki | Atlassian Confluence (Government Cloud at FedRAMP Moderate) |
@@ -542,24 +539,24 @@ and domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Access Control (AC) — `references/domains/ac-access-control.md`
+- Access Control (AC). `references/domains/ac-access-control.md`
   for account management, remote access, and session controls.
-- System and Information Integrity (SI) —
+- System and Information Integrity (SI).
   `references/domains/si-system-information-integrity.md` for
   vulnerability management and malware protection at the legacy-
   tool plane.
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC).
   `references/domains/sc-system-comms.md` for encryption and
   boundary protection.
-- Identification and Authentication (IA) —
+- Identification and Authentication (IA).
   `references/domains/ia-identification-auth.md` for identity
   federation from primary suite IdP.
-- Configuration Management (CM) —
+- Configuration Management (CM).
   `references/domains/cm-configuration-mgmt.md` for change
   control on legacy-tool configurations.
-- Audit and Accountability (AU) — `references/domains/au-audit.md`
+- Audit and Accountability (AU). `references/domains/au-audit.md`
   for audit logging and SIEM ingestion.
-- Media Protection (MP) —
+- Media Protection (MP).
   `references/domains/mp-media-protection.md` for retention and
   records management.
 
@@ -569,9 +566,9 @@ lists:
 
 > **Examples as of 2026-04:** The four vendor families named in
 > this file are the Decision 7 scope. Third-party alternatives
-> serving overlapping capability needs — source control hosts
+> serving overlapping capability needs (source control hosts
 > outside the four named vendors, ITSM platforms outside
-> ServiceNow, file-collaboration platforms outside Box — would
+> ServiceNow, file-collaboration platforms outside Box) would
 > require a deliberate scope expansion per Decision 7 rather than
 > an author's judgment call. This skill does not rank vendors.
 > Verify current FedRAMP Marketplace status and the current vendor
@@ -662,7 +659,7 @@ Government Cloud) are labeled "as of 2026-04, verify current
 vendor documentation before implementing." Roadmap claims
 (Atlassian "FedRAMP High + IL5 on the horizon"; GitHub Enterprise
 Cloud FedRAMP Moderate in progress) are roadmap, not current
-authorization — contractors do not cite roadmap in an SSP.
+authorization. Contractors do not cite roadmap in an SSP.
 
 Content verified 2026-04-21 against the vendor compliance pages
 named at top. Next re-verification at the corpus review cycle or

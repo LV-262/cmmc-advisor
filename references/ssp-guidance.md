@@ -8,7 +8,7 @@
 The System Security Plan is the single most important document in your
 CMMC assessment. It describes your system, your CUI boundary, and how you
 implement each of the 110 Level 2 security practices. Assessors use your
-SSP as the roadmap for the entire assessment — if the SSP is incomplete
+SSP as the roadmap for the entire assessment. If the SSP is incomplete
 or inaccurate, the assessment stalls before it starts.
 
 The SSP is not a compliance artifact to be written at the end. It is a
@@ -49,7 +49,7 @@ https://csrc.nist.gov/files/pubs/sp/800/171/r2/upd1/final/docs/cui-ssp-template-
 | System owner | The individual accountable for the system |
 | System description | What the system does and its purpose |
 | Information types | FCI, CUI, CUI categories handled |
-| System environment | Cloud, on-premises, hybrid — the physical and logical environment |
+| System environment | Cloud, on-premises, hybrid; the physical and logical environment |
 | System status | Operational, under development, undergoing modification |
 
 ### 2. System Boundary
@@ -76,7 +76,7 @@ This is where scoping decisions are documented. Include:
 |------|------------------|
 | System Security Officer | Name, contact, responsibilities |
 | System Administrator | Name, contact, responsibilities |
-| Authorizing Official / Senior Leader | Name, contact — the person who signs the affirmation |
+| Authorizing Official / Senior Leader | Name, contact; the person who signs the affirmation |
 | IT Security Staff | Names, roles, training status |
 
 **Common gap:** Listing generic role titles without named individuals.
@@ -189,7 +189,7 @@ See `evidence-collection.md` for domain-specific evidence guidance.
 
 The most frequently cited gap. Every SSP needs a network diagram showing
 the CUI boundary, network segments, key security devices, and
-interconnections. It does not need to be a work of art — it needs to be
+interconnections. It does not need to be a work of art. It needs to be
 accurate and current.
 
 **Fix:** Use any diagramming tool (draw.io, Visio, Lucidchart). Show
@@ -260,7 +260,7 @@ The SSP is not a one-time document. It requires ongoing maintenance:
 
 **Tip:** Tie SSP updates to your change management process. If a change
 request modifies the CUI environment, the SSP update is part of the
-change — not a separate task to remember later.
+change, not a separate task to remember later.
 
 ---
 
@@ -278,7 +278,7 @@ Several approaches exist for maintaining your SSP:
 
 - **OSCAL-based:** Machine-readable SSP using NIST's Open Security Controls
   Assessment Language. Enables automated validation and continuous
-  monitoring integration. Emerging approach — not required but future-aligned.
+  monitoring integration. Emerging approach; not required but future-aligned.
 
 Choose the approach that matches your organization's size, budget, and
 technical capability. A well-maintained Word document beats a neglected

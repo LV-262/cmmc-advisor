@@ -29,17 +29,17 @@ authorization detail per Phase 5 hub Decision 2.
 
 Three providers serve three distinct model ecosystems:
 
-- **Amazon Bedrock (AWS GovCloud)** — FedRAMP High plus DoD
+- **Amazon Bedrock (AWS GovCloud).** FedRAMP High plus DoD
   IL4/IL5 authorization covering a subset of Anthropic, Amazon,
   and Meta models. The authorization route via AWS GovCloud
   gives Claude access at IL5 without committing to Azure or
   Google Cloud.
-- **Azure OpenAI Service (Azure Government)** — FedRAMP High
+- **Azure OpenAI Service (Azure Government).** FedRAMP High
   plus DoD IL4/IL5 authorization covering OpenAI models (GPT-
   4o, GPT-4.1 series, GPT-5.1, o-series, embeddings). Natural
   pair for M365 GCC High contractors. Also holds a Top Secret
   authorization (out of CMMC L2 scope).
-- **Vertex AI (Google Cloud Assured Workloads)** — FedRAMP High
+- **Vertex AI (Google Cloud Assured Workloads).** FedRAMP High
   plus DoD IL2 authorization at the AI layer. Covers Claude
   models plus Google's Gemini family when configured in an
   Assured Workloads environment. IL5 is roadmap.
@@ -78,9 +78,9 @@ Not covered:
   Vertex AI. These are out of scope for CUI; migration paths
   noted inline per-service.
 - Self-hosted AI inference patterns (Llama on contractor GPUs,
-  open-weight models on GovCloud EC2, air-gapped deployments) —
+  open-weight models on GovCloud EC2, air-gapped deployments),
   covered in `self-hosted-ai.md`.
-- AI developer tools (Claude Code, Copilot, Cursor) — covered
+- AI developer tools (Claude Code, Copilot, Cursor), covered
   in `ai-dev-tools.md`.
 - Top Secret / IL6 cloud AI (Azure OpenAI in Azure Government
   Top Secret, January 2025 authorization). Out of CMMC L2
@@ -163,7 +163,7 @@ The authorization was announced May 2025 per AWS Public Sector
 blog
 (aws.amazon.com/blogs/publicsector/accelerating-government-innovation-amazon-bedrock-models-get-fedramp-high-and-dod-il-4-5-approval-in-aws-govcloud-us/).
 Commercial AWS Bedrock (non-GovCloud) carries FedRAMP High on
-the AWS commercial boundary with IL2 reciprocity — not
+the AWS commercial boundary with IL2 reciprocity, not
 appropriate for DFARS 7012 CUI work.
 
 **Models in GovCloud scope (verified 2026-04-21 via AWS GovCloud
@@ -264,9 +264,9 @@ Provisional Authorization** by the Defense Information Systems
 Agency (DISA) in September 2024 per the same blog's editor's
 note. Commercial Azure OpenAI (on Azure commercial) carries
 FedRAMP High on the Azure commercial boundary with IL2
-reciprocity — not appropriate for DFARS 7012 CUI.
+reciprocity, not appropriate for DFARS 7012 CUI.
 
-Additionally, Azure OpenAI (including GPT-4o) received a
+Azure OpenAI (including GPT-4o) also received a
 Top Secret authorization for use in Azure Government Top Secret
 as of January 2025 per Defense Scoop reporting. Top Secret / IL6
 is outside CMMC L2 scope; contractors with TS workloads work
@@ -317,7 +317,7 @@ SSP update reflecting the model-version transition.
 - Deployment types: Data Zone Standard (an Azure Government
   deployment option that routes traffic within the Government
   data boundary for higher throughput); Data Zone Provisioned
-  managed (purchases PTUs — Provisioned Throughput Units — across
+  managed (purchases PTUs, Provisioned Throughput Units, across
   Azure Government infrastructure); Standard and Provisioned
   managed (regional deployment patterns). Per-model deployment-
   type availability varies; see the deployment-types guide at
@@ -381,13 +381,13 @@ Vertex AI IL5 becomes available.
 **Models in Vertex AI Assured Workloads FedRAMP High scope
 (verified 2026-04-21).**
 
-- **Anthropic Claude** — Claude 3.7 Sonnet at the April 2025
+- **Anthropic Claude.** Claude 3.7 Sonnet at the April 2025
   announcement ("Access the complete Claude model family,
   including Claude 3.7 Sonnet"). Claude 4, 4.5 Sonnet and
   related newer Claude models on Vertex AI: verify current
   availability at the Vertex AI Model Garden and Google Cloud
   Assured Workloads release notes before citing in an SSP.
-- **Google Gemini family** — Gemini models are accessible on
+- **Google Gemini family.** Gemini models are accessible on
   Vertex AI; per-model Assured Workloads FedRAMP High coverage
   updates run through the Google Cloud Assured Workloads
   release notes at `cloud.google.com/assured-workloads/docs/release-notes`.
@@ -518,7 +518,7 @@ hub's three-column crosswalk.
 | Multimodal (text + image) | Claude 3.7 Sonnet, Sonnet 4.5 (Bedrock GovCloud); GPT-4o, GPT-4.1 (Azure OpenAI Government); Claude 3.7 + Gemini multimodal (Vertex AI Assured Workloads) |
 | Reasoning models | Claude Sonnet 4.5 (Bedrock GovCloud); o3-mini, GPT-5.1 (Azure OpenAI Government); Claude via Vertex AI (Assured Workloads) |
 | Structured output and tool-use | Claude (Bedrock); GPT-4o / GPT-4.1 / GPT-5.1 (Azure OpenAI Government); Claude + Gemini (Vertex AI Assured Workloads) |
-| Fine-tuning | Bedrock Custom Models (GovCloud — verify current per-model fine-tuning availability); Azure OpenAI fine-tuning (Government — verify current scope); Vertex AI Tuning (Assured Workloads) |
+| Fine-tuning | Bedrock Custom Models (GovCloud; verify current per-model fine-tuning availability); Azure OpenAI fine-tuning (Government; verify current scope); Vertex AI Tuning (Assured Workloads) |
 | Retrieval-augmented generation (RAG) | Bedrock Knowledge Bases (GovCloud); Azure AI Search + Azure OpenAI (Government); Vertex AI Search + RAG Engine (Assured Workloads) |
 | Agent orchestration | Bedrock Agents (GovCloud); Azure AI Agent Service (Government); Vertex AI Agent Engine (Assured Workloads, Preview at 2026-04) |
 | Content safety and guardrails | Bedrock Guardrails (GovCloud); Azure AI Content Safety (Government); Vertex AI Safety (Assured Workloads) |
@@ -561,19 +561,19 @@ files and domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Access Control (AC) — `references/domains/ac-access-control.md`
+- Access Control (AC). `references/domains/ac-access-control.md`
   for account management on AI-service surfaces and identity
   federation.
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC).
   `references/domains/sc-system-comms.md` for encryption in
   transit to AI endpoints and at rest in prompt caches.
-- Configuration Management (CM) —
+- Configuration Management (CM).
   `references/domains/cm-configuration-mgmt.md` for change
   control on model-version transitions and service feature
   additions.
-- Audit and Accountability (AU) —
+- Audit and Accountability (AU).
   `references/domains/au-audit.md` for model invocation logs.
-- System and Information Integrity (SI) —
+- System and Information Integrity (SI).
   `references/domains/si-system-information-integrity.md` for
   guardrail and content-safety monitoring.
 

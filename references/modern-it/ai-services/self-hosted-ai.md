@@ -17,7 +17,7 @@
 
 This file covers self-hosted AI patterns for defense contractors
 where managed FedRAMP AI services (Bedrock GovCloud, Azure
-OpenAI Government, Vertex AI Assured Workloads — see
+OpenAI Government, Vertex AI Assured Workloads; see
 `fedramp-ai-services.md`) do not fit the workload. Three patterns:
 Coder as a self-hosted cloud development environment (CDE) for
 AI-adjacent development workflow; on-premises or contractor-
@@ -50,17 +50,17 @@ authorization that contractor-authored boundaries inherit from.
 
 Covered:
 
-- **Coder** — the self-hosted Cloud Development Environment
+- **Coder.** The self-hosted Cloud Development Environment
   (CDE) platform deployed on FedRAMP-authorized IaaS or on-
   premises, providing managed workspaces for developers working
   on CUI-containing code or AI-augmented workflows.
-- **On-premises LLM inference** — open-weight foundation models
+- **On-premises LLM inference.** Open-weight foundation models
   (Meta Llama, Mistral AI, Qwen, DeepSeek, Microsoft Phi,
   Google Gemma) deployed on contractor-owned GPUs (on-premises
   data center, colocated hardware, or contractor-authored
   IaaS boundary). Inference serving via vLLM, TGI, llama.cpp,
   Triton, or contractor-authored runtimes.
-- **Air-gapped deployments** — fully disconnected-from-the-
+- **Air-gapped deployments.** Fully disconnected-from-the-
   internet AI infrastructure for classified-adjacent CUI, ITAR-
   controlled technical data, or contract terms prohibiting any
   third-party cloud routing. On-premises GPU clusters with air-
@@ -457,7 +457,7 @@ Per hub Decision 1 canonical format.
 
 | AI capability | Self-hosted pattern |
 |---|---|
-| Frontier-capability text generation | Limited — open-weight frontier gap exists versus Claude 4.5, GPT-5.1, Gemini frontier. Llama 3.3 70B or Llama 4 70B is the practical self-hosted frontier as of 2026-04 |
+| Frontier-capability text generation | Limited; open-weight frontier gap exists versus Claude 4.5, GPT-5.1, Gemini frontier. Llama 3.3 70B or Llama 4 70B is the practical self-hosted frontier as of 2026-04 |
 | Small-model text generation | Llama 3 8B, Mistral 7B, Phi family, Gemma family on contractor GPUs or even CPUs for small workloads |
 | Code generation | Code Llama, DeepSeek-Coder, StarCoder, Qwen-Coder on contractor GPUs |
 | Text embedding | Sentence-Transformers (BAAI BGE, E5, Nomic Embed), Instructor models on contractor GPUs or CPUs |
@@ -510,27 +510,27 @@ and domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Access Control (AC) — `references/domains/ac-access-control.md`
+- Access Control (AC). `references/domains/ac-access-control.md`
   for workspace identity federation and inference-endpoint
   access control.
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC).
   `references/domains/sc-system-comms.md` for encryption in
   transit (workspace connection, inference API) and at rest
   (model weights, fine-tune artifacts, prompt caches).
-- Configuration Management (CM) —
+- Configuration Management (CM).
   `references/domains/cm-configuration-mgmt.md` for change
   control on model updates, runtime updates, and workspace
   image revisions.
-- Physical Protection (PE) —
+- Physical Protection (PE).
   `references/domains/pe-physical-protection.md` for air-gapped
   facility controls.
-- Personnel Security (PS) —
+- Personnel Security (PS).
   `references/domains/ps-personnel-security.md` for air-gapped
   operator screening.
-- Audit and Accountability (AU) —
+- Audit and Accountability (AU).
   `references/domains/au-audit.md` for inference audit and
   workspace audit.
-- Media Protection (MP) —
+- Media Protection (MP).
   `references/domains/mp-media-protection.md` for model-weight
   media handling during air-gap transfer.
 
@@ -644,7 +644,7 @@ Versioning policy:
   hardware support). Feature-level claims decay fastest.
 - Hardware acceleration vendor releases (NVIDIA, AMD, Intel)
   introduce new capabilities that self-hosted deployments can
-  leverage. Hardware-specific guidance is deferred to the
+  use. Hardware-specific guidance is deferred to the
   contractor's infrastructure team.
 - Model licensing terms can change (Meta has updated the Llama
   license multiple times; Mistral adjusts commercial licensing

@@ -24,7 +24,7 @@ POA&Ms are **not permitted** for Level 1 self-assessments. All 17 practices
 must be MET at the time of the annual self-assessment affirmation.
 
 If you cannot meet all 17 Level 1 practices, you cannot achieve Level 1
-certification. These are basic cyber hygiene — there is no conditional path.
+certification. These are basic cyber hygiene; there is no conditional path.
 
 ### Level 2
 
@@ -35,9 +35,12 @@ POA&Ms are permitted under strict conditions:
 2. **Only non-critical practices:** Practices that carry a weight of 1 point
    can be placed on a POA&M. Higher-weighted practices must be fully met.
 3. **One exception:** SC.L2-3.13.11 (CUI encryption) can appear on a POA&M
-   if encryption exists but is not FIPS-validated. This is a 3-point item
-   but has a specific carve-out because FIPS validation procurement timelines
-   can be long.
+   if encryption exists but is not FIPS-validated. Per the DoD Assessment
+   Methodology v1.2.1, SC.L2-3.13.11 is a 5-point practice with a partial-
+   credit structure: full implementation is 5 points; encryption present
+   but not FIPS-validated is the 3-point-deduction state that qualifies
+   for this POA&M carve-out. The carve-out exists because FIPS validation
+   procurement timelines can be long.
 4. **180-day closeout deadline:** All POA&M items must be fully remediated
    within 180 days of receiving Conditional Certification.
 5. **Closeout assessment required:** The C3PAO must conduct a closeout
@@ -48,7 +51,7 @@ POA&Ms are permitted under strict conditions:
 POA&Ms are permitted under the same basic structure as Level 2, but the
 closeout assessment is conducted by DIBCAC (government-led), not a C3PAO.
 
-> Source: 32 CFR 170.21 — POA&M Closeout; 32 CFR 170.23 — Conditional
+> Source: 32 CFR 170.21, POA&M Closeout; 32 CFR 170.23, Conditional
 > Certification Requirements
 
 ---
@@ -59,15 +62,15 @@ Certain practices are designated as critical and **must be fully implemented
 at the time of assessment.** These cannot be deferred.
 
 The general principle: practices that represent fundamental security
-capabilities — the controls without which CUI protection is meaningfully
-compromised — cannot be deferred. The specific list is defined in the
+capabilities (the controls without which CUI protection is meaningfully
+compromised) cannot be deferred. The specific list is defined in the
 CMMC Assessment Guide, but the categories include:
 
 - **Practices with scoring weights greater than 1 point** (with the
   SC.L2-3.13.11 exception noted above)
-- **Practices that are prerequisites for other controls** — if deferring
+- **Practices that are prerequisites for other controls.** If deferring
   one practice undermines the effectiveness of others, it cannot be deferred
-- **Practices related to the core confidentiality of CUI** — encryption
+- **Practices related to the core confidentiality of CUI.** Encryption
   at rest and in transit, access controls, authentication mechanisms
 
 **Practical guidance:** Do not plan your compliance strategy around putting
@@ -193,7 +196,7 @@ Each POA&M entry should contain:
    remediation, not after.
 4. **Schedule the closeout assessment early.** C3PAO availability is not
    guaranteed. Schedule the closeout assessment as soon as you project
-   your remediation will be complete — do not wait until Day 175.
+   your remediation will be complete. Do not wait until Day 175.
 
 ---
 

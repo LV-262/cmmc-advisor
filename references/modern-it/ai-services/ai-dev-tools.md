@@ -13,8 +13,8 @@
 
 ## Overview
 
-This file covers AI developer tools — IDE-integrated AI coding
-assistants — scoped against the CUI boundary question at the
+This file covers AI developer tools (IDE-integrated AI coding
+assistants) scoped against the CUI boundary question at the
 dev-tool layer, distinct from the model-service authorization
 covered in `fedramp-ai-services.md` and `self-hosted-ai.md`. Per
 hub Decision 6, AI dev tools sit one layer above the prompt-
@@ -24,22 +24,22 @@ context collection, telemetry, and cache layer.
 
 Five tools in scope per hub Decision 7:
 
-- **Claude Code** (Anthropic) — agentic coding system. Configurable
+- **Claude Code** (Anthropic). Agentic coding system. Configurable
   backend: direct Anthropic API, Amazon Bedrock (including
   GovCloud), or Google Vertex AI. Dev-tool CUI boundary depends
   on which backend the contractor configures.
-- **GitHub Copilot Enterprise** (Microsoft/GitHub) — IDE
+- **GitHub Copilot Enterprise** (Microsoft/GitHub). IDE
   assistant. Rides on GitHub Enterprise Cloud authorization
   (FedRAMP Tailored) with Azure OpenAI Government as the
   federal-customer model backend option.
-- **Cursor** (Anysphere) — IDE (VS Code fork) with server-side
+- **Cursor** (Anysphere). IDE (VS Code fork) with server-side
   prompt building. SOC 2 Type II, not FedRAMP-authorized. Cannot
   direct-route to enterprise backends; Cursor's servers are
   always in the prompt path.
-- **Windsurf** (Codeium) — IDE assistant with cloud-hosted
+- **Windsurf** (Codeium). IDE assistant with cloud-hosted
   control plane. Enterprise offerings exist but FedRAMP
   authorization is not established.
-- **Continue** (Continue Dev) — open-source AI coding assistant.
+- **Continue** (Continue Dev). Open-source AI coding assistant.
   Self-hostable control plane; backend is contractor-configured.
 
 **The distinguishing axis is not model capability.** All five tools
@@ -54,9 +54,9 @@ servers in the path.
 Read this file alongside the Phase 5 AI hub at
 `references/modern-it/ai-services/README.md` (Decisions 5 and 6
 define the two-layer CUI boundary),
-`fedramp-ai-services.md` (Slice U — the backend options for
+`fedramp-ai-services.md` (Slice U: the backend options for
 FedRAMP-authorized model routing), and
-`self-hosted-ai.md` (Slice V — Coder as a workspace containment
+`self-hosted-ai.md` (Slice V: Coder as a workspace containment
 adjacency and on-prem LLM as a backend option).
 
 ---
@@ -327,10 +327,11 @@ concerns:
   OpenAI, Anthropic, Vertex commercial, xAI) are commercial
   services; none are in a FedRAMP-authorized boundary for DIB
   CUI use.
-- **Privacy Mode.** Cursor's Privacy Mode guarantees model
-  providers do not store code data or use it for training.
-  This is a contractual guarantee, not a FedRAMP authorization;
-  it does not satisfy DFARS 7012 equivalence.
+- **Privacy Mode.** Cursor states that its Privacy Mode ensures
+  model providers do not store code data or use it for training
+  (per cursor.com/security). That is a contractual commitment,
+  not a FedRAMP authorization; it does not satisfy DFARS 7012
+  equivalence.
 
 **4. Migration path when fit is no (current state).** A contractor
 using Cursor for CUI work has a scope problem, not a
@@ -463,8 +464,8 @@ five tools:
 |---|---|---|---|
 | Claude Code | Not FedRAMP-authorized; endpoint-local with vendor telemetry by default | Bedrock (incl. GovCloud) or Vertex AI supported | Yes, when configured with FedRAMP-authorized backend and telemetry scoped |
 | GitHub Copilot Enterprise | FedRAMP Tailored via GHEC parent (October 2025 scope update) | Azure OpenAI Government natural pairing | Yes, for Tailored-scope source code; not for CUI-beyond-source-code |
-| Cursor | SOC 2 Type II; NOT FedRAMP | Cannot direct-route; Cursor server in prompt path | No — architectural blocker at 2026-04-21 |
-| Windsurf (Codeium) | SOC 2 Type II; not FedRAMP-authorized at 2026-04-21 | Cloud-hosted control plane; enterprise options vary | Default: no — verify current enterprise-tier posture |
+| Cursor | SOC 2 Type II; NOT FedRAMP | Cannot direct-route; Cursor server in prompt path | No; architectural blocker at 2026-04-21 |
+| Windsurf (Codeium) | SOC 2 Type II; not FedRAMP-authorized at 2026-04-21 | Cloud-hosted control plane; enterprise options vary | Default no; verify current enterprise-tier posture |
 | Continue | Self-hosted; no vendor control plane in prompt path | Contractor-configured (any backend) | Yes, with FedRAMP-authorized or self-hosted backend |
 
 **Reading the summary.** Three tools can fit CUI workflow at
@@ -563,22 +564,22 @@ domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Access Control (AC) — `references/domains/ac-access-control.md`
+- Access Control (AC). `references/domains/ac-access-control.md`
   for dev-tool session and workspace-scope access control.
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC).
   `references/domains/sc-system-comms.md` for encryption-in-
   transit from dev tool to backend.
-- Configuration Management (CM) —
+- Configuration Management (CM).
   `references/domains/cm-configuration-mgmt.md` for change
   control on dev-tool version and configuration updates.
-- Audit and Accountability (AU) —
+- Audit and Accountability (AU).
   `references/domains/au-audit.md` for dev-tool telemetry and
   workspace audit export to SIEM.
-- System and Information Integrity (SI) —
+- System and Information Integrity (SI).
   `references/domains/si-system-information-integrity.md` for
   dev-tool vulnerability management and supply-chain discipline
   (open-source dependencies, extension marketplace exposure).
-- Awareness and Training (AT) —
+- Awareness and Training (AT).
   `references/domains/at-awareness-training.md` for developer
   training on CUI-boundary discipline when using AI dev tools
   (prompt content, workspace scope, tool-use operations).

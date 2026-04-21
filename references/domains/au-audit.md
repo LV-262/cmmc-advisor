@@ -6,9 +6,9 @@
 
 Audit and Accountability ensures that system activities are logged,
 protected, reviewed, and retained. This domain has 9 practices, all at
-Level 2. No Level 1 audit practices exist — meaning organizations that
+Level 2. No Level 1 audit practices exist. Organizations that
 only handle FCI (Level 1) have no audit logging requirements, but any
-organization handling CUI must implement comprehensive audit capabilities.
+organization handling CUI must implement full audit capabilities.
 
 Without effective audit logging, you cannot detect unauthorized access,
 investigate incidents, or prove to assessors that your other controls
@@ -47,7 +47,7 @@ assessors that your controls are operational.
 
 **Common mistakes:**
 - Only logging some systems (workstations log but servers do not)
-- No centralized log collection — logs only on individual systems
+- No centralized log collection (logs only on individual systems)
 - Insufficient event types logged (only login events, missing admin actions)
 
 **Modern IT note:** See
@@ -77,7 +77,7 @@ event.
 
 **Implementation guidance:**
 - Ensure all audit log entries include the user identity (unique user ID)
-- Prohibit shared accounts — actions under shared accounts cannot be
+- Prohibit shared accounts. Actions under shared accounts cannot be
   attributed to individuals
 - Correlate logs across systems using a common user identifier
 - Implement user activity monitoring for CUI access
@@ -111,7 +111,7 @@ based on experience and changing threats.
   escalation, after-hours access, large data transfers)
 - Assign responsibility for log review to specific personnel
 - Document review findings and any actions taken
-- Periodically assess whether the right events are being logged — add
+- Periodically assess whether the right events are being logged, adding
   new event types as threats evolve
 
 **Evidence to collect:**
@@ -150,7 +150,7 @@ failures ensures you know immediately when your audit trail is broken.
 - Response procedures for logging failures
 
 **Common mistakes:**
-- No alerting configured — log failures go unnoticed
+- No alerting configured (log failures go unnoticed)
 - Alerts configured but sent to an unmonitored mailbox
 - Log storage fills up silently, overwriting oldest logs
 
@@ -169,7 +169,7 @@ logs cannot.
 
 **Implementation guidance:**
 - Use a SIEM platform to correlate logs across sources
-- Synchronize time across all systems (NTP) — logs with different
+- Synchronize time across all systems (NTP). Logs with different
   timestamps cannot be correlated accurately
 - Create correlation rules for common attack patterns
 - Maintain the ability to query historical logs for investigations
@@ -182,7 +182,7 @@ logs cannot.
 
 **Common mistakes:**
 - Logs collected centrally but no correlation rules defined
-- Time not synchronized — logs are seconds or minutes apart, making
+- Time not synchronized. Logs are seconds or minutes apart, making
   correlation unreliable
 - Historical logs not searchable (archived to cold storage without
   query capability)
@@ -212,7 +212,7 @@ logs actionable for both routine review and incident investigation.
 - Report distribution records
 
 **Common mistakes:**
-- Raw logs only — no dashboards, reports, or summarization
+- Raw logs only (no dashboards, reports, or summarization)
 - Reports generated but never reviewed
 - No ability to perform ad-hoc queries when an incident occurs
 
@@ -264,7 +264,7 @@ the CUI they document.
 - Restrict access to log repositories to authorized security personnel only
 - Implement write-once or append-only storage for audit logs where possible
 - Encrypt logs in transit (to SIEM) and at rest (in storage)
-- Separate log storage from the systems being monitored — a compromised
+- Separate log storage from the systems being monitored. A compromised
   server should not have access to its own log repository
 - Back up audit logs
 
@@ -323,7 +323,7 @@ trustworthy as your least trustworthy administrator.
 **Assessment priority:** Start with AU.L2-3.3.1 (system audit) and
 AU.L2-3.3.7 (time source). If logs do not exist or timestamps are
 inconsistent, every other audit practice is undermined. Then focus on
-AU.L2-3.3.8 (audit protection) — logs that can be tampered with are
+AU.L2-3.3.8 (audit protection). Logs that can be tampered with are
 not trustworthy.
 
 **Key relationships:**

@@ -48,7 +48,7 @@ depends on current authorization state:
 1. Verify against the primary source (vendor compliance page,
    FedRAMP Marketplace package entry, Federal Register rule text,
    NIST CSRC publication) at the time of authoring.
-2. Stamp the verification date inline in the content — the corpus
+2. Stamp the verification date inline in the content. The corpus
    convention is "verified YYYY-MM-DD via [URL]".
 3. Label claims that decay faster than the stamp can track as
    "as of YYYY-MM, verify current [source] before implementing."
@@ -142,7 +142,7 @@ macOS, remote work, or other modern technology stacks.
    - A clear description of what you added or changed
    - Which source documents support the changes
    - Whether this is a factual correction, new content, or content update
-5. **Maintainer review** — A maintainer will review for:
+5. **Maintainer review.** A maintainer will review for:
    - Source provenance (every claim has a citation)
    - Accuracy (claims match the cited sources)
    - Consistency (format matches existing content)
