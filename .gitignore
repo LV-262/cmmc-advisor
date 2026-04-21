@@ -11,3 +11,6 @@ Thumbs.db
 
 # Claude Code
 .claude/settings.local.json
+
+# Eval run artifacts (may contain full Claude responses)
+evals/results/

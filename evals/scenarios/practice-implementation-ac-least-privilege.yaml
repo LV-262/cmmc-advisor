@@ -1,0 +1,71 @@
+id: practice-implementation-ac-least-privilege
+title: Implementing AC.L2-3.1.5 least privilege on a Windows fleet
+category: practice-implementation
+
+prompt: |
+  Our compliance officer flagged AC.L2-3.1.5 (Least Privilege) as a gap
+  on our last internal assessment. We run a 120-person Windows fleet
+  managed through Microsoft Intune in GCC High, with Entra ID Government
+  for identity. Most of our engineers currently have local-admin rights
+  on their laptops because some of our internal tools need admin to
+  install. The CISO wants this closed before the C3PAO assessment in
+  four months.
+
+  How do we implement AC.L2-3.1.5 on this fleet without breaking the
+  engineer workflow? What evidence will the assessor want to see?
+
+required_terms:
+  - AC.L2-3.1.5
+  - least privilege
+  - Entra ID
+  - Intune
+  - Privileged Identity Management
+
+factual_claims_expected: true
+
+expected_recommendation: |
+  AC.L2-3.1.5 requires access and privileges to be limited to what
+  users need for their authorized roles. Removing blanket local-admin
+  from engineers requires a privilege model that distinguishes (a)
+  daily-use account with no admin, (b) on-demand elevation for the
+  narrow set of legitimately-admin-needing tasks, and (c) a documented
+  rationale for each admin exception.
+
+  On this fleet, the natural implementation path is:
+  1. Inventory current admin needs per tool. Many "needs admin"
+     claims turn out to be installation-only; the tool runs fine as
+     a non-admin user after install.
+  2. Deploy per-application privilege-elevation tooling inside Intune
+     (Windows LAPS for emergency local-admin; Microsoft Endpoint
+     Privilege Management or an equivalent per-app elevation tool for
+     daily work that needs just-in-time elevation).
+  3. Use Entra ID Government Privileged Identity Management (PIM) for
+     any cloud-resource administration: engineers request elevation
+     into the admin role for a bounded time window, with approval and
+     audit trail.
+  4. Document the exception list (applications that still need
+     standing admin) in the SSP with security-review justification.
+     Each exception gets a POA&M entry if the exception cannot be
+     eliminated before the assessment.
+
+  Evidence the assessor will look for:
+  - RBAC role definitions showing the separation between daily-use
+    accounts and admin accounts.
+  - PIM configuration showing just-in-time elevation with approval
+    workflow for privileged roles.
+  - Intune policy showing local-admin restriction on the fleet and
+    MEPM (or equivalent) per-app elevation rules.
+  - A list of standing-admin exceptions with justification and SSP
+    documentation.
+  - Audit log evidence showing elevation events being captured in
+    the SIEM (typically Azure Sentinel in Government).
+
+evaluator_notes: |
+  The answer must cite AC.L2-3.1.5 explicitly and distinguish it from
+  AC.L2-3.1.7 (privileged function auditing — a related but separate
+  practice). It should name Intune and Entra ID Government as the
+  implementation substrate (since the scenario specifies GCC High).
+  PIM should be named for cloud-admin roles. Windows LAPS and
+  just-in-time elevation tooling should be named for endpoint local-
+  admin. Enabler posture: the answer tells the CISO how to ship this
+  in four months, not why it is hard.

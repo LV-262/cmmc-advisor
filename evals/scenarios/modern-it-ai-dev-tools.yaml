@@ -1,0 +1,77 @@
+id: modern-it-ai-dev-tools
+title: Evaluating AI coding assistants for CUI development work
+category: modern-it
+
+prompt: |
+  Our developers want to use AI coding assistants on the CUI-
+  containing code for our DoD subcontract. They are asking for
+  Cursor, Claude Code, or GitHub Copilot. We run Microsoft 365
+  GCC High for productivity. What are the compliant options, and
+  what do we need to configure for each?
+
+required_terms:
+  - Bedrock GovCloud
+  - Azure OpenAI Government
+  - Cursor
+  - Claude Code
+  - GitHub Copilot
+  - workspace context
+
+factual_claims_expected: true
+
+expected_recommendation: |
+  Three named tools, three different compliance postures at
+  2026-04-21 verification:
+
+  **Cursor** is not appropriate for CUI workflow. Cursor's own
+  security page states the tool cannot direct-route to enterprise
+  backends — prompts are built on Cursor's AWS commercial servers
+  before any model call. That puts Cursor's commercial-cloud
+  infrastructure in the prompt path for CUI code, which is a scope
+  breach regardless of Privacy Mode configuration or the enterprise
+  model backend the contractor selects. Architectural blocker, not
+  configuration. Wait for a self-hosted deployment option; verify
+  current posture at cursor.com/security before any CUI use.
+
+  **Claude Code** is configurable. The direct-API backend
+  (api.anthropic.com) is not FedRAMP-authorized and is a scope
+  breach for CUI. Routed to Amazon Bedrock in AWS GovCloud,
+  inference rides on Bedrock's FedRAMP High + DoD IL4/IL5
+  authorization. Configure at the enterprise level so individual
+  developers cannot silently switch to direct-API routing. Disable
+  or route telemetry to a contractor-operated collector. Treat the
+  developer endpoint as a CUI asset.
+
+  **GitHub Copilot Enterprise** on GitHub Enterprise Cloud with
+  Azure OpenAI Government as the backend is the federal-customer
+  pairing. GHEC parent authorization is FedRAMP Tailored (Low-
+  Impact SaaS) scoped around source code as the low-risk data
+  type. This fits CUI source-code scope but not CUI-beyond-source-
+  code (attachments, issue bodies, arbitrary files) — that exceeds
+  Tailored's design intent.
+
+  Configuration requirements across all CUI-appropriate options:
+  - Model backend routed through FedRAMP-authorized path (Bedrock
+    GovCloud, Azure OpenAI Government, or Vertex AI Assured
+    Workloads).
+  - Identity federation from Entra ID Government (the GCC High
+    primary-suite IdP) into the dev-tool identity plane.
+  - Workspace-scope discipline: one CUI workspace per program,
+    separate from non-CUI workspaces.
+  - Telemetry control: disable telemetry or route to the
+    contractor's SIEM.
+  - Endpoint controls per the Windows fleet CUI-asset posture.
+
+  See `references/modern-it/ai-services/ai-dev-tools.md` for the
+  two-layer CUI boundary analysis.
+
+evaluator_notes: |
+  The answer must correctly classify Cursor as not CUI-appropriate
+  with the architectural reason (server-side prompt building —
+  Cursor's servers are always in the prompt path). Cursor Privacy
+  Mode should not be offered as a CUI solution. Claude Code backend
+  configuration (Bedrock vs direct API) must be distinguished. GHEC
+  Tailored scope limitation (source code only, not CUI-beyond-
+  source-code) should appear. Enabler posture: the answer gives
+  developers a path, not a blanket "no AI coding tools." Naming the
+  hub Decision 6 two-layer framing is a plus.
