@@ -161,8 +161,8 @@ certification outcomes live in `references/poam-management.md`.
   evidence attaches to the closure record
 - POA&M scoring rules, deferral eligibility, the 180-day closeout
   clock, the SC.L2-3.13.11 encryption carve-out, and worked examples
-  of effective versus ineffective entries are covered in the POA&M
-  reference named in Overview
+  of effective versus ineffective entries are covered in
+  `references/poam-management.md`
 
 **Evidence to collect:**
 
