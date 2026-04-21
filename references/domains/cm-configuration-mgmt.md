@@ -315,9 +315,14 @@ foundation. Then focus on CM.L2-3.4.6 and CM.L2-3.4.7 (least functionality)
 because reducing attack surface has immediate security impact.
 
 **Key relationships:**
-- CM baselines inform Security Assessment (CA) evaluations
-- CM change management generates Audit (AU) log entries
-- CM software restrictions relate to System and Information Integrity (SI)
-  malicious code protection
-- CM configuration enforcement supports all other domains by ensuring
-  systems are in a known-good state
+- CM baselines (CM.L2-3.4.1) inform Security Assessment (CA)
+  evaluations, specifically CA.L2-3.12.1 (periodic security
+  assessment) which uses the baseline as the evaluation reference
+- CM change management (CM.L2-3.4.3) generates Audit (AU) log
+  entries captured under AU.L2-3.3.1 (audit log creation)
+- CM software restrictions (CM.L2-3.4.8, CM.L2-3.4.9) relate to
+  System and Information Integrity (SI) malicious code protection
+  at SI.L1-3.14.2 (malicious code protection) and SI.L1-3.14.5
+  (periodic and real-time scanning)
+- CM configuration enforcement (CM.L2-3.4.2) supports all other
+  domains by ensuring systems are in a known-good state
