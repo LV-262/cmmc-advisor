@@ -262,8 +262,10 @@ In scope:
   Confluence, Jira Service Management).
 - Atlassian Data Center (self-hosted pattern; contractor owns
   full compliance posture).
-- ServiceNow Government Community Cloud (FedRAMP Moderate plus
-  DoD IL4 Provisional Authorization).
+- ServiceNow Government Community Cloud (FedRAMP High plus
+  DoD IL4 Provisional Authorization; initial FedRAMP High P-ATO
+  August 2019 per servicenow.com/company/trust/compliance.html,
+  verified 2026-04-21).
 - GitHub Enterprise Cloud (FedRAMP Tailored — note this is a
   distinct lower-scope baseline rather than FedRAMP Moderate or
   High; implications covered in the per-vendor file).
@@ -324,7 +326,7 @@ lives in the per-vendor files; this snapshot is tier-level only.
 | Google Workspace + Assured Controls Plus | FedRAMP High services + overlay | IL4-aligned | Appropriate for CUI under DFARS 7012 |
 | Atlassian Government Cloud | FedRAMP Moderate | n/a | CUI scenarios with agency agreement |
 | Atlassian Data Center (self-hosted) | Contractor-owned | Contractor-owned | Contractor holds full compliance; FIPS and boundary posture depend on hosting |
-| ServiceNow Government Community Cloud | FedRAMP Moderate | IL4 | Appropriate for CUI under DFARS 7012 |
+| ServiceNow Government Community Cloud | FedRAMP High | IL4 | Appropriate for CUI under DFARS 7012 |
 | GitHub Enterprise Cloud | FedRAMP Tailored | n/a | Source-code-only low-risk SaaS; not a general CUI file store |
 | GitHub Enterprise Server (self-hosted) | Contractor-owned | Contractor-owned | Contractor holds full compliance |
 | Box for Government | FedRAMP High | n/a directly | Appropriate for CUI file collaboration under DFARS 7012 |
@@ -451,9 +453,9 @@ use cases.
 automation for procurement or change management, and platform-
 as-a-service use cases are ServiceNow's strength.
 
-**When this fails.** ServiceNow GCC is FedRAMP Moderate with
-DoD IL4; extending into IL5 territory requires the DoD-specific
-path that is out of the standard GCC offering.
+**When this fails.** ServiceNow GCC is FedRAMP High plus DoD
+IL4; extending into IL5 territory requires ServiceNow's National
+Security Cloud offering rather than the standard GCC path.
 
 ### Pattern C: Primary suite plus GitHub Enterprise Cloud for code
 

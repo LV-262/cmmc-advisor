@@ -91,8 +91,7 @@ Not covered:
 - Google Workspace IL4 posture (handled via Assured Controls
   Plus rather than Assured Workloads). Productivity-suite
   posture lives in
-  `references/modern-it/productivity/google-workspace.md`
-  (pending).
+  `references/modern-it/productivity/google-workspace.md`.
 - Google Distributed Cloud air-gapped and Google Distributed
   Cloud air-gapped appliance for IL6 classified workloads.
   Separate on-premises infrastructure; outside commercial
@@ -883,8 +882,8 @@ a contractor running IL4 CUI across productivity and compute
 uses Assured Controls Plus for the Workspace side and Assured
 Workloads for the compute side. Integration happens through
 identity federation, not tenant merge. See
-`references/modern-it/productivity/google-workspace.md`
-(pending) for the productivity-plane treatment.
+`references/modern-it/productivity/google-workspace.md` for
+the productivity-plane treatment.
 
 **Cloud EKM (Cloud External Key Manager).** The Google Cloud
 service that holds key material with an external key

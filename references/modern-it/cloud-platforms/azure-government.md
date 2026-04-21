@@ -92,8 +92,7 @@ Not covered:
   workload-specific and outside CMMC L2 scope.
 - Microsoft 365 productivity suite posture. Exchange Online,
   SharePoint Online, Teams, and productivity suite compliance
-  live in `references/modern-it/productivity/microsoft-365-gcc.md`
-  (pending).
+  live in `references/modern-it/productivity/microsoft-365-gcc.md`.
 - The GCC versus GCC High versus Azure Government distinction at
   the Microsoft 365 productivity-plane level. Note that GCC and
   GCC High refer to Microsoft 365 productivity-plane tenancies

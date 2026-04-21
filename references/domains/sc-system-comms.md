@@ -266,6 +266,13 @@ be intercepted. Encryption ensures confidentiality during transmission.
 - FTP used instead of SFTP for file transfers
 - Encryption present but not FIPS-validated
 
+**Modern IT note:** See
+`modern-it/productivity/microsoft-365-gcc.md` and
+`modern-it/productivity/google-workspace.md` for data-in-transit
+posture across government productivity services (Exchange Online
+TLS plus S/MIME options; Gmail TLS plus Google Workspace Client-
+Side Encryption for CUI-cryptographic-isolation scenarios).
+
 ---
 
 ### SC.L2-3.13.9 — Network Disconnect

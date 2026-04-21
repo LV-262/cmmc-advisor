@@ -449,6 +449,17 @@ backups are not user-facing.
 - Backup media unmarked; recovery later cannot distinguish CUI
   backups from non-CUI
 
+**Modern IT note:** See
+`modern-it/productivity/microsoft-365-gcc.md` and
+`modern-it/productivity/google-workspace.md` for retention and
+records-management posture across government productivity suites
+(Microsoft Purview Retention plus Records Management on the
+Microsoft side; Google Workspace Vault retention plus holds on
+the Google side). These platform-native retention tools typically
+inherit the primary suite's FedRAMP authorization and reduce the
+contractor's backup-confidentiality SSP scope when the primary
+suite is the CUI system of record.
+
 ---
 
 ## Domain Summary
