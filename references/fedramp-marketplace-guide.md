@@ -13,16 +13,16 @@
 
 ## Overview
 
-This file is the practitioner guide to navigating the FedRAMP
+This file is the practitioner guide to searching the FedRAMP
 Marketplace for CMMC-aligned tooling decisions. Two kinds of
 guidance:
 
-- **How to search the Marketplace yourself** — the authoritative
+- **How to search the Marketplace yourself.** The authoritative
   source for FedRAMP authorization status is
   marketplace.fedramp.gov. This file teaches the practitioner
   query patterns that produce usable results rather than
   drowning in unfiltered listings.
-- **Curated category short-lists** — representative vendors per
+- **Curated category short-lists.** Representative vendors per
   capability category that are commonly authorized at FedRAMP
   Moderate or High. This is not a ranking and not an exhaustive
   catalog; it is a starting point for a contractor building a
@@ -96,15 +96,15 @@ search patterns:
 Understanding the status progression prevents citing an
 In-Process product as if it were authorized:
 
-- **Authorized** — the product holds a current authorization
+- **Authorized.** The product holds a current authorization
   (JAB P-ATO or Agency ATO) at the listed impact level. Safe to
   cite in an SSP.
-- **In Process** — the product is actively pursuing
+- **In Process.** The product is actively pursuing
   authorization. Not authorized yet; not cite-safe.
-- **Ready** — the product has completed the FedRAMP Ready
+- **Ready.** The product has completed the FedRAMP Ready
   milestone (meets technical readiness to pursue authorization)
   but does not yet have an authorization. Not cite-safe.
-- **Retired** or **Not Authorized** — the product has exited
+- **Retired** or **Not Authorized.** The product has exited
   the authorization track. Verify current status before any
   SSP reference.
 
@@ -127,11 +127,11 @@ to Operate. The two routes are operationally equivalent for
 contract-accepting purposes but reflect different authorization
 paths:
 
-- JAB P-ATO — the Joint Authorization Board (DoD, DHS, GSA CIOs)
+- JAB P-ATO. The Joint Authorization Board (DoD, DHS, GSA CIOs)
   issues a provisional authorization that any federal agency
-  can leverage.
-- Agency ATO — a specific federal agency issues the ATO; other
-  agencies may leverage under reciprocity or re-authorize for
+  can use.
+- Agency ATO. A specific federal agency issues the ATO; other
+  agencies may use it under reciprocity or re-authorize for
   their own use.
 
 **4. Keyword search.** The Marketplace search box handles
@@ -186,9 +186,9 @@ messaging for cross-organization CUI-containing communications.
 - Google Workspace native security (Gmail spam/phishing
   protection inherits Workspace Assured Controls Plus
   FedRAMP High authorization).
-- Proofpoint for Government — FedRAMP authorized per vendor
+- Proofpoint for Government. FedRAMP authorized per vendor
   trust page; verify current impact level and package scope.
-- Mimecast for Government — FedRAMP authorization roadmap has
+- Mimecast for Government. FedRAMP authorization roadmap has
   shifted over the years; verify current status at
   marketplace.fedramp.gov.
 
@@ -206,14 +206,14 @@ suite; managed file transfer for external CUI exchange.
 
 **Representative vendors.**
 
-- Box for Government — FedRAMP High authorized per
+- Box for Government. FedRAMP High authorized per
   `references/modern-it/productivity/legacy-dib-tools.md`.
-- Egnyte for Government — FedRAMP authorization status varies
+- Egnyte for Government. FedRAMP authorization status varies
   by package; verify current scope.
-- Axway / Globalscape / Kiteworks — MFT (Managed File Transfer)
+- Axway / Globalscape / Kiteworks. MFT (Managed File Transfer)
   platforms with FedRAMP packages; verify specific package
   scope for CUI-handling workflows.
-- Accellion / KiteworksLegacy — retired or transitioned
+- Accellion / KiteworksLegacy. Retired or transitioned
   offerings; verify current status before citing.
 
 **Gap note.** File collaboration is well-covered at FedRAMP
@@ -228,19 +228,19 @@ platforms; log aggregation and analytics; UEBA.
 
 **Representative vendors.**
 
-- Microsoft Sentinel — inherits Azure Government authorization;
+- Microsoft Sentinel. Inherits Azure Government authorization;
   FedRAMP High + IL4/IL5 in Azure Government scope.
-- Splunk Cloud Platform — FedRAMP High P-ATO achieved 2024 per
+- Splunk Cloud Platform. FedRAMP High P-ATO achieved 2024 per
   Splunk press release (splunk.com/en_us/newsroom/press-
   releases/2024/splunk-cloud-platform-attains-fedramp-high-
   authorization.html). Verify current package scope.
-- Google Chronicle / Google SecOps — inherits Google Cloud
+- Google Chronicle / Google SecOps. Inherits Google Cloud
   Assured Workloads; verify specific FedRAMP package scope.
-- Elastic — FedRAMP authorization via Elastic Cloud on AWS
+- Elastic. FedRAMP authorization via Elastic Cloud on AWS
   GovCloud; verify current package.
-- Rapid7 InsightIDR — FedRAMP authorization; verify current
+- Rapid7 InsightIDR. FedRAMP authorization; verify current
   impact level.
-- LogRhythm — FedRAMP authorization package; verify current
+- LogRhythm. FedRAMP authorization package; verify current
   status.
 
 **Gap note.** SIEM at FedRAMP High is better-supplied than some
@@ -255,20 +255,20 @@ deployed on CUI-adjacent endpoints.
 
 **Representative vendors.**
 
-- Microsoft Defender for Endpoint — bundled with M365 GCC High
+- Microsoft Defender for Endpoint. Bundled with M365 GCC High
   and Azure Government; inherits FedRAMP High + IL5.
-- CrowdStrike Falcon — FedRAMP authorization per CrowdStrike
+- CrowdStrike Falcon. FedRAMP authorization per CrowdStrike
   government trust documentation; verify current package scope
   (FedRAMP Moderate and High variants exist for different
   products in the Falcon suite).
-- SentinelOne — FedRAMP authorized; verify current package and
+- SentinelOne. FedRAMP authorized; verify current package and
   impact level at marketplace.fedramp.gov.
-- Palo Alto Networks Cortex XDR — FedRAMP authorization
+- Palo Alto Networks Cortex XDR. FedRAMP authorization
   coverage is partial across the Cortex product family;
   verify per-product scope.
-- Trellix (formerly McAfee Enterprise + FireEye) — FedRAMP
+- Trellix (formerly McAfee Enterprise + FireEye). FedRAMP
   authorization on specific products; verify current.
-- Tanium — FedRAMP authorized per vendor documentation;
+- Tanium. FedRAMP authorized per vendor documentation;
   verify current scope.
 
 **Gap note.** EDR at FedRAMP High is a known supply-constrained
@@ -283,11 +283,11 @@ network); configuration-drift detection; asset inventory.
 
 **Representative vendors.**
 
-- Tenable (Tenable.io, Tenable.sc) — FedRAMP authorization per
+- Tenable (Tenable.io, Tenable.sc). FedRAMP authorization per
   Tenable government pages; verify current package scope.
-- Qualys — FedRAMP authorization via Qualys Cloud Platform;
+- Qualys. FedRAMP authorization via Qualys Cloud Platform;
   verify current impact level.
-- Rapid7 (InsightVM, InsightAppSec) — FedRAMP authorization
+- Rapid7 (InsightVM, InsightAppSec). FedRAMP authorization
   per vendor documentation.
 
 **Gap note.** Core three vendors (Tenable, Qualys, Rapid7)
@@ -303,21 +303,21 @@ identity governance.
 
 **Representative vendors.**
 
-- Microsoft Entra ID Government — bundled with Azure Government
+- Microsoft Entra ID Government. Bundled with Azure Government
   and M365 GCC High; FedRAMP High + IL5.
-- Google Cloud Identity (Workspace ACP) — inherits Workspace
+- Google Cloud Identity (Workspace ACP). Inherits Workspace
   Assured Controls Plus authorization.
-- Okta for US Government — FedRAMP Moderate and High variants
+- Okta for US Government. FedRAMP Moderate and High variants
   at different package scopes; verify current.
-- Ping Identity for Government — FedRAMP authorization per
+- Ping Identity for Government. FedRAMP authorization per
   vendor page; verify current.
-- CyberArk — FedRAMP authorization on the Privilege Cloud
+- CyberArk. FedRAMP authorization on the Privilege Cloud
   product; verify current scope.
-- BeyondTrust — FedRAMP authorization on multiple products
+- BeyondTrust. FedRAMP authorization on multiple products
   including the October 2025 Identity Security Insights
   extension (beyondtrust.com/press/fedramp-identity-security-
   insights).
-- Saviynt — FedRAMP authorization; verify current package.
+- Saviynt. FedRAMP authorization; verify current package.
 
 **Gap note.** IAM/PAM at FedRAMP High is generally
 well-supplied, but specific feature gaps exist (for example,
@@ -333,16 +333,16 @@ labeling; data governance for CUI-marked content.
 
 **Representative vendors.**
 
-- Microsoft Purview — bundled with M365 GCC High; inherits GCC
+- Microsoft Purview. Bundled with M365 GCC High; inherits GCC
   High authorization.
-- Google Workspace DLP / Drive DLP — inherits Workspace ACP
+- Google Workspace DLP / Drive DLP. Inherits Workspace ACP
   authorization.
-- Proofpoint DLP — FedRAMP authorization via Proofpoint for
+- Proofpoint DLP. FedRAMP authorization via Proofpoint for
   Government; verify current package.
-- Forcepoint DLP — FedRAMP authorization; verify current.
-- Symantec / Broadcom DLP — FedRAMP authorization on specific
+- Forcepoint DLP. FedRAMP authorization; verify current.
+- Symantec / Broadcom DLP. FedRAMP authorization on specific
   products; verify current scope.
-- Netskope Cloud Firewall + DLP — FedRAMP authorization via
+- Netskope Cloud Firewall + DLP. FedRAMP authorization via
   Netskope Federal; verify current package.
 
 **Gap note.** Primary-suite-native DLP (Purview, Workspace DLP)
@@ -358,16 +358,16 @@ Access; cloud firewall; secure web gateway; CASB.
 
 **Representative vendors.**
 
-- Zscaler for Government — FedRAMP High authorization;
+- Zscaler for Government. FedRAMP High authorization;
   verify current package scope at marketplace.fedramp.gov.
-- Netskope Federal — FedRAMP authorization; verify current
+- Netskope Federal. FedRAMP authorization; verify current
   impact level.
-- Palo Alto Networks Prisma Access — FedRAMP authorization on
+- Palo Alto Networks Prisma Access. FedRAMP authorization on
   specific products; verify current.
-- Cisco Umbrella for Government — FedRAMP authorization.
-- Cloudflare Zero Trust for US Government — FedRAMP
+- Cisco Umbrella for Government. FedRAMP authorization.
+- Cloudflare Zero Trust for US Government. FedRAMP
   authorization; verify current package scope.
-- Microsoft Entra Private Access / Internet Access — bundled
+- Microsoft Entra Private Access / Internet Access. Bundled
   with Azure Government for certain configurations; verify
   current availability in the government tenancy.
 
@@ -384,13 +384,13 @@ immutable backup; disaster recovery orchestration.
 
 **Representative vendors.**
 
-- AWS Backup / Azure Backup / Google Cloud Backup — inherit
+- AWS Backup / Azure Backup / Google Cloud Backup. Inherit
   their respective cloud platform authorizations.
-- Rubrik — FedRAMP authorization on specific products; verify
+- Rubrik. FedRAMP authorization on specific products; verify
   current package.
-- Cohesity — FedRAMP authorization; verify current scope.
-- Veeam — FedRAMP authorization status varies; verify current.
-- Commvault — FedRAMP authorization; verify current package.
+- Cohesity. FedRAMP authorization; verify current scope.
+- Veeam. FedRAMP authorization status varies; verify current.
+- Commvault. FedRAMP authorization; verify current package.
 
 **Gap note.** Cloud-native backup (AWS/Azure/GCP) dominates
 FedRAMP-authorized backup for cloud workloads. Third-party
@@ -405,13 +405,13 @@ collection.
 
 **Representative vendors.**
 
-- ServiceNow GRC on ServiceNow GCC — inherits ServiceNow GCC
+- ServiceNow GRC on ServiceNow GCC. Inherits ServiceNow GCC
   FedRAMP High + IL4 authorization (see
   `references/modern-it/productivity/legacy-dib-tools.md`).
-- RSA Archer — FedRAMP authorization on RSA Archer on the
+- RSA Archer. FedRAMP authorization on RSA Archer on the
   RSA-managed government platform; verify current.
-- MetricStream — FedRAMP authorization; verify current scope.
-- Vanta, Drata, Secureframe, Hyperproof — SOC 2 / ISO 27001
+- MetricStream. FedRAMP authorization; verify current scope.
+- Vanta, Drata, Secureframe, Hyperproof. SOC 2 / ISO 27001
   focused platforms with varying FedRAMP authorization
   coverage; verify current status at marketplace.fedramp.gov
   for each.
@@ -430,15 +430,15 @@ customers.
 
 **Representative vendors.**
 
-- Box for Government — file exchange use case (covered under
+- Box for Government. File exchange use case (covered under
   File collaboration above).
-- AWS Transfer Family in AWS GovCloud — inherits GovCloud
+- AWS Transfer Family in AWS GovCloud. Inherits GovCloud
   authorization.
-- Axway SecureTransport — FedRAMP authorization; verify
+- Axway SecureTransport. FedRAMP authorization; verify
   current.
-- IBM Sterling Secure File Transfer — FedRAMP authorization
+- IBM Sterling Secure File Transfer. FedRAMP authorization
   per specific package; verify current.
-- Kiteworks (successor offering to Accellion) — FedRAMP
+- Kiteworks (successor offering to Accellion). FedRAMP
   authorization status has evolved; verify current.
 
 **Gap note.** Legacy MFT products (Accellion, legacy Ipswitch)
@@ -470,38 +470,38 @@ plentiful).**
 **Medium-supply categories (multiple vendors, authorization
 coverage uneven across features).**
 
-- EDR / XDR — mid-tier vendors carry Moderate, fewer carry High.
-- DLP — primary-suite-native dominates; third-party DLP
+- EDR / XDR. Mid-tier vendors carry Moderate, fewer carry High.
+- DLP. Primary-suite-native dominates; third-party DLP
   authorization coverage is uneven.
-- GRC — ServiceNow GCC plus a handful of enterprise platforms;
+- GRC. ServiceNow GCC plus a handful of enterprise platforms;
   mid-market GRC tooling is thinner.
-- SASE / ZTNA — a growing but still-constrained market.
+- SASE / ZTNA. A growing but still-constrained market.
 
 **Thin-supply categories (contractors routinely accept
 Moderate or layer tooling rather than single-source High).**
 
-- EDR at FedRAMP High — known constraint; major EDR vendors
+- EDR at FedRAMP High. Known constraint; major EDR vendors
   hold Moderate, fewer hold High. MeriTalk and industry
   analysis through 2025-2026 framed this as the "FedRAMP High
   supply crisis."
-- Secure file transfer at High — Kiteworks and a few others;
+- Secure file transfer at High. Kiteworks and a few others;
   legacy MFT retired without equal-tier replacement.
-- Specialized categories — cloud workload scanning, container
+- Specialized categories (cloud workload scanning, container
   runtime security, API security, data-in-motion encryption
-  for specific protocols — often have no FedRAMP High option;
+  for specific protocols) often have no FedRAMP High option;
   contractors use Moderate or self-hosted.
 
 **Categories with no FedRAMP coverage (contractors self-host
 or accept the gap).**
 
-- AI developer tools at the tool-vendor service layer —
-  covered in `references/modern-it/ai-services/ai-dev-tools.md`;
+- AI developer tools at the tool-vendor service layer. Covered
+  in `references/modern-it/ai-services/ai-dev-tools.md`;
   most dev tools are not FedRAMP-authorized at the control-
   plane layer even when the model backend is.
-- Specialized compliance-automation tooling — some
+- Specialized compliance-automation tooling. Some
   FedRAMP-authorized, others only SOC 2 or StateRAMP.
 - Developer-experience tooling (Gitpod, Codespaces commercial,
-  many CI/CD SaaS) — covered in modern-IT files; gap is
+  many CI/CD SaaS). Covered in modern-IT files; gap is
   architectural, not imminent.
 
 **What the gap story means for the contractor.**
@@ -581,7 +581,7 @@ contractor architecture may reorder.
 
 ## Cross-domain anchors
 
-Marketplace navigation composes with corpus cross-cutting
+Marketplace search composes with corpus cross-cutting
 files:
 
 - **FedRAMP program framing.** `references/fedramp-gap.md` for
@@ -712,7 +712,7 @@ vendor authorization state lives at
 corpus's primary managed-service vendors with primary-source
 URLs, DoD IL overlays, CUI-suitability framing, and notes on
 common miscitations. The snapshot is agent-facing reference data,
-not an SSP citation substitute — contractors building an SSP
+not an SSP citation substitute. Contractors building an SSP
 still verify the current Marketplace package at
 marketplace.fedramp.gov and cite with a live-verification date.
 See `references/data/README.md` for the refresh cadence and

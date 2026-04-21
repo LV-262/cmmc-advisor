@@ -25,7 +25,7 @@ expected_recommendation: |
 
   **Cursor** is not appropriate for CUI workflow. Cursor's own
   security page states the tool cannot direct-route to enterprise
-  backends — prompts are built on Cursor's AWS commercial servers
+  backends. Prompts are built on Cursor's AWS commercial servers
   before any model call. That puts Cursor's commercial-cloud
   infrastructure in the prompt path for CUI code, which is a scope
   breach regardless of Privacy Mode configuration or the enterprise
@@ -47,7 +47,7 @@ expected_recommendation: |
   pairing. GHEC parent authorization is FedRAMP Tailored (Low-
   Impact SaaS) scoped around source code as the low-risk data
   type. This fits CUI source-code scope but not CUI-beyond-source-
-  code (attachments, issue bodies, arbitrary files) — that exceeds
+  code (attachments, issue bodies, arbitrary files). That exceeds
   Tailored's design intent.
 
   Configuration requirements across all CUI-appropriate options:
@@ -67,7 +67,7 @@ expected_recommendation: |
 
 evaluator_notes: |
   The answer must correctly classify Cursor as not CUI-appropriate
-  with the architectural reason (server-side prompt building —
+  with the architectural reason (server-side prompt building;
   Cursor's servers are always in the prompt path). Cursor Privacy
   Mode should not be offered as a CUI solution. Claude Code backend
   configuration (Bedrock vs direct API) must be distinguished. GHEC

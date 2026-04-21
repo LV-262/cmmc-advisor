@@ -29,17 +29,17 @@ when a model provider is FedRAMP-authorized.
 
 Three per-vendor files live alongside this hub:
 
-- **`fedramp-ai-services.md`** — Amazon Bedrock in AWS GovCloud
+- **`fedramp-ai-services.md`.** Amazon Bedrock in AWS GovCloud
   (FedRAMP High + DoD IL4/IL5), Azure OpenAI Service in Azure
   Government (FedRAMP High + DoD IL4/IL5), Vertex AI via Google
   Cloud Assured Workloads (FedRAMP High + DoD IL2), with per-model
   authorization breakdowns per provider.
-- **`self-hosted-ai.md`** — Coder as a self-hosted cloud
+- **`self-hosted-ai.md`.** Coder as a self-hosted cloud
   development environment pattern, on-prem LLM inference, and
   air-gapped deployments. Contractor-authored compliance
   boundaries inheriting from the underlying IaaS or on-prem
   infrastructure.
-- **`ai-dev-tools.md`** — Claude Code, GitHub Copilot, Cursor,
+- **`ai-dev-tools.md`.** Claude Code, GitHub Copilot, Cursor,
   and adjacent AI coding assistants. CUI-boundary scoping for
   the prompt-processing surface distinct from the underlying
   model authorization.
@@ -371,14 +371,14 @@ files decompose each cell into specific service-to-model mapping.
 | AI capability | FedRAMP-authorized cloud AI | Self-hosted AI | AI dev tools |
 |---|---|---|---|
 | Frontier-capability text generation | Claude 4.5 Sonnet (Bedrock GovCloud); GPT-5 family (Azure OpenAI Gov); Claude 3.7 Sonnet and Gemini (Vertex AI Assured Workloads) | Llama 3.3 70B or similar open-weight on contractor GPUs | Claude Code, GitHub Copilot Enterprise routed to the authorized backend |
-| Small-model text generation | Claude Haiku 4.5 (Bedrock GovCloud); GPT-4o-mini (Azure OpenAI Gov); Gemini Flash (Vertex AI) | Llama 3 8B, Mistral 7B, Phi on contractor infrastructure | — |
+| Small-model text generation | Claude Haiku 4.5 (Bedrock GovCloud); GPT-4o-mini (Azure OpenAI Gov); Gemini Flash (Vertex AI) | Llama 3 8B, Mistral 7B, Phi on contractor infrastructure | - |
 | Code generation | Claude 4.5 Sonnet (Bedrock GovCloud); GPT-5 (Azure OpenAI Gov); Codestral or similar on Vertex AI | Code Llama, DeepSeek-Coder on contractor GPUs | Claude Code, Copilot, Cursor, Continue |
-| Text embedding for retrieval | Amazon Titan Text Embeddings V2 (Bedrock GovCloud); Azure OpenAI ada-002 or text-embedding-3 (Gov); Gecko (Vertex AI) | Sentence-Transformers, BGE models on contractor infrastructure | — |
+| Text embedding for retrieval | Amazon Titan Text Embeddings V2 (Bedrock GovCloud); Azure OpenAI ada-002 or text-embedding-3 (Gov); Gecko (Vertex AI) | Sentence-Transformers, BGE models on contractor infrastructure | - |
 | Multimodal (vision plus text) | Claude 4.5 Sonnet (Bedrock); GPT-4o (Azure OpenAI Gov); Gemini 2.5 Pro (Vertex AI) | LLaVA, Llama Vision on contractor GPUs | IDE-integrated vision for screenshot analysis (dev-tool specific) |
 | Structured output and tool-use | Claude (Bedrock); GPT-4o / GPT-5 (Azure OpenAI Gov); Gemini (Vertex AI) | Open-weight models with structured-output post-processing | Claude Code skills, Copilot extensions |
-| Fine-tuning and customization | Bedrock Custom Models (GovCloud); Azure OpenAI fine-tuning (Gov); Vertex AI tuning | Full-weight fine-tuning on contractor GPUs (LoRA, full-parameter) | — |
-| Retrieval-augmented generation (RAG) | Amazon Bedrock Knowledge Bases (GovCloud); Azure AI Search plus Azure OpenAI (Gov); Vertex AI Search plus RAG Engine | Open-source vector databases (pgvector, Qdrant, Weaviate) on contractor infrastructure | — |
-| Agent orchestration | Amazon Bedrock Agents (GovCloud); Azure AI Agent Service (Gov); Vertex AI Agent Engine (Assured Workloads Preview) | LangChain, LlamaIndex, contractor-authored agent runtime | — |
+| Fine-tuning and customization | Bedrock Custom Models (GovCloud); Azure OpenAI fine-tuning (Gov); Vertex AI tuning | Full-weight fine-tuning on contractor GPUs (LoRA, full-parameter) | - |
+| Retrieval-augmented generation (RAG) | Amazon Bedrock Knowledge Bases (GovCloud); Azure AI Search plus Azure OpenAI (Gov); Vertex AI Search plus RAG Engine | Open-source vector databases (pgvector, Qdrant, Weaviate) on contractor infrastructure | - |
+| Agent orchestration | Amazon Bedrock Agents (GovCloud); Azure AI Agent Service (Gov); Vertex AI Agent Engine (Assured Workloads Preview) | LangChain, LlamaIndex, contractor-authored agent runtime | - |
 | Prompt caching and context optimization | Bedrock prompt caching (GovCloud); Azure OpenAI prompt caching (Gov); Vertex AI context caching | Contractor-authored caching layer | Dev-tool-specific context strategies |
 | Content safety and guardrails | Bedrock Guardrails (GovCloud); Azure AI Content Safety (Gov); Vertex AI Safety (Assured Workloads) | NeMo Guardrails, Llama Guard, contractor-authored filters | Dev-tool workspace-trust and telemetry configuration |
 | Model inventory and monitoring | CloudTrail plus Bedrock model invocation logs (GovCloud); Azure Monitor plus Azure OpenAI logs (Gov); Vertex AI monitoring (Assured Workloads) | Contractor-authored telemetry, OpenTelemetry-instrumented inference servers | Dev-tool telemetry export to SIEM |
@@ -565,24 +565,24 @@ domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Access Control (AC) — `references/domains/ac-access-control.md`
+- Access Control (AC). `references/domains/ac-access-control.md`
   for account management on AI-service surfaces and identity
   federation to the AI-service backend.
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC).
   `references/domains/sc-system-comms.md` for encryption in
   transit from dev tools to model backends and for data-at-rest
   on prompt caches and model artifacts.
-- Configuration Management (CM) —
+- Configuration Management (CM).
   `references/domains/cm-configuration-mgmt.md` for change
   control on AI-service feature rollouts and model-version
   transitions.
-- Audit and Accountability (AU) —
+- Audit and Accountability (AU).
   `references/domains/au-audit.md` for audit logging of AI-
   service invocations and dev-tool prompt-submission events.
-- System and Information Integrity (SI) —
+- System and Information Integrity (SI).
   `references/domains/si-system-information-integrity.md` for
   guardrail and content-safety monitoring on AI outputs.
-- Awareness and Training (AT) —
+- Awareness and Training (AT).
   `references/domains/at-awareness-training.md` for training
   contractor personnel on AI-service CUI-boundary discipline
   (prompt content, context attachment, output retention).

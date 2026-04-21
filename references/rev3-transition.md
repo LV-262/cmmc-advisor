@@ -6,8 +6,8 @@
 ## Current Status (April 2026)
 
 **CMMC Level 2 is built on NIST SP 800-171 Revision 2.** This is the
-current legal requirement. All assessments — self-assessment, C3PAO,
-and DIBCAC — evaluate against Rev 2.
+current legal requirement. All assessments (self-assessment, C3PAO,
+and DIBCAC) evaluate against Rev 2.
 
 NIST published SP 800-171 Revision 3 in May 2024, but it has **not yet
 been adopted by the CMMC program.** A DoD class deviation keeps Rev 2
@@ -32,7 +32,7 @@ resources implementing Rev 3 requirements until DoD formally adopts it.
 | May 2024 | NIST SP 800-171 Rev 3 published |
 | December 2024 | CMMC 2.0 program rule effective (based on Rev 2) |
 | November 2025 | 48 CFR acquisition rule effective (Rev 2 baseline) |
-| April 2026 | DoD class deviation still active — Rev 2 remains the standard |
+| April 2026 | DoD class deviation still active; Rev 2 remains the standard |
 
 ### What We Expect
 
@@ -76,7 +76,7 @@ Rev 3 reorganizes the framework significantly:
   controls) have been restructured
 
 **Organization-Defined Parameters (ODPs):**
-Rev 3 introduces ODPs — values that the organization must define for
+Rev 3 introduces ODPs, values that the organization must define for
 certain requirements. For example, instead of prescribing a specific
 password length, Rev 3 requires the organization to define and document
 their minimum password length. DoD will define the specific ODP values
@@ -90,7 +90,7 @@ that apply to CMMC when they adopt Rev 3.
 
 **Start with Rev 2.** It is the current legal requirement and will remain
 so for at least the next 1-2 years. Every practice you implement for Rev 2
-will carry forward to Rev 3 — the security capabilities are the same,
+will carry forward to Rev 3. The security capabilities are the same,
 even if the requirement numbering and structure change.
 
 Do not wait for Rev 3 to begin your compliance journey. Contracts are
@@ -134,20 +134,20 @@ Organizations that have fully implemented Rev 2 will find that the majority
 of their controls satisfy Rev 3 requirements with minimal adjustment. The
 primary work will be:
 
-1. **Remapping documentation** — updating SSP practice references from
+1. **Remapping documentation.** Updating SSP practice references from
    Rev 2 numbering to Rev 3 numbering
-2. **Defining ODPs** — establishing organization-defined parameter values
+2. **Defining ODPs.** Establishing organization-defined parameter values
    per DoD guidance
-3. **Addressing new requirements** — implementing any genuinely new
+3. **Addressing new requirements.** Implementing any genuinely new
    capabilities required by Rev 3 that have no Rev 2 equivalent
-4. **Updating evidence** — collecting evidence against the new assessment
+4. **Updating evidence.** Collecting evidence against the new assessment
    procedures
 
 **This is documentation and tuning work, not a ground-up rebuild.** If
 your Rev 2 implementation is solid, the Rev 3 transition should be
 measured in weeks, not months.
 
-> Source: NIST SP 800-171 Rev 3, Appendix C — Analysis of Changes;
+> Source: NIST SP 800-171 Rev 3, Appendix C, Analysis of Changes;
 > Secureframe, "NIST 800-171 Rev 2 vs Rev 3: What Changed and What It
 > Means for CMMC"
 > https://secureframe.com/blog/nist-800-171-rev2-vs-rev3
@@ -158,17 +158,17 @@ measured in weeks, not months.
 
 Track these signals for Rev 3 adoption timing:
 
-1. **DoD class deviation update** — When DoD rescinds or modifies the
+1. **DoD class deviation update.** When DoD rescinds or modifies the
    class deviation that keeps Rev 2 as the standard, the transition
    clock begins
-2. **CMMC rulemaking** — A new proposed rule updating CMMC to Rev 3
+2. **CMMC rulemaking.** A new proposed rule updating CMMC to Rev 3
    will go through the Federal Register process with a public comment
    period
-3. **ODP publication** — DoD publication of specific ODP values for
+3. **ODP publication.** DoD publication of specific ODP values for
    CMMC Rev 3 signals imminent adoption
 4. **The Cyber AB guidance.** The Cyber AB (formerly the CMMC
    Accreditation Body; rebranded 2022) will publish assessor
    guidance for Rev 3 assessments
-5. **Summit 7 analysis** — The Sum IT Up podcast and Summit 7 blog
+5. **Summit 7 analysis.** The Sum IT Up podcast and Summit 7 blog
    consistently provide early and accurate analysis of CMMC rulemaking
    developments: https://www.summit7.us/podcast

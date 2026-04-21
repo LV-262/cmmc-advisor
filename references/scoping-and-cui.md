@@ -8,7 +8,7 @@
 Scoping is the single most impactful decision in your CMMC journey. A
 well-defined boundary reduces the number of systems you must protect,
 the evidence you must collect, and the cost of your assessment. A poorly
-defined boundary expands your compliance surface unnecessarily or — worse —
+defined boundary expands your compliance surface unnecessarily or, worse,
 leaves CUI unprotected in systems you thought were out of scope.
 
 Get scoping right first. Everything else follows from it.
@@ -65,7 +65,7 @@ Government.
 
 ### The Critical Distinction
 
-FCI is broadly defined — almost any non-public contract information qualifies.
+FCI is broadly defined; almost any non-public contract information qualifies.
 CUI is specifically designated by the Government and carries marking
 requirements. If your contract specifies DFARS 252.204-7012, you are handling
 CUI and need at least Level 2.
@@ -111,7 +111,7 @@ scope just because it does not store CUI.
 
 ### 3. Contractor Risk Managed Assets
 
-Assets that can — but are not intended to — process, store, or transmit CUI.
+Assets that can (but are not intended to) process, store, or transmit CUI.
 The contractor manages the risk of CUI exposure on these assets.
 
 **Examples:**
@@ -306,7 +306,7 @@ receives CUI via email, the entire email system may be in scope.
 
 3. **Ignoring personal devices.** If employees access CUI from personal
    devices (phones, tablets, home computers), those devices may be in scope.
-   VDI is the cleanest solution — the device becomes an access terminal,
+   VDI is the cleanest solution. The device becomes an access terminal,
    not a CUI asset.
 
 4. **Leaving CUI in commercial email.** One CUI-marked document in a

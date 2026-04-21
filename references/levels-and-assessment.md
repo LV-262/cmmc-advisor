@@ -40,11 +40,11 @@ have in place. Examples include using passwords, limiting physical access
 to systems, and updating software.
 
 **Key point for contractors:** If your contract involves only FCI (not CUI),
-Level 1 is sufficient. Self-assessment means no third-party audit — you
+Level 1 is sufficient. Self-assessment means no third-party audit. You
 assess yourself annually and submit results to the Supplier Performance
 Risk System (SPRS).
 
-> Source: 32 CFR 170.14 — Level 1 Self-Assessment
+> Source: 32 CFR 170.14, Level 1 Self-Assessment
 
 ---
 
@@ -69,7 +69,7 @@ requires implementation of all 110 security requirements from NIST SP
 
 The distinction between prioritized and non-prioritized is made by the
 DoD program manager in the contract solicitation. DoD has stated that
-Level 2 self-assessments are the exception, not the rule — most CUI
+Level 2 self-assessments are the exception, not the rule; most CUI
 contracts will require C3PAO assessment.
 
 > Source: Summit 7 Blog, "DoD Says CMMC Level 2 Self-Assessments Are the
@@ -84,7 +84,7 @@ These estimates include preparation, remediation, and assessment fees.
 Actual costs vary by organization size, complexity, and current posture.
 
 > Source: Secureframe, "CMMC for Small Business: A Practical Guide to
-> Compliance & Cost" — https://secureframe.com/blog/cmmc-small-business
+> Compliance & Cost," https://secureframe.com/blog/cmmc-small-business
 
 ---
 
@@ -109,7 +109,7 @@ or third-party option. DIBCAC conducts the assessment directly. This level
 applies to a small subset of DIB contractors working on the most sensitive
 programs.
 
-> Source: 32 CFR 170.16 — Level 3 Certification Assessment
+> Source: 32 CFR 170.16, Level 3 Certification Assessment
 
 ---
 
@@ -152,7 +152,7 @@ Each of the 110 Level 2 practices is assessed as either **MET** or **NOT MET**.
 The scoring system assigns point values to each practice. The maximum score
 is 110 points (one point per practice in the simplest case). However, some
 practices carry higher point values when they have multiple assessment
-objectives — a practice that is partially implemented may lose more than
+objectives, so a practice that is partially implemented may lose more than
 one point.
 
 **SPRS scoring:** Organizations calculate their SPRS (Supplier Performance
@@ -182,7 +182,7 @@ If an organization achieves at least 80% but does not meet all 110 practices:
 **If the 180-day deadline is missed:** Conditional status expires. The
 organization loses its certification and must re-assess.
 
-> Source: 32 CFR 170.21 — POA&M Closeout; ISI Defense, "CMMC POA&Ms
+> Source: 32 CFR 170.21, POA&M Closeout; ISI Defense, "CMMC POA&Ms
 > Explained: What You Can and Cannot Defer"
 > https://isidefense.com/blog/cmmc-poams-explained-what-you-can-and-cannot-defer
 
@@ -191,8 +191,8 @@ organization loses its certification and must re-assess.
 Certain practices are designated as critical and must be fully implemented
 at the time of assessment. These cannot be deferred to a POA&M. The specific
 list is defined in the CMMC Assessment Guide, but the general principle is:
-practices that represent fundamental security capabilities — such as those
-protecting the confidentiality of CUI at rest and in transit — must be in
+practices that represent fundamental security capabilities (such as those
+protecting the confidentiality of CUI at rest and in transit) must be in
 place before certification.
 
 ---
@@ -233,7 +233,7 @@ not a checkbox exercise.
 1. Organization must first hold a Level 2 C3PAO certification
 2. DIBCAC conducts the Level 3 assessment directly
 3. Assesses the 24 additional practices from NIST SP 800-172
-4. Government-led process — no third-party option
+4. Government-led process with no third-party option
 
 ---
 

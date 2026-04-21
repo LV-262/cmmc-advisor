@@ -6,7 +6,7 @@
 
 Identification and Authentication ensures that users, processes, and
 devices are who they claim to be before they are granted access. This
-domain has 11 practices — 2 at Level 1 and 9 additional at Level 2.
+domain has 11 practices: 2 at Level 1 and 9 additional at Level 2.
 
 IA is the gatekeeper that makes Access Control work. Without reliable
 identification and authentication, access control policies cannot be
@@ -27,7 +27,7 @@ individuals, which undermines accountability and audit.
 
 **Implementation guidance:**
 - Assign unique user IDs to every individual
-- Prohibit shared accounts — each person gets their own credentials
+- Prohibit shared accounts. Each person gets their own credentials
 - Identify service accounts and document their purpose and owner
 - Identify devices through certificates, MAC addresses, or device
   management enrollment
@@ -57,7 +57,7 @@ proves it. Without authentication, anyone can claim any identity.
 **Implementation guidance:**
 - Require password or stronger authentication for all user access
 - Implement multi-factor authentication (MFA) for remote and privileged
-  access (required at Level 2 — see IA.L2-3.5.3)
+  access (required at Level 2; see IA.L2-3.5.3)
 - Authenticate devices through certificates or MDM enrollment
 - Authenticate service-to-service connections through API keys,
   certificates, or managed identities
@@ -191,7 +191,7 @@ systems) remain attack targets. Disabling them reduces the attack surface.
 - Service account review schedule and records
 
 **Common mistakes:**
-- No automatic disabling — inactive accounts accumulate
+- No automatic disabling (inactive accounts accumulate)
 - Threshold too long (365+ days)
 - Service accounts exempt with no alternative review process
 
@@ -235,7 +235,7 @@ attacks.
 generations.
 
 **Why it matters:** If users can immediately reuse old passwords, password
-change requirements become meaningless — they cycle through a short list
+change requirements become meaningless; users cycle through a short list
 and return to their favorite.
 
 **Implementation guidance:**
@@ -269,7 +269,7 @@ active creates a known-credential risk.
 - Configure identity systems to force password change at first login
   when temporary passwords are issued
 - Set temporary passwords to expire within a short window (e.g., 24 hours)
-- Use unique temporary passwords per user — never a shared default
+- Use unique temporary passwords per user (never a shared default)
 - Transmit temporary passwords through a secure channel separate from
   the username
 

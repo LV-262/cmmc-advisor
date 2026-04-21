@@ -329,9 +329,9 @@ compliance documentation and practitioner publications.
 - **Used in:** Assessment insights, practitioner guidance, CMMC interpretation
 
 #### Specific Articles Referenced:
-- "CMMC is Published: What Now?" — https://www.summit7.us/blog/cmmc-is-published-what-now
-- "DoD Says CMMC Level 2 Self-Assessments Are the Exception, Not the Rule" — https://www.summit7.us/blog/cmmc-l2-self-assessments
-- "3 Strategies for Successful CMMC Assessments, According to C3PAOs" — https://www.summit7.us/blog/c3pao-advice-for-cmmc-assessment
+- "CMMC is Published: What Now?" https://www.summit7.us/blog/cmmc-is-published-what-now
+- "DoD Says CMMC Level 2 Self-Assessments Are the Exception, Not the Rule," https://www.summit7.us/blog/cmmc-l2-self-assessments
+- "3 Strategies for Successful CMMC Assessments, According to C3PAOs," https://www.summit7.us/blog/c3pao-advice-for-cmmc-assessment
 
 ### Secureframe — CMMC for Small Business
 - **Title:** CMMC for Small Business: A Practical Guide to Compliance & Cost

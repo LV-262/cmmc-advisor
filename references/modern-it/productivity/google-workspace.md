@@ -130,7 +130,7 @@ Enterprise Plus edition licensing), not configuration
 tightening.
 
 **2. Which overlay or control-plane configuration is the
-contractor path — base Assured Controls, Assured Controls Plus,
+contractor path: base Assured Controls, Assured Controls Plus,
 or neither?** For CMMC Level 2 CUI work under DFARS 7012, the
 answer is **Assured Controls Plus**. Base Assured Controls
 provides a lighter-weight overlay (some personnel and
@@ -189,7 +189,7 @@ CUI can choose either Microsoft 365 GCC High (sovereign tenancy,
 IL5-aligned, FedRAMP High) or Workspace Assured Controls Plus
 (overlay on commercial Workspace, IL4-aligned, FedRAMP High on
 in-scope services). This is a choice between architectural
-models — sovereign partition versus control-package overlay —
+models (sovereign partition versus control-package overlay)
 as much as between vendors. The "ITAR posture under Assured
 Controls Plus" section below carries the architectural
 comparison in depth.
@@ -821,15 +821,15 @@ corpus cross-cutting files and domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Access Control (AC) — `references/domains/ac-access-control.md`
-- System and Information Integrity (SI) — `references/domains/si-system-information-integrity.md`
-- System and Communications Protection (SC) — `references/domains/sc-system-comms.md`
-- Identification and Authentication (IA) — `references/domains/ia-identification-auth.md`
-- Configuration Management (CM) — `references/domains/cm-configuration-mgmt.md`
-- Audit and Accountability (AU) — `references/domains/au-audit.md`
-- Media Protection (MP) — `references/domains/mp-media-protection.md`
-- Awareness and Training (AT) — `references/domains/at-awareness-training.md`
-- Personnel Security (PS) — `references/domains/ps-personnel-security.md`
+- Access Control (AC): `references/domains/ac-access-control.md`
+- System and Information Integrity (SI): `references/domains/si-system-information-integrity.md`
+- System and Communications Protection (SC): `references/domains/sc-system-comms.md`
+- Identification and Authentication (IA): `references/domains/ia-identification-auth.md`
+- Configuration Management (CM): `references/domains/cm-configuration-mgmt.md`
+- Audit and Accountability (AU): `references/domains/au-audit.md`
+- Media Protection (MP): `references/domains/mp-media-protection.md`
+- Awareness and Training (AT): `references/domains/at-awareness-training.md`
+- Personnel Security (PS): `references/domains/ps-personnel-security.md`
 
 ---
 

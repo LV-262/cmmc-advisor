@@ -22,16 +22,16 @@ requirements.
 
 Three per-vendor files live alongside this hub:
 
-- **`microsoft-365-gcc.md`** — Microsoft 365 GCC, GCC High, and
+- **`microsoft-365-gcc.md`.** Microsoft 365 GCC, GCC High, and
   DoD tenancy posture for the Microsoft productivity stack
   (Exchange Online, SharePoint Online, OneDrive, Teams, Intune,
   Purview, Defender for Office 365, Power Platform).
-- **`google-workspace.md`** — Google Workspace editions, Assured
+- **`google-workspace.md`.** Google Workspace editions, Assured
   Controls and Assured Controls Plus overlays, per-service
   posture (Gmail, Drive, Meet, Chat, Calendar, Docs), Cloud
   Identity, DLP, Vault, Context-Aware Access, client-side
   encryption.
-- **`legacy-dib-tools.md`** — Adjacent productivity tools the
+- **`legacy-dib-tools.md`.** Adjacent productivity tools the
   defense industrial base runs alongside the primary suite:
   Atlassian (Jira, Confluence, Jira Service Management),
   ServiceNow (IT Service Management and workflow platform),
@@ -263,7 +263,7 @@ In scope:
   DoD IL4 Provisional Authorization; initial FedRAMP High P-ATO
   August 2019 per servicenow.com/company/trust/compliance.html,
   verified 2026-04-21).
-- GitHub Enterprise Cloud (FedRAMP Tailored — note this is a
+- GitHub Enterprise Cloud (FedRAMP Tailored; note this is a
   distinct lower-scope baseline rather than FedRAMP Moderate or
   High; implications covered in the per-vendor file).
 - GitHub Enterprise Server (self-hosted pattern; contractor
@@ -348,7 +348,7 @@ descriptions, or repository metadata must treat those as
 CUI-adjacent surfaces and evaluate whether Tailored coverage
 meets the contract's requirement.
 
-**GCC High versus Workspace Assured Controls Plus — equivalence
+**GCC High versus Workspace Assured Controls Plus. Equivalence
 is not symmetric.** Both tenancies can host CUI workflows under
 DFARS 7012, but they deliver that posture through different
 mechanisms. GCC High is a sovereign tenancy (FedRAMP High plus
@@ -378,11 +378,11 @@ the specific service-to-practice mapping.
 | Email | Exchange Online | Gmail | Atlassian JSM email integration, legacy on-prem Exchange (migration source) |
 | File storage and collaboration | SharePoint Online, OneDrive | Drive, Shared Drives | Box for Government, Atlassian Confluence (pages), GitHub (code only) |
 | Real-time messaging and chat | Teams | Chat, Meet Chat | Atlassian JSM chat integration, ServiceNow chat |
-| Calendaring and meetings | Outlook Calendar, Teams Meetings | Calendar, Meet | — |
-| Document editing (word, spreadsheet, presentation) | Word, Excel, PowerPoint (Online and desktop) | Docs, Sheets, Slides | — |
-| IT service management and ticketing | — | — | ServiceNow GCC, Atlassian Jira Service Management |
-| Issue tracking and project management | Planner, Project | — | Atlassian Jira, GitHub Issues |
-| Source code collaboration | DevOps services (limited) | — | GitHub Enterprise Cloud; Atlassian Bitbucket Data Center (contractor-owned) |
+| Calendaring and meetings | Outlook Calendar, Teams Meetings | Calendar, Meet | - |
+| Document editing (word, spreadsheet, presentation) | Word, Excel, PowerPoint (Online and desktop) | Docs, Sheets, Slides | - |
+| IT service management and ticketing | - | - | ServiceNow GCC, Atlassian Jira Service Management |
+| Issue tracking and project management | Planner, Project | - | Atlassian Jira, GitHub Issues |
+| Source code collaboration | DevOps services (limited) | - | GitHub Enterprise Cloud; Atlassian Bitbucket Data Center (contractor-owned) |
 | Knowledge base and wiki | SharePoint sites, OneNote | Sites, Docs | Atlassian Confluence, ServiceNow Knowledge |
 | Identity and access | Entra ID Government, Conditional Access, PIM | Cloud Identity, Context-Aware Access | Federated via the primary suite's identity plane |
 | DLP and sensitivity labeling | Microsoft Purview DLP, Sensitivity Labels | Workspace DLP, Client-Side Encryption with EKM | Limited native; usually rely on primary suite DLP |
@@ -563,19 +563,19 @@ files and domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Access Control (AC) — `references/domains/ac-access-control.md`
+- Access Control (AC). `references/domains/ac-access-control.md`
   for account management and remote access patterns.
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC).
   `references/domains/sc-system-comms.md` for encryption and
   boundary protection.
-- Configuration Management (CM) —
+- Configuration Management (CM).
   `references/domains/cm-configuration-mgmt.md` for change
   control on productivity-suite feature rollouts.
-- Media Protection (MP) — `references/domains/mp-media-protection.md`
+- Media Protection (MP). `references/domains/mp-media-protection.md`
   for retention and records.
-- Audit and Accountability (AU) — `references/domains/au-audit.md`
+- Audit and Accountability (AU). `references/domains/au-audit.md`
   for audit logging.
-- Identification and Authentication (IA) —
+- Identification and Authentication (IA).
   `references/domains/ia-identification-auth.md` for identity
   and authentication posture.
 

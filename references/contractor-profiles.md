@@ -23,32 +23,32 @@ set-aside certification (SDVOSB, 8(a), WOSB, HUBZone).
 
 Three size profiles:
 
-- **Small** (fewer than 50 employees) — the most cost-sensitive
+- **Small** (fewer than 50 employees). The most cost-sensitive
   segment. Enclave architectures, managed-service partnerships,
-  and tax-credit leverage are common patterns. Primary risk is
+  and tax-credit use are common patterns. Primary risk is
   under-scoping CUI and running compliance on a spreadsheet.
-- **Medium** (50-500 employees) — scaling compliance across
+- **Medium** (50-500 employees). Scaling compliance across
   multiple programs and contract vehicles. Typical segment for
   standing up dedicated compliance staff and maturing policy
   architecture.
-- **Large** (500+ employees) — enterprise compliance programs
+- **Large** (500+ employees). Enterprise compliance programs
   with GRC tooling, dedicated teams, and multi-BU scope. Primary
   risk is scope sprawl and CUI-boundary drift across business
   units.
 
 Four set-aside program considerations:
 
-- **SDVOSB** (Service-Disabled Veteran-Owned Small Business) —
+- **SDVOSB** (Service-Disabled Veteran-Owned Small Business).
   SBA certification required since 2024-01-01 for federal
   set-aside eligibility.
-- **8(a)** — the SBA's business development program for socially
+- **8(a).** The SBA's business development program for socially
   and economically disadvantaged small businesses. The Small
   Disadvantaged Business contracting goal reset to the statutory
   5% on 2025-01-24.
 - **WOSB / EDWOSB** (Women-Owned Small Business / Economically
-  Disadvantaged Women-Owned Small Business) — SBA certification
+  Disadvantaged Women-Owned Small Business). SBA certification
   via certify.sba.gov.
-- **HUBZone** — Historically Underutilized Business Zone, SBA
+- **HUBZone.** Historically Underutilized Business Zone, SBA
   certification for firms in designated distressed areas.
 
 Read this file alongside
@@ -300,7 +300,7 @@ interpretation and specific compliance decisions.
   approach; the enterprise loses visibility and consistent
   posture.
 - Compliance theater. Enterprise organizations can maintain
-  elaborate policy hierarchies, robust evidence repositories,
+  elaborate policy hierarchies, well-stocked evidence repositories,
   and full-time compliance staff while the actual operational
   posture drifts from documented intent. Anti-pattern discussion
   beyond this file's scope is covered in a future corpus
@@ -497,7 +497,7 @@ catching a DFARS 7012 clause on an active solicitation or
 newly-awarded contract start the priority clock immediately and
 compress the sequence as assessment deadlines dictate.
 
-**Small profile — first-quarter priorities.**
+**Small profile, first-quarter priorities.**
 
 1. Scope CUI accurately. Wrong scope dominates cost risk at
    small scale.
@@ -511,7 +511,7 @@ compress the sequence as assessment deadlines dictate.
    investing in tooling. Scope drives tooling; tooling does
    not drive scope.
 
-**Medium profile — first-six-months priorities.**
+**Medium profile, first-six-months priorities.**
 
 1. Tenancy migration to government-tier productivity (GCC High
    or Assured Controls Plus) if not already complete.
@@ -524,7 +524,7 @@ compress the sequence as assessment deadlines dictate.
 5. Establish assessment-readiness cycle separate from assessment
    delivery.
 
-**Large profile — continuous priorities.**
+**Large profile, continuous priorities.**
 
 1. Cross-BU consistency. Single SSP per assessment scope;
    consistent CUI-boundary definitions; consistent tooling.
@@ -546,34 +546,34 @@ compress the sequence as assessment deadlines dictate.
 Contractor-profile considerations compose with corpus cross-
 cutting files and domain practice files:
 
-- **CUI scoping.** `references/scoping-and-cui.md` — the most
+- **CUI scoping.** `references/scoping-and-cui.md`. The most
   load-bearing upstream input to profile-driven compliance
   planning.
-- **Levels and assessment.** `references/levels-and-assessment.md`
-  — the L1 vs L2 determination that sets the cost envelope per
+- **Levels and assessment.** `references/levels-and-assessment.md`.
+  The L1 vs L2 determination that sets the cost envelope per
   profile.
-- **SSP authoring.** `references/ssp-guidance.md` — SSP
+- **SSP authoring.** `references/ssp-guidance.md`. SSP
   complexity scales with profile.
-- **POA&M management.** `references/poam-management.md` —
+- **POA&M management.** `references/poam-management.md`.
   Conditional Certification deferral rules particularly
   relevant at small and medium profiles where resource
   constraints drive POA&M volume.
-- **FedRAMP framing.** `references/fedramp-gap.md` —
-  government-tenancy migration cost implications per profile.
+- **FedRAMP framing.** `references/fedramp-gap.md`.
+  Government-tenancy migration cost implications per profile.
 - **Modern IT productivity.**
   `references/modern-it/productivity/README.md` and
-  per-vendor files — tenancy-migration costs vary sharply by
+  per-vendor files. Tenancy-migration costs vary sharply by
   profile (enclave vs full migration).
 - **Modern IT cloud platforms.**
-  `references/modern-it/cloud-platforms/cloud-selection.md` —
-  platform selection interacts with profile (single cloud
+  `references/modern-it/cloud-platforms/cloud-selection.md`.
+  Platform selection interacts with profile (single cloud
   commitment for small; multi-cloud for medium and large).
 - **Modern IT AI services.**
-  `references/modern-it/ai-services/README.md` — AI service
+  `references/modern-it/ai-services/README.md`. AI service
   adoption pattern varies by profile (managed services favored
   at small; self-hosted viable at medium and large).
-- **Rev 3 transition.** `references/rev3-transition.md` —
-  transition timing and cost impact varies by profile.
+- **Rev 3 transition.** `references/rev3-transition.md`.
+  Transition timing and cost impact varies by profile.
 
 Domain practice files for requirement text and evidence lists:
 all 14 CMMC domains at `references/domains/`.
@@ -623,7 +623,7 @@ administering small-business size standards, socioeconomic
 set-aside certifications, and business-development programs.
 
 **SBIR / STTR.** Small Business Innovation Research and Small
-Business Technology Transfer — federal research programs that
+Business Technology Transfer. Federal research programs that
 sometimes intersect with CMMC when the research produces or
 involves CUI.
 

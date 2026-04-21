@@ -6,7 +6,7 @@
 
 System and Communications Protection covers boundary defense, encryption,
 network segmentation, and communications security. This domain has 16
-practices — 2 at Level 1 and 14 additional at Level 2.
+practices: 2 at Level 1 and 14 additional at Level 2.
 
 SC is where your technical architecture either proves or undermines your
 compliance story. Assessors will examine your network boundaries,
@@ -25,7 +25,7 @@ information transmitted or received by organizational systems) at the
 external boundaries and key internal boundaries of organizational systems.
 
 **Why it matters:** Your system boundary is the perimeter of your CUI
-environment. Controlling what crosses that boundary — in both directions —
+environment. Controlling what crosses that boundary in both directions
 is fundamental to protecting CUI.
 
 **Implementation guidance:**
@@ -45,7 +45,7 @@ is fundamental to protecting CUI.
 
 **Common mistakes:**
 - Allow-by-default firewall rules (permit everything, block specific threats)
-- No internal segmentation — CUI network and corporate network are flat
+- No internal segmentation (CUI network and corporate network are flat)
 - Boundary exists but is not monitored
 - Network diagram does not accurately reflect actual boundary
 
@@ -78,7 +78,7 @@ system does not provide direct access to CUI.
 
 **Common mistakes:**
 - Public-facing web server on the same network as CUI systems
-- No DMZ — public services directly on the internal network
+- No DMZ (public services directly on the internal network)
 - DMZ exists but firewall rules allow broad access to internal network
 
 ---
@@ -242,7 +242,7 @@ CUI network through the remote device.
 unauthorized disclosure of CUI during transmission unless otherwise
 protected by alternative physical safeguards.
 
-**Why it matters:** CUI traversing networks — internal or external — can
+**Why it matters:** CUI traversing networks (internal or external) can
 be intercepted. Encryption ensures confidentiality during transmission.
 
 **Implementation guidance:**
@@ -297,7 +297,7 @@ them after inactivity prevents abandoned sessions from being hijacked.
 - Timeout policy documentation
 
 **Common mistakes:**
-- No timeouts configured — sessions remain active indefinitely
+- No timeouts configured (sessions remain active indefinitely)
 - Inconsistent timeouts across different connection types
 - Timeouts set too long (hours instead of minutes for sensitive systems)
 
@@ -309,8 +309,8 @@ them after inactivity prevents abandoned sessions from being hijacked.
 employed in organizational systems.
 
 **Why it matters:** Encryption is only as strong as its key management.
-Poor key management — reused keys, unrotated keys, unprotected key
-storage — undermines the entire encryption implementation.
+Poor key management (reused keys, unrotated keys, unprotected key
+storage) undermines the entire encryption implementation.
 
 **Implementation guidance:**
 - Define key management procedures covering generation, distribution,
@@ -330,7 +330,7 @@ storage — undermines the entire encryption implementation.
 
 **Common mistakes:**
 - Encryption keys stored in plaintext configuration files
-- No key rotation — same keys used since initial deployment
+- No key rotation (same keys used since initial deployment)
 - No documented key management procedures
 - Keys shared across multiple environments (dev and production)
 
@@ -365,18 +365,18 @@ be FIPS 140-2 or FIPS 140-3 validated. Check the NIST CMVP list.
 - CMVP listing printouts or references
 - Configuration showing FIPS mode is enabled where applicable
 
-**POA&M note:** This practice has a special carve-out — it can be placed
+**POA&M note:** This practice has a special carve-out. It can be placed
 on a POA&M if encryption exists but is not FIPS-validated, provided
 you are actively pursuing FIPS-validated alternatives. This is the only
 3-point practice eligible for POA&M. See `poam-management.md`.
 
 **Common mistakes:**
-- Assuming the algorithm name (AES-256) equals FIPS validation — it does not
+- Assuming the algorithm name (AES-256) equals FIPS validation. It does not
 - Not checking the CMVP list for specific module validation
 - Using encryption libraries that are not FIPS-validated
 - FIPS mode available but not enabled in the configuration
 
-> Source: NIST CMVP — https://csrc.nist.gov/projects/cryptographic-module-validation-program
+> Source: NIST CMVP, https://csrc.nist.gov/projects/cryptographic-module-validation-program
 
 ---
 
@@ -447,7 +447,7 @@ Protocol (VoIP) technologies.
 
 **Why it matters:** VoIP systems can transmit CUI through voice
 conversations. They also represent an attack vector if not properly
-secured — VoIP traffic can be intercepted, and VoIP systems can be
+secured. VoIP traffic can be intercepted, and VoIP systems can be
 compromised.
 
 **Implementation guidance:**
@@ -545,7 +545,7 @@ unauthorized access to storage does not expose CUI.
 | Count | 2 | 14 | 16 |
 
 **Assessment priority:** Focus on SC.L2-3.13.11 (FIPS-validated
-encryption) first — this is the practice most organizations struggle
+encryption) first. This is the practice most organizations struggle
 with because they assume using a known algorithm is sufficient when FIPS
 module validation is actually required. Then address SC.L2-3.13.8 (data
 in transit) and SC.L2-3.13.16 (data at rest) as they directly protect

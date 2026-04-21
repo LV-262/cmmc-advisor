@@ -1,10 +1,10 @@
 # CMMC Advisor
 
-A Claude Code skill for navigating CMMC 2.0 (Cybersecurity Maturity Model Certification) compliance. Built for defense contractors who deliver services to the U.S. Government and need clear, actionable guidance on cybersecurity certification requirements.
+A Claude Code skill for working through CMMC 2.0 (Cybersecurity Maturity Model Certification) compliance. Built for defense contractors who deliver services to the U.S. Government and need clear, actionable guidance on cybersecurity certification requirements.
 
 ## Philosophy
 
-This skill exists to help businesses succeed in delivering great services to the U.S. Government in a compliant way. It is not a tool to say no — it is a tool to say **how**.
+This skill exists to help businesses succeed in delivering great services to the U.S. Government in a compliant way. It is not a tool to say no. It is a tool to say **how**.
 
 When a compliant path exists, the skill maps it clearly. When no compliant option exists today, the skill identifies the gap, describes who in the industry is working on closing it, and estimates when options may become available. Legitimate gaps in the market deserve honest answers, not dead ends.
 
@@ -21,7 +21,7 @@ Modern IT compliance mapping for real-world stacks:
 
 Contractor-specific guidance by company size (small, medium, large) and socioeconomic set-aside (SDVOSB, 8(a), WOSB/EDWOSB, HUBZone).
 
-FedRAMP Marketplace practitioner guide with curated category short-lists, navigation guidance, and coverage-gap analysis.
+FedRAMP Marketplace practitioner guide with curated category short-lists, search guidance, and coverage-gap analysis.
 
 Rev 3 transition context (current Rev 2 requirements with Rev 3 awareness).
 
@@ -46,13 +46,13 @@ Claude Code automatically discovers and loads skills from these locations.
 ```
 "What CMMC level do I need for a DoD subcontract that handles CUI?"
 
-"We use Google Workspace and macOS — can we achieve Level 2 compliance?"
+"We use Google Workspace and macOS. Can we achieve Level 2 compliance?"
 
 "Design a CUI enclave for a 30-person company using AWS GovCloud."
 
 "What evidence do I need to collect for the Access Control domain?"
 
-"We want to use AI coding tools in our development workflow — what are the compliant options?"
+"We want to use AI coding tools in our development workflow. What are the compliant options?"
 ```
 
 ## Sources
@@ -70,7 +70,7 @@ Primary sources include:
 - Cloud provider compliance documentation (AWS, Microsoft, Google Cloud)
 - Vendor trust centers for each named product
 
-Compliance facts that depend on current authorization state (per-service FedRAMP status, per-model availability, vendor product scope) carry dated verification stamps inline — typically "verified 2026-04-21 via [URL]." Re-verify at the primary source before citing in an SSP.
+Compliance facts that depend on current authorization state (per-service FedRAMP status, per-model availability, vendor product scope) carry dated verification stamps inline, typically "verified 2026-04-21 via [URL]." Re-verify at the primary source before citing in an SSP.
 
 ## Contributing
 
@@ -82,6 +82,6 @@ This skill provides compliance guidance based on publicly available documentatio
 
 ## License
 
-This work is licensed under [CC BY-SA 4.0](LICENSE) — Creative Commons Attribution-ShareAlike 4.0 International.
+This work is licensed under [CC BY-SA 4.0](LICENSE), Creative Commons Attribution-ShareAlike 4.0 International.
 
 You are free to share and adapt this material for any purpose, including commercial use, as long as you provide attribution and distribute contributions under the same license.

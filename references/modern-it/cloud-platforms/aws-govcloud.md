@@ -13,8 +13,8 @@
 This file maps AWS GovCloud (US) capability patterns to CMMC
 practice requirements for defense contractors hosting CUI or FCI
 workloads on AWS. AWS GovCloud is a physically and logically
-separate set of AWS Regions — AWS GovCloud (US-East) and
-AWS GovCloud (US-West) — designed for US government workloads
+separate set of AWS Regions (AWS GovCloud US-East and
+AWS GovCloud US-West) designed for US government workloads
 with US-person operator access, hardened against FedRAMP High
 and DoD Impact Level (IL) overlay requirements.
 
@@ -34,7 +34,7 @@ GovCloud (US) package is F1603047866.
 The JAB P-ATO pathway is now defunct for new authorizations;
 the AWS GovCloud P-ATO remains in force but will not be
 re-issued as an Agency ATO because FedRAMP no longer issues
-ATOs to CSPs — agencies issue their own ATOs against the AWS
+ATOs to CSPs. Agencies issue their own ATOs against the AWS
 authorization package. AWS GovCloud is listed with FedRAMP
 High authorization on marketplace.fedramp.gov; verify current
 status at the marketplace before citing in an SSP.
@@ -382,7 +382,7 @@ CA.L2-3.12.1 (security control assessment), and CA.L2-3.12.3
 - Security Hub aggregates findings; enable it as the
   primary findings aggregation plane and forward findings to
   the SIEM. Security Hub controls map to FedRAMP, NIST
-  800-53, CIS AWS Foundations, and PCI — useful for
+  800-53, CIS AWS Foundations, and PCI, which is useful for
   cross-framework evidence.
 - GuardDuty should be enabled in every account and every
   Region in scope, with delegated administration through
@@ -724,12 +724,12 @@ files and domain practice files:
 Domain practice files used for requirement text and
 evidence lists:
 
-- Configuration Management (CM) — `references/domains/cm-configuration-mgmt.md`
-- System and Information Integrity (SI) — `references/domains/si-system-information-integrity.md`
-- System and Communications Protection (SC) — `references/domains/sc-system-comms.md`
-- Identification and Authentication (IA) — `references/domains/ia-identification-auth.md`
-- Access Control (AC) — `references/domains/ac-access-control.md`
-- Audit and Accountability (AU) — `references/domains/au-audit.md`
+- Configuration Management (CM): `references/domains/cm-configuration-mgmt.md`
+- System and Information Integrity (SI): `references/domains/si-system-information-integrity.md`
+- System and Communications Protection (SC): `references/domains/sc-system-comms.md`
+- Identification and Authentication (IA): `references/domains/ia-identification-auth.md`
+- Access Control (AC): `references/domains/ac-access-control.md`
+- Audit and Accountability (AU): `references/domains/au-audit.md`
 
 ---
 

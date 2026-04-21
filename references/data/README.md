@@ -8,7 +8,7 @@ that corpus prose files hedge to.
 
 ## Files
 
-- **fedramp-snapshot.json** — FedRAMP authorization state for the
+- **fedramp-snapshot.json.** FedRAMP authorization state for the
   six productivity-corpus vendors (Microsoft 365 GCC, Microsoft
   365 GCC High, Google Workspace + Assured Controls Plus,
   Atlassian Government Cloud, ServiceNow GCC, GitHub Enterprise
@@ -21,17 +21,17 @@ that corpus prose files hedge to.
 A starting reference for agent-grounded responses that need
 authorization-state facts. Each entry carries:
 
-- `id` — stable identifier
-- `product` — vendor-facing product name
-- `vendor` — parent vendor
-- `fedramp_impact_level` — Low / Moderate / High / Tailored
-- `dod_impact_level` — array of applicable IL authorizations
-- `authorization_type` — P-ATO, JAB P-ATO, Agency ATO, Tailored
-- `package_hint` — hint for finding the Marketplace package
-- `cui_suitability` — short phrase on DFARS 7012 fit
-- `primary_source` — authoritative URLs for verification
-- `corpus_references` — which cmmc-advisor files cite this vendor
-- `notes` — caveats, model-level availability, common miscitations
+- `id`: stable identifier
+- `product`: vendor-facing product name
+- `vendor`: parent vendor
+- `fedramp_impact_level`: Low / Moderate / High / Tailored
+- `dod_impact_level`: array of applicable IL authorizations
+- `authorization_type`: P-ATO, JAB P-ATO, Agency ATO, Tailored
+- `package_hint`: hint for finding the Marketplace package
+- `cui_suitability`: short phrase on DFARS 7012 fit
+- `primary_source`: authoritative URLs for verification
+- `corpus_references`: which cmmc-advisor files cite this vendor
+- `notes`: caveats, model-level availability, common miscitations
 
 ## What the snapshot is not
 
@@ -96,5 +96,5 @@ When adding a new vendor entry, follow the existing entry shape
 and include `corpus_references` pointing at the files that cite
 the vendor. When removing a vendor (decommissioned product,
 retired authorization), preserve the entry with an explicit
-`status: retired` note rather than deleting — downstream
+`status: retired` note rather than deleting; downstream
 consumers may rely on the identifier persisting.

@@ -321,8 +321,8 @@ primary facility's access control system.
   Wi-Fi without any policy on storage or disposal. Paper CUI at
   home is a common audit finding.
 - Having no alternate-work-site policy at all, then citing
-  PE.L2-3.10.6 as "inherited from the office facility" —
-  assessors read this as an unmet practice.
+  PE.L2-3.10.6 as "inherited from the office facility."
+  Assessors read this as an unmet practice.
 
 ---
 
@@ -583,29 +583,29 @@ borders).
 Remote-work guidance composes with the domain practice files for
 assessor-facing requirement text and evidence lists:
 
-- Physical Protection (PE) —
+- Physical Protection (PE).
   `references/domains/pe-physical-protection.md` for PE.L1-3.10.1
   through PE.L1-3.10.5 and PE.L2-3.10.6.
-- Access Control (AC) — `references/domains/ac-access-control.md`
+- Access Control (AC). `references/domains/ac-access-control.md`
   for AC.L1-3.1.20, AC.L2-3.1.12 through AC.L2-3.1.15, AC.L2-3.1.18,
   and AC.L2-3.1.19.
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC).
   `references/domains/sc-system-comms.md` for SC.L2-3.13.7
   and SC.L2-3.13.8.
-- Configuration Management (CM) —
+- Configuration Management (CM).
   `references/domains/cm-configuration-mgmt.md` for
   CM.L2-3.4.1 and CM.L2-3.4.2 applied to virtual desktop or
   managed-container baselines.
-- Identification and Authentication (IA) —
+- Identification and Authentication (IA).
   `references/domains/ia-identification-auth.md` for remote-
   access MFA.
-- Awareness and Training (AT) —
+- Awareness and Training (AT).
   `references/domains/at-awareness-training.md` for the
   remote-worker training module.
-- Media Protection (MP) —
+- Media Protection (MP).
   `references/domains/mp-media-protection.md` for traveling-
   device sanitization.
-- CUI Scoping — `references/scoping-and-cui.md` for the scope
+- CUI Scoping. `references/scoping-and-cui.md` for the scope
   decision that every pattern above hinges on.
 
 For FedRAMP Moderate inheritance when DaaS, VDI, or remote

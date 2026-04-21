@@ -10,7 +10,7 @@ domain has 9 practices, all at Level 2.
 
 CM is about knowing what your systems look like, keeping them in a known
 good state, and controlling how that state changes. Unmanaged
-configurations drift toward insecurity — CM prevents that drift.
+configurations drift toward insecurity. CM prevents that drift.
 
 ---
 
@@ -46,7 +46,7 @@ and ensure all systems are configured to your standards.
 - Baseline change history
 
 **Common mistakes:**
-- No documented baseline — systems configured ad hoc
+- No documented baseline (systems configured ad hoc)
 - Baseline created once and never updated
 - Inventory incomplete (missing mobile devices, cloud resources, or
   network equipment)
@@ -109,7 +109,7 @@ reviewed, approved, tested, and documented before implementation.
 - Evidence of testing before production changes
 
 **Common mistakes:**
-- No change management process — changes made ad hoc
+- No change management process (changes made ad hoc)
 - Process exists but is bypassed for "emergency" changes routinely
 - Changes logged but not reviewed or approved before implementation
 - No testing before production changes
@@ -224,8 +224,8 @@ surface to only what is needed for the system's mission.
 programs, functions, ports, protocols, and services.
 
 **Why it matters:** This practice reinforces least functionality with
-active prevention. It is not enough to not install unnecessary software —
-you must actively prevent its use.
+active prevention. It is not enough to avoid installing unnecessary software.
+You must actively prevent its use.
 
 **Implementation guidance:**
 - Implement application allowlisting or denylisting
@@ -242,7 +242,7 @@ you must actively prevent its use.
 - Endpoint protection configurations
 
 **Common mistakes:**
-- No application control — users can install and run anything
+- No application control (users can install and run anything)
 - USB drives unrestricted on all endpoints
 - Outbound traffic completely open
 
@@ -319,7 +319,7 @@ configuration.
 |-----------|---------|---------|-------|
 | Count | 0 | 9 | 9 |
 
-**Assessment priority:** Start with CM.L2-3.4.1 (baselining) — without
+**Assessment priority:** Start with CM.L2-3.4.1 (baselining). Without
 a known baseline and asset inventory, all other CM practices lack a
 foundation. Then focus on CM.L2-3.4.6 and CM.L2-3.4.7 (least functionality)
 because reducing attack surface has immediate security impact.

@@ -173,10 +173,10 @@ are delivered through two Security Requirements Guides (SRGs) that
 define Impact Levels (IL2, IL4, IL5, IL6) layered on top of FedRAMP
 authorization for DoD-specific workloads:
 
-- **DoD CSP SRG v1r1** — security requirements Cloud Service
+- **DoD CSP SRG v1r1.** Security requirements Cloud Service
   Providers must meet to deliver cloud service offerings to DoD
   Mission Owners.
-- **DoD MO SRG** — technical requirements applying to the Mission
+- **DoD MO SRG.** Technical requirements applying to the Mission
   Owner (the DoD organization or contractor using the CSP's
   offering).
 
@@ -926,7 +926,7 @@ updates to all parties (FedRAMP, CISA when applicable, all agency
 customers) until recovery is complete.
 
 **Final post-incident report.** After completing the Post-Incident
-Activity phase, the CSP provides a comprehensive report describing
+Activity phase, the CSP provides a full report describing
 what occurred, root cause, response actions, lessons learned, and
 required changes. The Agency AO reviews this report and may
 establish corrective action plans.

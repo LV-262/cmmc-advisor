@@ -14,7 +14,7 @@
 
 Compliance theater is the pattern of appearing compliant
 without being operationally secure. It takes effort,
-investment, and organizational attention — all without
+investment, and organizational attention, all without
 producing the control outcomes CMMC requires. Assessors see
 through it. Peers see through it. Adversaries do not care.
 
@@ -84,7 +84,7 @@ Not covered:
 Each anti-pattern section follows the same four-element
 structure:
 
-1. **What it looks like.** The observable symptoms — what an
+1. **What it looks like.** The observable symptoms: what an
    assessor or auditor would see when inspecting the
    environment, policies, or staff behavior.
 2. **Why it fails.** The underlying reason the pattern does
@@ -114,7 +114,7 @@ and what systems actually do.
 
 ### Pattern 1: Policy pyramid without procedures
 
-**What it looks like.** Organization has a comprehensive
+**What it looks like.** Organization has a full
 policy library: an information-security policy, an
 acceptable-use policy, an access-control policy, an
 incident-response policy, a configuration-management policy.
@@ -262,9 +262,9 @@ what retires.
 
 **What it looks like.** SIEM platform deployed, logs flowing
 in from endpoints, network devices, cloud services, and
-applications. Correlation rules exist — sometimes
+applications. Correlation rules exist (sometimes
 vendor-default, sometimes tuned at deployment and never
-revisited. No named analyst is responsible for alert
+revisited). No named analyst is responsible for alert
 triage. Alerts accumulate in a queue nobody reads.
 
 **Why it fails.** AU.L2-3.3.3 (event review) requires that
@@ -276,7 +276,7 @@ for investigation records and none exist.
 **CMMC practices broken.** AU.L2-3.3.3 (event review),
 AU.L2-3.3.5 (audit correlation), SI.L2-3.14.6 (monitoring),
 SI.L2-3.14.7 (unauthorized-use detection), IR.L2-3.6.1
-(incident handling) — detection signals never flow to
+(incident handling). Detection signals never flow to
 response.
 
 **What to do instead.** Named analyst role (security analyst,
@@ -369,7 +369,7 @@ they sample CUI-touching systems and find ones not in the
 SSP scope.
 
 **CMMC practices broken.** CA.L2-3.12.4 (SSP), AC.L1-3.1.1
-(authorized access control — access granted to CUI by users
+(authorized access control, access granted to CUI by users
 not in the authorization boundary), MP.L2-3.8.2 (limit media
 access), and every CUI-protecting practice on the out-of-
 scope systems.
@@ -394,12 +394,12 @@ customer-contractor email flow touches.
 information content and handling requirements; "we don't
 store it" does not remove CUI-status when the information
 transits contractor systems. DFARS 7012 applies to CUI
-processed, stored, or transmitted — all three.
+processed, stored, or transmitted: all three.
 
 **CMMC practices broken.** CA.L2-3.12.4 (SSP scoping),
 AC.L1-3.1.1 (authorized access), SC.L2-3.13.8 (data in
-transit — CUI email is in-scope), MP.L2-3.8.2 (media
-access — email attachments are media).
+transit, CUI email is in-scope), MP.L2-3.8.2 (media
+access, email attachments are media).
 
 **What to do instead.** CUI scope follows the information,
 not the storage state. Transmitted CUI is in scope. See
@@ -427,7 +427,7 @@ on a commercial tenancy do not substitute for the
 authorization boundary.
 
 **CMMC practices broken.** CA.L2-3.12.1 (security
-assessment — inheritance from commercial cloud does not
+assessment, inheritance from commercial cloud does not
 cover the required IL4/IL5 scope), SC.L2-3.13.11 (FIPS
 cryptography may not be enforced consistently), MP.L2-3.8.1
 (media protection depends on tenancy-level operator access).
@@ -456,7 +456,7 @@ assessment and incident-response fail on shared-account
 patterns.
 
 **CMMC practices broken.** AU.L2-3.3.2 (user accountability),
-IA.L1-3.5.1 (identification), AC.L2-3.1.5 (least privilege —
+IA.L1-3.5.1 (identification), AC.L2-3.1.5 (least privilege,
 shared accounts typically have broad privilege), AC.L2-3.1.7
 (privileged-function auditing), SI.L2-3.14.7 (unauthorized
 use detection).
@@ -475,8 +475,8 @@ replaced with role-based access tied to individual identity.
 Patterns where the contractor optimizes for assessment
 outcome rather than operational security. C3PAOs vary in
 experience; sophisticated assessors catch these patterns,
-less-experienced assessors sometimes let them pass — a gap
-that surfaces on re-assessment when a different assessor
+less-experienced assessors sometimes let them pass. That gap
+surfaces on re-assessment when a different assessor
 finds what the first one missed.
 
 ### Pattern 13: Point-in-time readiness
@@ -496,7 +496,7 @@ the same control state.
 
 **CMMC practices broken.** CA.L2-3.12.3 (continuous
 monitoring), CA.L2-3.12.4 (SSP maintenance), CM.L2-3.4.3
-(change tracking — continuous process required), and the
+(change tracking, continuous process required), and the
 48 CFR 252.204-7021 annual affirmation obligation.
 
 **What to do instead.** Continuous-compliance cycle
@@ -523,7 +523,7 @@ the provider's SSP and the contractor's usage configuration.
 Claims without traceability produce findings.
 
 **CMMC practices broken.** CA.L2-3.12.4 (SSP inheritance
-documentation), CA.L2-3.12.1 (assessment — inherited
+documentation), CA.L2-3.12.1 (assessment, inherited
 controls must be verifiable).
 
 **What to do instead.** For each inherited control, document:
@@ -644,29 +644,29 @@ readiness rather than urgency.
 Anti-pattern recognition composes with corpus cross-cutting
 files and domain practice files:
 
-- **SSP authoring.** `references/ssp-guidance.md` — the SSP
+- **SSP authoring.** `references/ssp-guidance.md`. The SSP
   is where documentation theater surfaces or is prevented.
-- **POA&M management.** `references/poam-management.md` —
-  the POA&M is where assessment theater meets operational
+- **POA&M management.** `references/poam-management.md`.
+  The POA&M is where assessment theater meets operational
   reality.
 - **Evidence collection.**
-  `references/evidence-collection.md` — evidence quality
+  `references/evidence-collection.md`. Evidence quality
   standards prevent most documentation and tool theater.
-- **CUI scoping.** `references/scoping-and-cui.md` — the
+- **CUI scoping.** `references/scoping-and-cui.md`. The
   upstream determination that scope theater operates against.
 - **Levels and assessment.**
-  `references/levels-and-assessment.md` — CMMC level
+  `references/levels-and-assessment.md`. CMMC level
   determines assessment stakes.
 - **Contractor profiles.**
-  `references/contractor-profiles.md` — profile-specific
+  `references/contractor-profiles.md`. Profile-specific
   theater risk (small contractors most vulnerable to
   documentation theater; large contractors most vulnerable
   to tool theater and scope sprawl).
 - **FedRAMP Marketplace guide.**
-  `references/fedramp-marketplace-guide.md` — inherited-
+  `references/fedramp-marketplace-guide.md`. Inherited-
   control fantasy (Pattern 14) requires marketplace-verified
   inheritance claims.
-- **Modern IT.** `references/modern-it/` — tenancy-selection
+- **Modern IT.** `references/modern-it/`. Tenancy-selection
   framework prevents commercial-cloud-with-policy-controls
   (Pattern 11).
 

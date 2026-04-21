@@ -22,20 +22,20 @@ Decision 5.
 
 Microsoft 365 government tenancies serve distinct audiences:
 
-- **Commercial** — public-sector and private-sector workloads;
+- **Commercial.** Public-sector and private-sector workloads;
   FedRAMP Moderate on specific services; DoD IL2 for non-CUI
   federal. Not appropriate for CUI under DFARS 7012.
-- **GCC (Government Community Cloud)** — federal agencies and
+- **GCC (Government Community Cloud).** Federal agencies and
   contractors handling public-sector workloads up to FedRAMP
   Moderate and DoD IL2. CUI posture is limited; contract clauses
   may allow GCC for specific CUI scenarios with agency
   agreement, but GCC High is the common contractor path for
   DFARS-scope CUI.
-- **GCC High (Government Community Cloud High)** — defense
+- **GCC High (Government Community Cloud High).** Defense
   contractors, IL4 and IL5 workloads, DFARS 7012 CUI handling,
   ITAR-controlled environments. Sovereign tenancy physically
   and logically separate from commercial Microsoft 365.
-- **DoD** — Department of Defense mission-owner workloads.
+- **DoD.** Department of Defense mission-owner workloads.
   Reserved for DoD consumption; contractors typically do not
   land here directly but may interact with DoD tenants through
   cross-tenant collaboration.
@@ -66,7 +66,7 @@ identifiers in an SSP.
 **DoD Impact Level coverage (verified 2026-04-21).** Microsoft
 365 GCC holds DoD IL2 Provisional Authorization. Microsoft 365
 GCC High holds DoD IL2, IL4, and IL5 Provisional Authorizations
-under CSP SRG v1r1 reciprocity rules — IL5 on FedRAMP High
+under CSP SRG v1r1 reciprocity rules: IL5 on FedRAMP High
 baseline plus CNSSI 1253 High Confidentiality and Integrity
 overlays. Microsoft 365 DoD (the DoD-exclusive tenancy) holds
 IL5 under separate provisional authorization.
@@ -132,7 +132,7 @@ tuning problem; the path forward is a migration to GCC High
 (or Workspace Assured Controls Plus) rather than
 configuration tightening.
 
-**2. Which government tenancy is the contractor path — GCC,
+**2. Which government tenancy is the contractor path: GCC,
 GCC High, or DoD?**
 
 - **GCC** is FedRAMP Moderate plus DoD IL2. Appropriate for
@@ -176,7 +176,7 @@ compliance). A management plane running in GCC High inherits
 the GCC High FedRAMP High P-ATO plus IL5 PA; a management
 plane running in GCC inherits FedRAMP Moderate plus IL2. The
 productivity-suite tenancy and the management-plane tenancy
-must match — splitting them (for example, M365 GCC High for
+must match. Splitting them (for example, M365 GCC High for
 productivity but Intune GCC for endpoint management) is not
 supported and creates an inheritance-mismatch scope problem.
 
@@ -384,7 +384,7 @@ event creation), AU.L2-3.3.2 (user accountability).
 - Exchange Online Protection (EOP) and Defender for Office 365
   provide anti-phishing, anti-malware, and attachment scanning
   for email. Defender for Office 365 is the CUI-expected tier
-  for CMMC L2 because the threat landscape includes phishing
+  for CMMC L2 because the threat environment includes phishing
   and supply-chain email attacks.
 - SharePoint Online and OneDrive inherit tenant-level sharing
   policies. Configure the external sharing policy to "New and
@@ -912,22 +912,22 @@ cutting files and domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Access Control (AC) — `references/domains/ac-access-control.md`
-- System and Information Integrity (SI) —
+- Access Control (AC). `references/domains/ac-access-control.md`
+- System and Information Integrity (SI).
   `references/domains/si-system-information-integrity.md`
-- System and Communications Protection (SC) —
+- System and Communications Protection (SC).
   `references/domains/sc-system-comms.md`
-- Identification and Authentication (IA) —
+- Identification and Authentication (IA).
   `references/domains/ia-identification-auth.md`
-- Configuration Management (CM) —
+- Configuration Management (CM).
   `references/domains/cm-configuration-mgmt.md`
-- Audit and Accountability (AU) —
+- Audit and Accountability (AU).
   `references/domains/au-audit.md`
-- Media Protection (MP) —
+- Media Protection (MP).
   `references/domains/mp-media-protection.md`
-- Awareness and Training (AT) —
+- Awareness and Training (AT).
   `references/domains/at-awareness-training.md`
-- Personnel Security (PS) —
+- Personnel Security (PS).
   `references/domains/ps-personnel-security.md`
 
 ---

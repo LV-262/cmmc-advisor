@@ -824,13 +824,13 @@ corpus cross-cutting files and domain practice files:
 Domain practice files used for requirement text and evidence
 lists:
 
-- Configuration Management (CM) — `references/domains/cm-configuration-mgmt.md`
-- System and Information Integrity (SI) — `references/domains/si-system-information-integrity.md`
-- System and Communications Protection (SC) — `references/domains/sc-system-comms.md`
-- Identification and Authentication (IA) — `references/domains/ia-identification-auth.md`
-- Access Control (AC) — `references/domains/ac-access-control.md`
-- Audit and Accountability (AU) — `references/domains/au-audit.md`
-- Security Assessment (CA) — `references/domains/ca-security-assessment.md`
+- Configuration Management (CM): `references/domains/cm-configuration-mgmt.md`
+- System and Information Integrity (SI): `references/domains/si-system-information-integrity.md`
+- System and Communications Protection (SC): `references/domains/sc-system-comms.md`
+- Identification and Authentication (IA): `references/domains/ia-identification-auth.md`
+- Access Control (AC): `references/domains/ac-access-control.md`
+- Audit and Accountability (AU): `references/domains/au-audit.md`
+- Security Assessment (CA): `references/domains/ca-security-assessment.md`
 
 ---
 
