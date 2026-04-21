@@ -59,10 +59,8 @@ access has already been granted is not screening, it is notification.
   investigations and are out of scope for most CUI-only roles;
   include Tier 3 only when the contract explicitly requires that
   higher investigation level. Investigation submissions today route
-  through NBIS
-  (National Background Investigation Services, which replaced e-QIP
-  around 2023) and are tracked in DISS
-  (Defense Information System for Security)
+  through NBIS (National Background Investigation Services, which replaced e-QIP around 2023) and are tracked in
+  DISS (Defense Information System for Security)
 - Clearance mechanics are out of scope for Level 2 CUI work; the
   investigation tier references are included here only because
   contracts sometimes require them for CUI-handling roles even without

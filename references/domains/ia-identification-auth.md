@@ -14,7 +14,7 @@ enforced because you cannot verify who is requesting access.
 
 ---
 
-## Level 1 Practices (Basic)
+## Level 1 Practices
 
 ### IA.L1-3.5.1 — Identification
 
@@ -75,7 +75,7 @@ proves it. Without authentication, anyone can claim any identity.
 
 ---
 
-## Level 2 Practices (Derived)
+## Level 2 Practices
 
 ### IA.L2-3.5.3 — Multi-Factor Authentication
 

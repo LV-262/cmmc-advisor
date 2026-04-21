@@ -16,7 +16,7 @@ encryption modules, network design).
 
 ---
 
-## Level 1 Practices (Basic)
+## Level 1 Practices
 
 ### SC.L1-3.13.1 — Boundary Protection
 
@@ -83,7 +83,7 @@ system does not provide direct access to CUI.
 
 ---
 
-## Level 2 Practices (Derived)
+## Level 2 Practices
 
 ### SC.L2-3.13.2 — Architectural Design
 
