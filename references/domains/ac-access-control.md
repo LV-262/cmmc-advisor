@@ -48,6 +48,14 @@ other control is meaningful.
 - Service accounts with no documented owner
 - Systems accessible without authentication
 
+**Modern IT note:** See
+`modern-it/productivity/microsoft-365-gcc.md` and
+`modern-it/productivity/google-workspace.md` for account-management
+posture across government productivity suites (Entra ID Government
+plus Conditional Access plus PIM on the Microsoft side; Cloud
+Identity plus Context-Aware Access plus 2-Step Verification on the
+Google side).
+
 ---
 
 ### AC.L1-3.1.2 — Transaction and Function Control

@@ -114,6 +114,16 @@ reviewed, approved, tested, and documented before implementation.
 - Changes logged but not reviewed or approved before implementation
 - No testing before production changes
 
+**Modern IT note:** See
+`modern-it/productivity/microsoft-365-gcc.md` and
+`modern-it/productivity/google-workspace.md` for feature-rollout
+governance on government productivity suites. Tier-level FedRAMP
+authorization is stable; feature-level claims (new services, new
+Purview modules, new Workspace controls) drift faster and are
+tracked via vendor release notes and staged rollouts. The
+productivity files' versioning sections flag which claims are
+anchor-stable versus feature-date-sensitive.
+
 ---
 
 ### CM.L2-3.4.4 — Impact Analysis

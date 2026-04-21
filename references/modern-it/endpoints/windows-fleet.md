@@ -41,26 +41,16 @@ payload and policy names change with Microsoft release cadence
 and must be verified against current Microsoft Learn documentation
 before deployment.
 
-**GCC versus GCC High.** Contractors handling CUI under DFARS
-252.204-7012 typically run the Microsoft 365 and Intune management
-planes in Government Community Cloud High (GCC High) rather than
-commercial or GCC. GCC High is the FedRAMP High-authorized
-tenancy aligned with IL5; GCC is FedRAMP Moderate.
-DFARS 252.204-7012(b)(2)(ii)(D) requires FedRAMP Moderate
-equivalence, so GCC Moderate can satisfy the CSP-equivalence
-requirement on its face; GCC High is the more common contractor
-choice because several DoD contract vehicles explicitly reference
-IL5 and because enforcement against future tightening is easier
-from the higher tenancy. The tenancy decision belongs in a
-tenancy-selection workflow, not in an endpoint-posture default.
-Management-plane tenancy selection drives what inheritance a
-contractor can claim for the Intune and Defender control
-surfaces; see
-`references/modern-it/productivity/microsoft-365-gcc.md` (pending)
-for the tenancy-selection decision. The capability and control
-mapping in this file applies regardless of tenancy, but the
-FedRAMP inheritance depends on which tenancy hosts the
-management plane.
+**GCC versus GCC High.** The Microsoft 365 tenancy-selection
+decision (commercial, GCC, GCC High, DoD) is the authoritative
+subject of `references/modern-it/productivity/microsoft-365-gcc.md`
+"Tenancy Selection" per Phase 5d hub Decision 5. The decision
+drives what FedRAMP inheritance a contractor can claim for the
+Intune and Defender control surfaces sitting on top. The capability
+and control mapping in this file applies regardless of tenancy,
+but FedRAMP inheritance depends on which tenancy hosts the
+management plane; read the productivity file for the full decision
+tree.
 
 ---
 
@@ -82,8 +72,7 @@ Not covered:
 - Microsoft 365 productivity suite compliance. Exchange Online,
   SharePoint Online, Teams, and the DLP, retention, and
   sensitivity-label layers ride in
-  `references/modern-it/productivity/microsoft-365-gcc.md`
-  (pending).
+  `references/modern-it/productivity/microsoft-365-gcc.md`.
 - Azure IaaS platform posture. Azure tenancy and subscription
   posture lives in
   `references/modern-it/cloud-platforms/azure-government.md`;
