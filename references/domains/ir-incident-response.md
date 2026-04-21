@@ -364,10 +364,13 @@ should start early because the medallion certificate has lead time.
   cross-functional stakeholders for meaningful exercise participation
 - IR intersects Media Protection (MP) for evidence handling,
   chain-of-custody, and forensic media management during investigation
-- FedRAMP and DFARS reporting tracks are separate. FedRAMP CSPs
-  report to CISA within 1 hour; CMMC contractors report to DoD via
-  DIBNet within 72 hours per DFARS 252.204-7012(c)(1)(ii), with
-  malware samples to DC3 under (d) and 90-day media preservation
-  under (e). A joint incident runs both tracks. See
-  `references/fedramp-gap.md` "Incident reporting cadence" and the
-  full-scope DFARS 7012 walkthrough
+- Federal Risk and Authorization Management Program (FedRAMP) and
+  Defense Federal Acquisition Regulation Supplement (DFARS) reporting
+  tracks are separate. FedRAMP cloud service providers (CSPs) report
+  to the Cybersecurity and Infrastructure Security Agency (CISA)
+  within 1 hour; CMMC contractors report to DoD via DIBNet within 72
+  hours per DFARS 252.204-7012(c)(1)(ii), with malware samples to DC3
+  under (d) and 90-day media preservation under (e). A joint incident
+  runs both tracks. See `references/fedramp-gap.md` "Incident
+  reporting cadence" and "DFARS 252.204-7012 — the safeguarding clause
+  in full"
