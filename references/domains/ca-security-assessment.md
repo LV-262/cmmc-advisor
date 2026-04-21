@@ -403,11 +403,12 @@ common assessment gaps in this domain.
   FIPS (Federal Information Processing Standards) validated
   crypto POA&M carve-out under SC.L2-3.13.11; SC boundary
   protection is a primary subject of CA.L2-3.12.3 monitoring
-- FedRAMP inheritance: CA.L2-3.12.3 (continuous monitoring) sits
-  against a FedRAMP Moderate ConMon program that runs on a
-  monthly/annual cycle, substantially more frequent than the
-  CMMC triennial assessment cycle. CA.L2-3.12.4 (SSP) sits
-  against a FedRAMP SSP template with roughly seventeen
+- Federal Risk and Authorization Management Program (FedRAMP)
+  inheritance: CA.L2-3.12.3 (continuous monitoring) sits against
+  a FedRAMP Moderate continuous monitoring (ConMon) program that
+  runs on a monthly/annual cycle, substantially more frequent
+  than the CMMC triennial assessment cycle. CA.L2-3.12.4 (SSP)
+  sits against a FedRAMP SSP template with roughly seventeen
   appendices and per-control Requirement/Summary/Implementation
   structure. See `references/fedramp-gap.md` "Continuous
   monitoring cadence" and "System Security Plan depth"
