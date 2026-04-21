@@ -21,7 +21,9 @@ equivalent) security requirements. See `references/fedramp-gap.md` "The
 CUI Baseline Decision" for the clause text and the equivalency mechanics.
 The CUI boundary and the CSP's FedRAMP authorization boundary are distinct
 artifacts; see `references/fedramp-gap.md` "Boundary documentation depth"
-for the two-boundary pattern.
+for the two-boundary pattern. For platform-selection decisions across
+AWS GovCloud, Azure Government, and Google Cloud Assured Workloads, see
+`references/modern-it/cloud-platforms/cloud-selection.md`.
 
 ---
 

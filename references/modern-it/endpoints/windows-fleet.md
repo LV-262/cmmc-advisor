@@ -86,8 +86,10 @@ Not covered:
   (pending).
 - Azure IaaS platform posture. Azure tenancy and subscription
   posture lives in
-  `references/modern-it/cloud-platforms/azure-government.md`
-  (pending).
+  `references/modern-it/cloud-platforms/azure-government.md`;
+  the platform-selection hub with the FedRAMP-to-IL crosswalk
+  lives in
+  `references/modern-it/cloud-platforms/cloud-selection.md`.
 - Legacy Windows versions below Windows 10 22H2 for CUI
   endpoints. Windows 8.1 and earlier are out of security-update
   support; handling CUI on them is a non-starter.

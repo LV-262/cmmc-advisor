@@ -57,10 +57,9 @@ Not covered:
 - Detailed MDM product configuration. Product-specific guidance
   belongs to the vendor's own documentation; the Examples sidebar
   at the bottom lists the common products.
-- iOS and iPadOS fleet patterns. Mobile endpoint guidance lives in
-  `references/modern-it/endpoints/remote-work.md` (pending;
-  dev-a6ig) where mobile is treated alongside BYOD and VDI
-  patterns.
+- iOS and iPadOS fleet patterns. Mobile endpoint guidance lives
+  in `references/modern-it/endpoints/remote-work.md` where
+  mobile is treated alongside BYOD and VDI patterns.
 - macOS Server. Apple deprecated macOS Server in 2022; contemporary
   fleet management does not rely on it.
 

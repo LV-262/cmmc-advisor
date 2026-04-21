@@ -64,7 +64,12 @@ Not covered:
   file cites those files when a capability is OS-specific.
 - Cloud platform posture. Azure Government, AWS GovCloud, and
   GCP Assured Workloads are treated under
-  `references/modern-it/cloud-platforms/` (pending).
+  `references/modern-it/cloud-platforms/`; see
+  `cloud-selection.md` for the platform-selection hub and the
+  per-provider files (`aws-govcloud.md`,
+  `azure-government.md`, `gcp-assured.md`) for DaaS/VDI
+  platform posture including AVD, WorkSpaces, and Windows 365
+  hosting.
 - Physical facility security for primary contractor offices.
   Alternate work sites are covered here; primary facilities live
   in the PE domain file directly.
