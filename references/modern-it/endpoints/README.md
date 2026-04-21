@@ -54,13 +54,13 @@ Files currently planned in `references/modern-it/endpoints/`:
   automatically discoverable when a reader browses the
   directory. The SKILL.md routing table carries a first-class
   row pointing at this file.
-- **`macos-fleet.md`** — macOS endpoint capability patterns mapped to
-  CMMC (pending; dev-56av).
-- **`windows-fleet.md`** — Windows endpoint capability patterns mapped
-  to CMMC (pending; dev-uwz3).
+- **`macos-fleet.md`** — macOS endpoint capability patterns
+  mapped to CMMC.
+- **`windows-fleet.md`** — Windows endpoint capability patterns
+  mapped to CMMC.
 - **`remote-work.md`** — VDI, DaaS, BYOD, mobile, travel, and
   Outside Continental United States (OCONUS) posture mapped to
-  CMMC (pending; dev-a6ig).
+  CMMC.
 
 Out of scope for this directory:
 
@@ -71,11 +71,14 @@ Out of scope for this directory:
 - Network infrastructure. Firewalls, switches, and router
   configuration are boundary-protection content under
   `references/domains/sc-system-comms.md`.
-- Cloud platform posture. AWS GovCloud, Azure Government, and GCP
-  Assured Workloads are treated under
-  `references/modern-it/cloud-platforms/`. The management-plane of
-  an endpoint fleet may run in one of those environments; that is
-  covered in the cloud-platform files, not here.
+- Cloud platform posture. AWS GovCloud, Azure Government, and
+  GCP Assured Workloads are treated under
+  `references/modern-it/cloud-platforms/` (see
+  `cloud-selection.md` for the hub, `aws-govcloud.md`,
+  `azure-government.md`, and `gcp-assured.md` for per-provider
+  detail). The management-plane of an endpoint fleet may run in
+  one of those environments; that is covered in the
+  cloud-platform files, not here.
 - Productivity suite posture. Microsoft 365 GCC and GCC High posture
   lives in `references/modern-it/productivity/microsoft-365-gcc.md`.
   Endpoint files reference it when the productivity suite is part of
