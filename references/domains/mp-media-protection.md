@@ -193,28 +193,26 @@ CUI from non-CUI, and downstream controls (sanitization, encrypted
 transport, access restriction) cannot be applied selectively.
 
 **Implementation guidance:**
-- Marking standard: 32 CFR Part 2002 CUI marking requirements and the
-  CUI Registry categories. Banner markings at the top, portion
-  markings on each portion, and dissemination markings as required
+- Marking standard: 32 CFR Part 2002 and the CUI Registry categories
+  define the applicable banner, portion, and dissemination markings.
+  See `references/scoping-and-cui.md` for the CUI-category framework
+  and dissemination-controls taxonomy; this section covers the
+  media-marking mechanics only
 - Digital media: cover page, file-level headers, and where applicable
   embedded watermarks identifying CUI status
 - Physical media: exterior label clearly visible, interior label
   where applicable (tape cartridge exterior and internal index)
-- Dissemination controls under the CUI Registry: FEDCON (Federal
-  Government and contractors only), NOCON (no contractor access),
-  RELTO (releasable to specified entities), and other controls
-  defined in 32 CFR 2002.16 and applied per the CUI category the
-  information belongs to. NOFORN is a classified-system marking
-  under EO 13526, not a CUI dissemination control, and does not
-  apply to standalone unclassified CUI
+- Dissemination markings (per 32 CFR 2002.16) are applied per the
+  CUI category the information belongs to
 - Re-marking on reuse: if media is sanitized and reused, old
   markings removed or overwritten
 
 **Evidence to collect:**
-- Marking policy referencing 32 CFR 2002 and the CUI Registry
+- Marking policy referencing 32 CFR 2002 and the scoping artifact
 - Sample marked media (redacted screenshots or photos of labels)
 - Training records for personnel responsible for applying markings
-- CUI Registry category mapping for the organization's CUI types
+- CUI-category mapping for the organization's CUI types (tracked in
+  the scoping artifact per `references/scoping-and-cui.md`)
 
 **Common mistakes:**
 - Digital files stored with CUI content but no markings; recipients

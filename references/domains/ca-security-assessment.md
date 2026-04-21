@@ -132,20 +132,17 @@ in organizational systems.
 **Why it matters:** Every assessment produces findings and not every
 finding can be closed before the next milestone. The POA&M is the
 tracking artifact that converts "we found this" into "we committed
-to close it by this date." For CMMC, the POA&M also gates
-Conditional Certification: organizations with limited gaps can
-achieve certification by committing to close remaining items under
-defined rules. An organization without a structured POA&M has no way
-to show an assessor (or itself) that deficiencies are being worked
-rather than forgotten.
+to close it by this date." An organization without a structured
+POA&M has no way to show an assessor (or itself) that deficiencies
+are being worked rather than forgotten. POA&M rules governing
+certification outcomes live in `references/poam-management.md`.
 
 **Implementation guidance:**
 
 - POA&M as tracking artifact: practices scored NOT MET in
   CA.L2-3.12.1 become POA&M entries when the gap cannot be closed
-  before the assessment concludes AND the practice qualifies for
-  Conditional Certification deferral (weight-1 practices plus the
-  SC.L2-3.13.11 encryption carve-out per references/poam-management.md).
+  before the assessment concludes and the practice qualifies for
+  deferral under the rules in `references/poam-management.md`.
   NIST SP 800-171A scores practices MET or NOT MET; partially
   implemented practices score NOT MET
 - Entry content per item: practice ID, weakness description, named
@@ -162,10 +159,10 @@ rather than forgotten.
 - Closure discipline: an entry closes only when remediation is
   verified, not when the action is scheduled or taken. Verification
   evidence attaches to the closure record
-- See references/poam-management.md for Conditional Certification
-  scoring rules, the 180-day closeout clock, the SC.L2-3.13.11
-  encryption carve-out, and worked examples of effective POA&M
-  entries versus ineffective ones
+- POA&M scoring rules, deferral eligibility, the 180-day closeout
+  clock, the SC.L2-3.13.11 encryption carve-out, and worked examples
+  of effective versus ineffective entries are covered in the POA&M
+  reference named in Overview
 
 **Evidence to collect:**
 

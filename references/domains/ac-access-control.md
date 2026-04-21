@@ -14,7 +14,7 @@ connection in your environment.
 
 ---
 
-## Level 1 Practices (Basic)
+## Level 1 Practices
 
 These 4 practices apply to all CMMC levels and represent fundamental
 access control capabilities.
@@ -144,7 +144,7 @@ public and that CUI is removed if accidentally posted.
 
 ---
 
-## Level 2 Practices (Derived)
+## Level 2 Practices
 
 These 18 practices apply at CMMC Level 2 and above.
 
