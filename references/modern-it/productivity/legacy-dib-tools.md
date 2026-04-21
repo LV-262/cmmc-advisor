@@ -465,14 +465,22 @@ each pattern.
 
 ## Capability appendix — CMMC capability to legacy DIB tool
 
-Per hub Decision 1 canonical format, with asymmetric rows
-reflecting that no single legacy tool covers every capability. A
-hyphen in a row means the tool family does not provide the
-capability in a CUI-suitable way; the primary suite is expected to
-own that capability.
+Per hub Decision 1 canonical format, this appendix follows the
+hub row order. `—` in a row means the legacy DIB tool families do
+not provide that capability in a CUI-suitable way; the primary
+productivity suite is expected to own that capability.
 
 | Productivity capability | Legacy DIB tool service |
 |---|---|
+| Email and calendar | — |
+| Chat and team messaging | — |
+| Meetings and video conferencing | — |
+| Document authoring | — |
+| Spreadsheets | — |
+| Presentations | — |
+| File storage and internal collaboration | Box for Government (FedRAMP High) |
+| Intranet and employee communications | — |
+| Forms and workflow intake | ServiceNow GCC (FedRAMP High + IL4) |
 | Issue tracking and project management | Atlassian Jira (Government Cloud at FedRAMP Moderate); GitHub Issues (FedRAMP Tailored, source-code scope only) |
 | Knowledge base and wiki | Atlassian Confluence (Government Cloud at FedRAMP Moderate) |
 | IT service management and ticketing | ServiceNow GCC (FedRAMP High + IL4); Atlassian Jira Service Management (Government Cloud at FedRAMP Moderate) |
