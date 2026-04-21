@@ -15,6 +15,18 @@ The SSP is not a compliance artifact to be written at the end. It is a
 living document that reflects your actual security posture. Write it as
 you build your controls, not after.
 
+**FedRAMP SSP comparison.** The CMMC SSP described here is lighter
+than the FedRAMP Moderate SSP both in per-control depth and in
+structural framing. A FedRAMP Moderate SSP includes Section 8
+"Illustrated Architecture and Narratives" plus seventeen appendices,
+and carries three required sections (Requirement, Summary,
+Implementation Statement) for each of ~325 Moderate controls.
+Contractors with a FedRAMP Moderate CSP still write their own CMMC
+SSP; the CSP's FedRAMP package is inherited-control evidence, not a
+substitute. See `references/fedramp-gap.md` "System Security Plan
+depth" and "Inherited vs shared-responsibility controls" for the
+inheritance narrative patterns.
+
 > Source: NIST SP 800-171 Rev 2, Practice 3.12.4: "Develop, document, and
 > periodically update system security plans that describe system boundaries,
 > system environments of operation, how security requirements are implemented,

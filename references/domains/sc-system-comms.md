@@ -560,3 +560,12 @@ CUI confidentiality.
   password protection), AU.L2-3.3.8 (audit information protection
   when encrypted), and MP.L2-3.8.6 (cryptographic mechanisms for
   media in transport)
+- FedRAMP inheritance: SC.L2-3.13.11 (FIPS) inherits strongly from
+  FedRAMP Moderate SC-13 when the CSP operates on FIPS-validated
+  modules; SC.L1-3.13.1 (boundary) inherits from SC-7 at the CSP
+  infrastructure layer. See `references/fedramp-gap.md`
+  "FIPS-validated cryptography" and "Boundary protection" family
+  deep-dives
+- The CUI boundary and the FedRAMP authorization boundary are
+  distinct artifacts. See `references/fedramp-gap.md` "Boundary
+  documentation depth" for the two-boundary pattern

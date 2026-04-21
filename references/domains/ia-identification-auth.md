@@ -369,3 +369,9 @@ for it early.
   (obscured feedback) rely on System and Communications Protection
   (SC) encryption requirements, specifically SC.L2-3.13.11
   (FIPS-validated cryptography)
+- FedRAMP inheritance: IA.L2-3.5.3 (MFA) overlaps with FedRAMP
+  Moderate IA-2(1), IA-2(2), IA-2(3). IA.L2-3.5.4 (replay-resistant
+  authentication) maps to IA-2(8) and IA-2(9); IA-2(8) was added
+  to the Rev 5 Moderate baseline (not in Rev 4). See
+  `references/fedramp-gap.md` "Multi-factor authentication" family
+  deep-dive for the inheritance pattern and the Rev 4/Rev 5 delta
