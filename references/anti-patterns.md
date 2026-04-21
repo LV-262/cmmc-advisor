@@ -3,8 +3,9 @@
 > Source: NIST SP 800-171 Rev 2; CMMC Assessment Guide Level 2
 > (DoD CIO); DFARS 252.204-7012; 32 CFR Part 170 CMMC Program
 > Final Rule (effective 2024-12-16); NIST SP 800-171A
-> assessment objectives; CMMC Phase 1 enforcement observations
-> through 2025-11-10; DoD CMMC Program cost-benefit analysis
+> assessment objectives; CMMC Phase 2 enforcement observations
+> (48 CFR acquisition rule effective 2025-11-10); DoD CMMC
+> Program cost-benefit analysis
 > (federalregister.gov/documents/2023/12/26/2023-27280); C3PAO
 > assessment guidance; practitioner-reported patterns from the
 > DIB compliance community.
@@ -570,13 +571,13 @@ Certification carries the implementation cost to
 post-certification.
 
 **Why it fails.** Conditional Certification rules (see
-`references/poam-management.md`) limit deferral to weight-1
-practices (with SC.L2-3.13.11 included as a specific carve-out
-despite its higher weight), require a minimum 80% assessment
-score for eligibility, and cap the total POA&M mass at a
-specific percentage of the overall score. Assumed-scale POA&M
-strategies hit the cap or the 80% floor; unremediable gaps
-above either line fail the assessment outright.
+`references/poam-management.md` and 32 CFR 170.21/170.23) limit
+deferral to weight-1 practices (with SC.L2-3.13.11 included as
+a specific carve-out despite its higher weight) and require a
+minimum 80% assessment score for eligibility. Assumed-scale
+POA&M strategies hit the 80% floor once enough weight-1
+practices are NOT MET; non-weight-1 gaps fail the assessment
+outright regardless of the POA&M volume.
 
 **CMMC practices broken.** CA.L2-3.12.2 (POA&M rules),
 CA.L2-3.12.1 (pre-assessment remediation), and whichever
@@ -707,10 +708,12 @@ date.
 **False Claims Act.** 31 USC 3729-3733. US federal civil
 statute imposing treble damages and civil penalties for
 knowingly presenting false claims for payment to the federal
-government. Knowingly false CMMC attestation carries False
-Claims Act civil exposure; separate criminal exposure under
-18 USC 1001 applies to knowingly false statements to federal
-agencies.
+government. Knowingly false CMMC attestation may carry False
+Claims Act civil exposure (see, for example, the Aerojet
+Rocketdyne DOJ settlement, 2022-07-08); separate criminal
+exposure under 18 USC 1001 may apply to knowingly false
+statements to federal agencies. Consult counsel on specific
+scenarios; this skill does not make FCA determinations.
 
 **Inheritance matrix.** A traceability artifact mapping
 inherited controls to the inheriting contractor's SSP, the
@@ -745,13 +748,17 @@ alternative to tool proliferation (Pattern 5).
 Anti-pattern content drifts more slowly than vendor-specific
 content, but the underlying CMMC enforcement context shifts:
 
-- **Phase 1 enforcement observations.** Patterns in this
-  file reflect practitioner observations through Phase 1
-  enforcement (began 2025-11-10). Patterns 13 (point-in-
-  time readiness) and 16 (Conditional Certification default)
-  are particularly likely to surface in Phase 2 and 3
-  enforcement when annual affirmations (48 CFR 252.204-7021)
-  become the continuous-compliance test.
+- **Phase 2 enforcement observations.** Per the canonical
+  phased-rollout taxonomy in
+  `references/levels-and-assessment.md`, Phase 1 is the 2024-12-16
+  32 CFR 170 program-rule effective date and Phase 2 is the
+  2025-11-10 48 CFR acquisition-rule effective date. Patterns in
+  this file reflect practitioner observations through Phase 2
+  enforcement. Patterns 13 (point-in-time readiness) and 16
+  (Conditional Certification default) are particularly likely to
+  surface in Phase 3 enforcement (2026-11-10) when annual
+  affirmations under 48 CFR 252.204-7021 become the continuous-
+  compliance test.
 - **Assessor experience maturation.** Assessor variance is
   expected to narrow as C3PAO experience accumulates across
   the industry. Patterns that currently pass with
@@ -771,7 +778,7 @@ content, but the underlying CMMC enforcement context shifts:
   specifics.
 
 Content verified 2026-04-21 against corpus framework and
-practitioner reporting through Phase 1 enforcement. Next
+practitioner reporting through Phase 2 enforcement. Next
 full re-verification at the corpus review cycle or when
 CMMC enforcement phase changes materially (Phase 2 begins,
 48 CFR annual affirmation cycle reaches steady state).

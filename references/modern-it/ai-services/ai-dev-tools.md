@@ -327,10 +327,11 @@ concerns:
   OpenAI, Anthropic, Vertex commercial, xAI) are commercial
   services; none are in a FedRAMP-authorized boundary for DIB
   CUI use.
-- **Privacy Mode.** Cursor's Privacy Mode guarantees model
-  providers do not store code data or use it for training.
-  This is a contractual guarantee, not a FedRAMP authorization;
-  it does not satisfy DFARS 7012 equivalence.
+- **Privacy Mode.** Cursor states that its Privacy Mode ensures
+  model providers do not store code data or use it for training
+  (per cursor.com/security). That is a contractual commitment,
+  not a FedRAMP authorization; it does not satisfy DFARS 7012
+  equivalence.
 
 **4. Migration path when fit is no (current state).** A contractor
 using Cursor for CUI work has a scope problem, not a

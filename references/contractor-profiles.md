@@ -339,11 +339,12 @@ set-asides). Self-certification is no longer valid for federal
 set-asides; contractors must hold SBA certification obtained
 through certify.sba.gov.
 
-**CMMC intersection.** SDVOSB status determines contract
-eligibility for set-aside procurements but does not reduce or
-shift CMMC requirements. A small SDVOSB contractor handling CUI
-under DFARS 7012 meets the same NIST 800-171 requirements as any
-other contractor. The SDVOSB set-aside may make the contract
+**CMMC intersection.** As a general rule, SDVOSB status
+determines contract eligibility for set-aside procurements but
+does not reduce or shift CMMC requirements; specific contract
+clauses control. A small SDVOSB contractor handling CUI under
+DFARS 7012 meets the same NIST 800-171 requirements as any other
+contractor. The SDVOSB set-aside may make the contract
 competitively accessible; the cybersecurity bar is the same.
 
 **Practical implications.**
@@ -372,9 +373,10 @@ mechanics.
 
 **CMMC intersection.** 8(a) sole-source awards and competitive
 8(a) set-asides carry DFARS 7012 when the contract handles CUI.
-8(a) certification does not exempt or reduce CMMC requirements.
-8(a) graduates (firms that have completed the nine-year 8(a)
-term) carry CMMC requirements as they compete on open-market
+As a general rule, 8(a) certification does not exempt or reduce
+CMMC requirements; specific contract clauses control. 8(a)
+graduates (firms that have completed the nine-year 8(a) term)
+carry CMMC requirements as they compete on open-market
 contracts.
 
 **Practical implications.**
@@ -488,7 +490,9 @@ protection plus readiness) rather than scope (every Level 2
 contract requires all 110). Priority timing framing below
 ("first-quarter" for small, "first-six-months" for medium) is
 relative to when a contractor begins compliance investment;
-with Phase 1 enforcement active since 2025-11-10, contractors
+with Phase 2 enforcement active since 2025-11-10 (per
+`references/levels-and-assessment.md` phased-rollout
+taxonomy), contractors
 catching a DFARS 7012 clause on an active solicitation or
 newly-awarded contract start the priority clock immediately and
 compress the sequence as assessment deadlines dictate.
@@ -589,8 +593,8 @@ CFR Part 124.
 
 **C3PAO (CMMC Third-Party Assessment Organization).** An
 accredited assessor authorized to perform Level 2 and Level 3
-certification assessments. Accreditation through the Cyber AB
-(formerly CMMC Accreditation Body).
+certification assessments. Accreditation through The Cyber AB
+(formerly the CMMC Accreditation Body; rebranded 2022).
 
 **CISO (Chief Information Security Officer).** The executive
 responsible for information-security program leadership.
@@ -660,9 +664,12 @@ Contractor-profile content drifts on several axes:
   regulations at 13 CFR Parts 121/124/126/127/128 update
   periodically. Verify current text at sba.gov/regulations
   before citing specific requirements.
-- **CMMC enforcement timeline.** CMMC Phase 1 enforcement
-  began 2025-11-10 per 48 CFR final rule. Phase 2, 3, and 4
-  enforcement phases roll forward over subsequent years.
+- **CMMC enforcement timeline.** Per
+  `references/levels-and-assessment.md`, Phase 1 is the
+  2024-12-16 32 CFR program-rule effective date; Phase 2 is the
+  2025-11-10 48 CFR acquisition-rule effective date; Phase 3
+  begins 2026-11-10; Phase 4 begins 2027-11-10. Content below
+  reflects the Phase 2 operating context.
 - **SBA certification processes.** certify.sba.gov is the
   current authoritative portal for SDVOSB, WOSB, EDWOSB, 8(a),
   and HUBZone certifications. Process timing and documentation

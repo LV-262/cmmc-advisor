@@ -35,9 +35,12 @@ POA&Ms are permitted under strict conditions:
 2. **Only non-critical practices:** Practices that carry a weight of 1 point
    can be placed on a POA&M. Higher-weighted practices must be fully met.
 3. **One exception:** SC.L2-3.13.11 (CUI encryption) can appear on a POA&M
-   if encryption exists but is not FIPS-validated. This is a 3-point item
-   but has a specific carve-out because FIPS validation procurement timelines
-   can be long.
+   if encryption exists but is not FIPS-validated. Per the DoD Assessment
+   Methodology v1.2.1, SC.L2-3.13.11 is a 5-point practice with a partial-
+   credit structure: full implementation is 5 points; encryption present
+   but not FIPS-validated is the 3-point-deduction state that qualifies
+   for this POA&M carve-out. The carve-out exists because FIPS validation
+   procurement timelines can be long.
 4. **180-day closeout deadline:** All POA&M items must be fully remediated
    within 180 days of receiving Conditional Certification.
 5. **Closeout assessment required:** The C3PAO must conduct a closeout

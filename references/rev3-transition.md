@@ -166,8 +166,9 @@ Track these signals for Rev 3 adoption timing:
    period
 3. **ODP publication** — DoD publication of specific ODP values for
    CMMC Rev 3 signals imminent adoption
-4. **Cyber AB guidance** — The CMMC Accreditation Body will publish
-   assessor guidance for Rev 3 assessments
+4. **The Cyber AB guidance.** The Cyber AB (formerly the CMMC
+   Accreditation Body; rebranded 2022) will publish assessor
+   guidance for Rev 3 assessments
 5. **Summit 7 analysis** — The Sum IT Up podcast and Summit 7 blog
    consistently provide early and accurate analysis of CMMC rulemaking
    developments: https://www.summit7.us/podcast

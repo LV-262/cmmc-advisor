@@ -230,10 +230,7 @@ GCC is frequently cited as FedRAMP Moderate in compliance
 literature, but the current authorization is High. A contractor
 building an SSP cites the current FedRAMP Marketplace package
 listing and the verification date, not the widely-circulated
-Moderate claim. (The Phase 5d hub snapshot at
-`references/modern-it/productivity/README.md` still reads
-FedRAMP Moderate for ServiceNow GCC; hub correction is tracked
-under Slice S.)
+Moderate claim.
 
 **2. DoD Impact Level.** ServiceNow GCC carries **DoD Impact Level
 4 (IL4) Provisional Authorization** under CSP SRG v1r1 reciprocity

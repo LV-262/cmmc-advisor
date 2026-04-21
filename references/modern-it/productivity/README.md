@@ -220,13 +220,10 @@ productivity file did not yet exist. With Phase 5d, the
 productivity file becomes the natural owner; endpoint and
 cloud-platform files cross-reference rather than re-derive.
 
-**Implementation note.** Phase 5d Slice S rewrites
-`windows-fleet.md:44-63` from a full framing block to a compact
-pointer. The rewrite is semantic-neutral; content moves to
-`microsoft-365-gcc.md` without framing changes. Slice S PR must
-include side-by-side pre-rewrite and post-rewrite diff plus a
-grep of `windows-fleet.md` for any residual GCC/GCC-High framing
-outside the rewritten block.
+**Implementation note.** The full tenancy-selection decision
+tree lives in `microsoft-365-gcc.md`. The endpoint file
+`references/modern-it/endpoints/windows-fleet.md` carries a
+compact pointer into that tree rather than a parallel framing.
 
 ### Decision 6: Google Workspace Assured Controls Plus ownership
 
@@ -385,7 +382,7 @@ the specific service-to-practice mapping.
 | Document editing (word, spreadsheet, presentation) | Word, Excel, PowerPoint (Online and desktop) | Docs, Sheets, Slides | — |
 | IT service management and ticketing | — | — | ServiceNow GCC, Atlassian Jira Service Management |
 | Issue tracking and project management | Planner, Project | — | Atlassian Jira, GitHub Issues |
-| Source code collaboration | DevOps services (limited) | — | GitHub Enterprise Cloud, Atlassian Bitbucket (Government Cloud) |
+| Source code collaboration | DevOps services (limited) | — | GitHub Enterprise Cloud; Atlassian Bitbucket Data Center (contractor-owned) |
 | Knowledge base and wiki | SharePoint sites, OneNote | Sites, Docs | Atlassian Confluence, ServiceNow Knowledge |
 | Identity and access | Entra ID Government, Conditional Access, PIM | Cloud Identity, Context-Aware Access | Federated via the primary suite's identity plane |
 | DLP and sensitivity labeling | Microsoft Purview DLP, Sensitivity Labels | Workspace DLP, Client-Side Encryption with EKM | Limited native; usually rely on primary suite DLP |

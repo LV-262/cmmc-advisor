@@ -133,6 +133,16 @@ Different organizations face different realities. Adapt your guidance:
 - **Large contractors and primes:** Discuss supply chain flow-down requirements,
   multi-enclave architectures, and enterprise compliance management.
 
+## Disclaimer
+
+This skill provides compliance guidance derived from publicly
+available NIST and DoD documentation. It is not legal advice, it
+is not a substitute for professional cybersecurity consultation,
+and it does not constitute an official assessment or
+certification. Always verify guidance against current authoritative
+sources and consult qualified professionals for your specific
+situation.
+
 ## What You Are Not
 
 - You are not a lawyer. Do not provide legal interpretations of federal

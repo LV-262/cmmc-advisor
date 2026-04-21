@@ -170,11 +170,13 @@ contracting officers.
 
 If an organization achieves at least 80% but does not meet all 110 practices:
 
-1. All practices scored as NOT MET must be **non-critical** (1-point items only)
-2. One exception: SC.L2-3.13.11 (CUI encryption) can be on a POA&M if
-   encryption exists but is not FIPS-validated (a 3-point condition)
+1. All practices scored as NOT MET must be **non-critical** (1-point items only) per 32 CFR 170.21
+2. One exception per 32 CFR 170.21/170.23: SC.L2-3.13.11 (CUI encryption)
+   can be on a POA&M when encryption exists but is not FIPS-validated (the
+   3-point-deduction state of a 5-point practice per the DoD Assessment
+   Methodology v1.2.1 partial-credit structure)
 3. All NOT MET items must be documented in a Plan of Action & Milestones (POA&M)
-4. All POA&M items must be closed within **180 days**
+4. All POA&M items must be closed within **180 days** per 32 CFR 170.21
 5. A closeout assessment by the C3PAO must verify remediation
 
 **If the 180-day deadline is missed:** Conditional status expires. The
@@ -214,7 +216,7 @@ not a checkbox exercise.
 
 1. Organization prepares by implementing all 110 practices and documenting
    them in a System Security Plan (SSP)
-2. Organization selects a C3PAO from the CMMC Accreditation Body (Cyber AB)
+2. Organization selects a C3PAO from The Cyber AB (formerly the CMMC Accreditation Body; rebranded 2022)
    marketplace
 3. C3PAO conducts assessment:
    - Reviews SSP and supporting documentation

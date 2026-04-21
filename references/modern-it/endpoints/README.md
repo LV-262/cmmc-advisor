@@ -164,7 +164,7 @@ specific FIPS-validated module, cite the CMVP certificate number
 directly and stamp the verification date. Example form:
 
 > **FIPS 140 status.** Apple CoreCrypto Kernel Module v14.0 is CMVP
-> certificate #4832 (verified 2026-04-20 on csrc.nist.gov). Module
+> certificate #4832 (verified 2026-04-21 on csrc.nist.gov). Module
 > status transitions (Active, Historical, Revoked) occur
 > continuously; verify before citing.
 

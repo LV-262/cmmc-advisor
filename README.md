@@ -10,20 +10,22 @@ When a compliant path exists, the skill maps it clearly. When no compliant optio
 
 ## What This Covers
 
-- **All 3 CMMC levels** — Level 1 (Foundational), Level 2 (Advanced), Level 3 (Expert)
-- **14 domains, 110 practices** — Full implementation guidance mapped from NIST SP 800-171 Rev 2
-- **Assessment preparation** — Self-assessment, C3PAO, and DIBCAC assessment guidance
-- **CUI scoping** — Boundary definition, FCI vs CUI, enclave strategies
-- **SSP and POA&M** — System Security Plan guidance and Plan of Action & Milestones management
-- **Modern IT mapping** — Compliance guidance for real-world technology stacks:
-  - Cloud platforms (AWS GovCloud, Azure Government, GCP Assured Workloads, hybrid patterns)
-  - Productivity suites (Microsoft 365 GCC/GCC High, Google Workspace, Atlassian Government Cloud, ServiceNow GCC, GitHub Enterprise, Box for Government)
-  - AI services — FedRAMP-authorized (Amazon Bedrock GovCloud, Azure OpenAI Government, Vertex AI Assured Workloads); self-hosted (Coder, on-prem LLM, air-gapped); AI dev tools (Claude Code, Copilot Enterprise, Cursor, Windsurf, Continue)
-  - Endpoint management (macOS, Windows STIG baselines, remote work)
-- **Contractor profiles** — Guidance tailored by company size (small/medium/large) and socioeconomic set-aside (SDVOSB, 8(a), WOSB/EDWOSB, HUBZone)
-- **FedRAMP Marketplace guide** — Curated category short-lists, navigation guidance, and coverage-gap analysis
-- **Rev 3 transition** — Current Rev 2 requirements with Rev 3 awareness and timeline context
-- **Anti-patterns** — Sixteen named compliance-theater patterns across documentation, tool, scope, and assessment categories
+All three CMMC levels: Level 1 (Foundational), Level 2 (Advanced), Level 3 (Expert). 14 domains, 110 practices with full implementation guidance mapped from NIST SP 800-171 Rev 2. Assessment preparation for self-assessment, C3PAO, and DIBCAC paths. CUI scoping covering boundary definition, FCI vs CUI, and enclave strategies. SSP guidance and POA&M management.
+
+Modern IT compliance mapping for real-world stacks:
+
+- Cloud platforms. AWS GovCloud, Azure Government, GCP Assured Workloads, and hybrid patterns.
+- Productivity suites. Microsoft 365 GCC and GCC High, Google Workspace, Atlassian Government Cloud, ServiceNow GCC, GitHub Enterprise, Box for Government.
+- AI services. FedRAMP-authorized (Amazon Bedrock GovCloud, Azure OpenAI Government, Vertex AI Assured Workloads), self-hosted (Coder, on-prem LLM, air-gapped), and AI dev tools (Claude Code, Copilot Enterprise, Cursor, Windsurf, Continue).
+- Endpoint management. macOS, Windows STIG baselines, remote work.
+
+Contractor-specific guidance by company size (small, medium, large) and socioeconomic set-aside (SDVOSB, 8(a), WOSB/EDWOSB, HUBZone).
+
+FedRAMP Marketplace practitioner guide with curated category short-lists, navigation guidance, and coverage-gap analysis.
+
+Rev 3 transition context (current Rev 2 requirements with Rev 3 awareness).
+
+Anti-patterns catalog: sixteen named compliance-theater patterns across documentation, tool, scope, and assessment categories.
 
 ## Installation
 
