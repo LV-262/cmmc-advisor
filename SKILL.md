@@ -50,6 +50,7 @@ from memory alone when a reference exists.
 | Azure Government compliance | `references/modern-it/cloud-platforms/azure-government.md` |
 | GCP Assured Workloads compliance | `references/modern-it/cloud-platforms/gcp-assured.md` |
 | Cloud platform selection | `references/modern-it/cloud-platforms/cloud-selection.md` |
+| Productivity suite overview, vendor selection, tier-level authorization snapshot | `references/modern-it/productivity/README.md` |
 | Microsoft 365 GCC or GCC High | `references/modern-it/productivity/microsoft-365-gcc.md` |
 | Google Workspace compliance | `references/modern-it/productivity/google-workspace.md` |
 | Atlassian, ServiceNow, legacy tools | `references/modern-it/productivity/legacy-dib-tools.md` |
