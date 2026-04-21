@@ -457,8 +457,8 @@ records-management posture across government productivity suites
 Microsoft side; Google Workspace Vault retention plus holds on
 the Google side). These platform-native retention tools typically
 inherit the primary suite's FedRAMP authorization and reduce the
-contractor's backup-confidentiality SSP scope when the primary
-suite is the CUI system of record.
+contractor's backup-confidentiality SSP (System Security Plan)
+scope when the primary suite is the CUI system of record.
 
 ---
 
