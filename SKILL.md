@@ -54,14 +54,16 @@ from memory alone when a reference exists.
 | Microsoft 365 GCC or GCC High | `references/modern-it/productivity/microsoft-365-gcc.md` |
 | Google Workspace compliance | `references/modern-it/productivity/google-workspace.md` |
 | Atlassian, ServiceNow, legacy tools | `references/modern-it/productivity/legacy-dib-tools.md` |
-| AI services in compliant environments | `references/modern-it/ai-services/` |
+| AI services overview, decisions, capability crosswalk | `references/modern-it/ai-services/README.md` |
+| FedRAMP-authorized AI (Bedrock GovCloud, Azure OpenAI Gov, Vertex AI) | `references/modern-it/ai-services/fedramp-ai-services.md` |
+| Self-hosted AI (Coder, on-prem LLM, air-gapped) | `references/modern-it/ai-services/self-hosted-ai.md` |
+| AI developer tools (Claude Code, Copilot, Cursor, Windsurf, Continue) | `references/modern-it/ai-services/ai-dev-tools.md` |
 | Endpoint fleet overview, capability vs product, practice crosswalk | `references/modern-it/endpoints/README.md` |
 | macOS fleet compliance | `references/modern-it/endpoints/macos-fleet.md` |
 | Windows endpoint compliance | `references/modern-it/endpoints/windows-fleet.md` |
 | Remote work and VDI | `references/modern-it/endpoints/remote-work.md` |
-| Small contractor strategies | `references/modern-it/small-contractor.md` |
-| SDVOSB, 8(a), contractor types | `references/modern-it/contractor-profiles.md` |
-| FedRAMP product recommendations | `references/modern-it/fedramp-marketplace.md` |
+| Contractor size profiles (small/medium/large), SDVOSB, 8(a), WOSB, HUBZone | `references/contractor-profiles.md` |
+| FedRAMP Marketplace navigation + curated category short-lists | `references/fedramp-marketplace-guide.md` |
 | Unsure where to look | This file (routing table above) |
 
 If a referenced file does not exist yet, say so honestly. Tell the user

@@ -17,14 +17,13 @@ When a compliant path exists, the skill maps it clearly. When no compliant optio
 - **SSP and POA&M** — System Security Plan guidance and Plan of Action & Milestones management
 - **Modern IT mapping** — Compliance guidance for real-world technology stacks:
   - Cloud platforms (AWS GovCloud, Azure Government, GCP Assured Workloads, hybrid patterns)
-  - Productivity suites (Microsoft 365 GCC/GCC High, Google Workspace)
-  - AI services (Amazon Bedrock, Azure OpenAI, Vertex AI, self-hosted models)
+  - Productivity suites (Microsoft 365 GCC/GCC High, Google Workspace, Atlassian Government Cloud, ServiceNow GCC, GitHub Enterprise, Box for Government)
+  - AI services — FedRAMP-authorized (Amazon Bedrock GovCloud, Azure OpenAI Government, Vertex AI Assured Workloads); self-hosted (Coder, on-prem LLM, air-gapped); AI dev tools (Claude Code, Copilot Enterprise, Cursor, Windsurf, Continue)
   - Endpoint management (macOS, Windows STIG baselines, remote work)
-  - Legacy DIB tools (Atlassian, ServiceNow, and others)
-- **Contractor profiles** — Guidance tailored by company type and size (SDVOSB, 8(a), small/medium/large)
-- **FedRAMP marketplace guide** — Curated compliant product recommendations by category
+- **Contractor profiles** — Guidance tailored by company size (small/medium/large) and socioeconomic set-aside (SDVOSB, 8(a), WOSB/EDWOSB, HUBZone)
+- **FedRAMP Marketplace guide** — Curated category short-lists, navigation guidance, and coverage-gap analysis
 - **Rev 3 transition** — Current Rev 2 requirements with Rev 3 awareness and timeline context
-- **Anti-patterns** — Common compliance mistakes and how to avoid them
+- **Anti-patterns** — Sixteen named compliance-theater patterns across documentation, tool, scope, and assessment categories
 
 ## Installation
 
@@ -59,12 +58,17 @@ Claude Code automatically discovers and loads skills from these locations.
 Every factual claim in this skill traces to a publicly available source. See [SOURCES.md](SOURCES.md) for the complete provenance list.
 
 Primary sources include:
-- NIST SP 800-171 Revision 2
-- NIST SP 800-171A (Assessment Procedures)
-- 32 CFR Part 170 (CMMC Program Final Rule)
-- CMMC Assessment Guide (dodcio.defense.gov)
-- FedRAMP Marketplace (fedramp.gov)
-- Vendor public documentation (AWS, Microsoft, Google Cloud)
+- NIST SP 800-171 Revision 2 and SP 800-171A (Assessment Procedures)
+- 32 CFR Part 170 (CMMC Program Final Rule) and 48 CFR acquisition rule
+- CMMC Assessment Guide Level 2 (dodcio.defense.gov)
+- DoD CSP SRG v1r1 (public.cyber.mil) for DoD Impact Level reciprocity
+- FedRAMP Marketplace (fedramp.gov) for authorization status
+- NIST CMVP Validated Modules Registry (csrc.nist.gov) for FIPS validation
+- SBA regulations (13 CFR Parts 121/124/126/127/128) for contractor profiles
+- Cloud provider compliance documentation (AWS, Microsoft, Google Cloud)
+- Vendor trust centers for each named product
+
+Compliance facts that depend on current authorization state (per-service FedRAMP status, per-model availability, vendor product scope) carry dated verification stamps inline — typically "verified 2026-04-21 via [URL]." Re-verify at the primary source before citing in an SSP.
 
 ## Contributing
 
