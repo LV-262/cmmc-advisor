@@ -29,13 +29,16 @@ Anti-patterns catalog: sixteen named compliance-theater patterns across document
 
 ## Installation
 
-Copy the skill to your Claude Code skills directory:
+Clone the repository, then copy the skill into your Claude Code skills directory.
 
 ```bash
-# Personal installation
+git clone https://github.com/LV-262/cmmc-advisor.git
+# or via SSH: git clone git@github.com:LV-262/cmmc-advisor.git
+
+# Personal installation (available to all your projects)
 cp -r cmmc-advisor ~/.claude/skills/cmmc-advisor
 
-# Project installation
+# Project installation (scoped to the current project)
 cp -r cmmc-advisor .claude/skills/cmmc-advisor
 ```
 
