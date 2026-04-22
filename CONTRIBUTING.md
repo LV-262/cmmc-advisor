@@ -166,4 +166,4 @@ that seriousness.
 ## License
 
 By contributing, you agree that your contributions will be licensed under
-[CC BY-SA 4.0](LICENSE), the same license as the rest of this project.
+the [MIT License](LICENSE), the same license as the rest of this project.

@@ -82,6 +82,6 @@ This skill provides compliance guidance based on publicly available documentatio
 
 ## License
 
-This work is licensed under [CC BY-SA 4.0](LICENSE), Creative Commons Attribution-ShareAlike 4.0 International.
+Released under the [MIT License](LICENSE). Copyright (c) 2026 Lloyd Evans.
 
-You are free to share and adapt this material for any purpose, including commercial use, as long as you provide attribution and distribute contributions under the same license.
+Free to use, modify, and redistribute, including commercially. If you fork, adapt, or build on this skill, keep the copyright notice and license text intact. Attribution in a visible place (README, about page, skill frontmatter) is appreciated but not legally required beyond what the license specifies.
