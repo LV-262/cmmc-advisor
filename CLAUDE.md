@@ -50,4 +50,4 @@ Same voice discipline as the wider Igris-family content: no em dashes, no slop w
 
 ## What this repo does NOT carry
 
-- No hooks, no agents dir, no settings.json, no soul.md. This is a skill distribution, not a Claude Code harness host. The Mk II harness in `/Users/mk24/dev/igris-mk2` is separate and handles harness-level governance.
+- No hooks, no agents dir, no settings.json, no soul.md. This is a skill distribution, not a Claude Code harness host. Harness-level governance (hooks, agents, settings) lives in the author's separate Claude Code harness repo and is out of scope here.
